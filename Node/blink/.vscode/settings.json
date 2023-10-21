@@ -1,0 +1,14 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.adapterTargetName": "esp32s3",
+  "idf.openOcdConfigs": [
+    "board/esp32s3-bridge.cfg"
+  ],
+  "files.associations": {
+    "sdkconfig.h": "c",
+    "led_strip.h": "c",
+    "portmacro.h": "c"
+  },
+  "idf.port": "/dev/ttyUSB0",
+  "idf.flashType": "UART"
+}
