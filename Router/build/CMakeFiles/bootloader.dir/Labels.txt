@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/szm/Desktop/ip_root/build/CMakeFiles/bootloader
+/home/szm/Desktop/ip_root/build/CMakeFiles/bootloader.rule
+/home/szm/Desktop/ip_root/build/CMakeFiles/bootloader-complete.rule
+/home/szm/Desktop/ip_root/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/szm/Desktop/ip_root/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/szm/Desktop/ip_root/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/szm/Desktop/ip_root/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/szm/Desktop/ip_root/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/szm/Desktop/ip_root/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/szm/Desktop/ip_root/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

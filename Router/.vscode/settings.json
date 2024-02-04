@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "mesh_netif.h": "c",
+        "string.h": "c"
+    }
+}

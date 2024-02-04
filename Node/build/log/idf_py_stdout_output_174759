@@ -1,0 +1,344 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x16e0
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2eb0
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb  5 2024 03:33:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00124f80[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=31e80h (204416) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00041ea8 vaddr=3fc97b00 size=045b4h ( 17844) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=00046464 vaddr=40374000 size=09bb4h ( 39860) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=c20f8h (794872) map[0m
+[0;32mI (294) esp_image: segment 4: paddr=00112120 vaddr=4037dbb4 size=09f0ch ( 40716) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (311) boot: Disabling RNG early entropy source...[0m
+[0;32mI (323) cpu_start: Multicore app[0m
+[0;32mI (323) cpu_start: Pro cpu up.[0m
+[0;32mI (323) cpu_start: Starting app cpu, entry point is 0x403754cc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (341) cpu_start: Pro cpu start user code[0m
+[0;32mI (341) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (342) cpu_start: Application information:[0m
+[0;32mI (344) cpu_start: Project name:     ip_internal_network[0m
+[0;32mI (350) cpu_start: App version:      1[0m
+[0;32mI (355) cpu_start: Compile time:     Feb  5 2024 03:32:48[0m
+[0;32mI (361) cpu_start: ELF file SHA256:  d4698dec7b1d8f32...[0m
+[0;32mI (367) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (372) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (376) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (381) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (386) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (393) heap_init: At 3FCA1AA8 len 00047C68 (287 KiB): DRAM[0m
+[0;32mI (399) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (406) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (412) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (420) spi_flash: detected chip: gd[0m
+[0;32mI (423) spi_flash: flash io: dio[0m
+[0;33mW (427) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (440) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (447) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (454) app_start: Starting scheduler on CPU0[0m
+[0;32mI (459) app_start: Starting scheduler on CPU1[0m
+[0;32mI (459) main_task: Started on CPU0[0m
+[0;32mI (469) main_task: Calling app_main()[0m
+[0;32mI (469) LED: Example configured to blink addressable LED![0m
+[0;32mI (479) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (519) pp: pp rom version: e7ae62f[0m
+[0;32mI (519) net80211: net80211 rom version: e7ae62f[0m
+I (529) wifi:wifi driver task: 3fcac330, prio:23, stack:6656, core=0
+I (539) wifi:wifi firmware version: ce9244d
+I (539) wifi:wifi certification version: v7.0
+I (549) wifi:config NVS flash: enabled
+I (549) wifi:config nano formating: disabled
+I (549) wifi:Init data frame dynamic rx buffer num: 32
+I (549) wifi:Init management frame dynamic rx buffer num: 32
+I (559) wifi:Init management short buffer num: 32
+I (559) wifi:Init dynamic tx buffer num: 32
+I (569) wifi:Init static tx FG buffer num: 2
+I (569) wifi:Init static rx buffer size: 1600
+I (579) wifi:Init static rx buffer num: 10
+I (579) wifi:Init dynamic rx buffer num: 32
+[0;32mI (579) wifi_init: rx ba win: 6[0m
+[0;32mI (589) wifi_init: tcpip mbox: 32[0m
+[0;32mI (589) wifi_init: udp mbox: 6[0m
+[0;32mI (599) wifi_init: tcp mbox: 6[0m
+[0;32mI (599) wifi_init: tcp tx win: 5744[0m
+[0;32mI (599) wifi_init: tcp rx win: 5744[0m
+[0;32mI (609) wifi_init: tcp mss: 624[0m
+[0;32mI (609) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (619) wifi_init: WiFi RX IRAM OP enabled[0m
+I (619) wifi:Set ps type: 0, coexist: 0
+
+[0;32mI (619) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+I (669) wifi:mode : sta (f4:12:fa:86:79:20) + softAP (f4:12:fa:86:79:21)
+I (669) wifi:enable tsf
+I (669) wifi:Total power save buffer number: 16
+I (679) wifi:Init max length of beacon: 752/752
+I (679) wifi:Init max length of beacon: 752/752
+I (689) mesh: <nvs>read layer:0
+I (689) mesh: <nvs>read assoc:0, err:0x1102
+I (699) wifi:Total power save buffer number: 16
+I (1759) wifi:mode : sta (f4:12:fa:86:79:20)
+I (1769) mesh: <MESH_NWK_LOOK_FOR_NETWORK>need_scan:0x3, need_scan_router:0x0, look_for_nwk_count:1
+[0;32mI (1769) mesh_main: <MESH_EVENT_MESH_STARTED>ID:77:77:77:77:77:76[0m
+I (1769) mesh: [IO]disable self-organizing<stop reconnect>
+[0;32mI (1769) mesh_main: mesh starts successfully, heap:242596, root not fixed
+[0m
+I (1779) mesh: <WIFI_EVENT_SCAN_DONE>status:fail, num:0, id:128
+[0;32mI (1789) main_task: Returned from app_main()[0m
+I (6819) mesh: 4016<scan>self-organized is disabled, users shall read out scan results by themselves.
+[0;32mI (6819) mesh_main: <MESH_EVENT_SCAN_DONE>number:18[0m
+0,58
+[0;32mI (6829) mesh_main: [0], 88:41:fc:bb:73:fd, channel:1, rssi:-60[0m
+0,58
+[0;32mI (6829) mesh_main: [1]haridhil, 48:ee:0c:6c:b7:f4, channel:1, rssi:-89[0m
+0,58
+[0;32mI (6839) mesh_main: [2], 52:ab:f8:33:de:4b, channel:1, rssi:-87[0m
+0,58
+[0;32mI (6849) mesh_main: [3]ESJE(AT), f4:17:b8:88:aa:26, channel:1, rssi:-79[0m
+0,58
+[0;32mI (6859) mesh_main: [4]SINGTEL-YKU8 2.4G, c4:e5:32:7f:af:d3, channel:3, rssi:-63[0m
+0,58
+[0;32mI (6859) mesh_main: [5], c6:e5:32:6f:af:d3, channel:3, rssi:-64[0m
+0,58
+[0;32mI (6869) mesh_main: [6]DIRECT-DPLAPTOP-ILF1QRRFmsBT, 12:b1:df:19:ac:e7, channel:3, rssi:-29[0m
+0,58
+[0;32mI (6879) mesh_main: [7]SZMiPhone, 36:3b:2a:96:37:98, channel:3, rssi:-36[0m
+0,58
+[0;32mI (6889) mesh_main: [8]HELLA_DR 760_7043D3, 00:0f:00:70:43:d3, channel:6, rssi:-93[0m
+0,58
+[0;32mI (6899) mesh_main: [9], 02:12:63:86:04:a7, channel:6, rssi:-86[0m
+0,58
+[0;32mI (6909) mesh_main: [10]SINGTEL-35A9, fc:12:63:86:04:a7, channel:6, rssi:-85[0m
+0,58
+[0;32mI (6909) mesh_main: [11]SINGTEL-CED0, 48:8d:36:42:ce:d0, channel:8, rssi:-59[0m
+0,58
+[0;32mI (6919) mesh_main: [12]Bonwifi2022, c0:c9:e3:a2:03:62, channel:10, rssi:-70[0m
+0,58
+[0;32mI (6929) mesh_main: [13], c6:c9:e3:a2:03:62, channel:10, rssi:-70[0m
+0,58
+[0;32mI (6939) mesh_main: [14]Bonwifi2022, c0:c9:e3:a2:03:1e, channel:10, rssi:-49[0m
+0,58
+[0;32mI (6949) mesh_main: [15], c6:c9:e3:a2:03:1e, channel:10, rssi:-50[0m
+0,58
+[0;32mI (6949) mesh_main: [16], 52:ab:f8:fb:02:62, channel:11, rssi:-80[0m
+0,58
+[0;32mI (6959) mesh_main: [17], 52:ab:f8:fb:02:62, channel:11, rssi:-80[0m
+[0;33mW (6969) mesh_main: <PARENT>SZMiPhone, 36:3b:2a:96:37:98, channel:3, rssi:-36[0m
+I (6979) wifi:mode : sta (f4:12:fa:86:79:20) + softAP (f4:12:fa:86:79:21)
+W (6979) wifi:<MESH AP>adjust channel:1, secondary channel offset:1(40U)
+I (6989) wifi:Total power save buffer number: 16
+I (6999) mesh: [IO]disable self-organizing<reconnect>
+W (6999) wifi:<MESH AP>adjust channel:3, secondary channel offset:1(40U)
+I (7009) wifi:Total power save buffer number: 16
+I (7009) mesh: [MANUAL]connect to router:SZMiPhone, 36:3b:2a:96:37:98[layer:0], ID:77:77:77:77:77:76<connect>
+[0;32mI (7019) mesh_main: <MESH_EVENT_CHANNEL_SWITCH>new channel:3[0m
+I (7029) wifi:new:<3,1>, old:<3,1>, ap:<3,1>, sta:<3,0>, prof:3
+I (7029) wifi:state: init -> auth (b0)
+I (7039) wifi:state: auth -> assoc (0)
+I (7079) wifi:state: assoc -> run (10)
+I (7139) wifi:connected with SZMiPhone, aid = 2, channel 3, BW20, bssid = 36:3b:2a:96:37:98
+I (7139) wifi:security: WPA2-PSK, phy: bgn, rssi: -39
+I (7149) wifi:pm start, type: 0
+
+I (7149) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (7159) mesh: [scan]new scanning time:600ms, beacon interval:300ms
+I (7169) wifi:<ba-add>idx:0 (ifx:0, 36:3b:2a:96:37:98), tid:0, ssn:2, winSize:64
+I (7169) mesh: <flush>upstream packets, connections(max):6, waiting:0, upQ:0
+[0;32mI (7169) mesh_main: <MESH_EVENT_PARENT_CONNECTED>layer:0-->1, parent:36:3b:2a:96:37:98<ROOT>, ID:77:77:77:77:77:76[0m
+I (7169) mesh: <flush>root
+[0;31mE (7189) esp_netif_lwip: dhcp client stop called with NULL api[0m
+I (7189) mesh: [TXQ]<max:32>up(0, be:0), down(0, be:0), mgmt:0, xon(req:0, rsp:0), bcast:0, wnd(0, parent:00:00:00:00:00:00)
+[0;32mI (7189) mesh_netif: Already wifi station, no need to do anything[0m
+I (7199) mesh: [RXQ]<max:32 = cfg:32 + extra:0>self:0, <max:32 = cfg:32 + extra:0>tods:0
+[0;32mI (7209) mesh_main: <MESH_EVENT_TODS_REACHABLE>state:0[0m
+[0;32mI (7219) mesh_main: <MESH_EVENT_ROOT_ADDRESS>root address:f4:12:fa:86:79:21[0m
+I (7319) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (8159) esp_netif_handlers: sta ip: 172.20.10.4, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (8159) mesh_main: <IP_EVENT_STA_GOT_IP>IP:172.20.10.4[0m
+[0;32mI (8159) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 10.0.0.1[0m
+[0;32mI (8169) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8169) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (8169) mesh_mqtt: Other event id:7[0m
+[0;32mI (8789) mesh_mqtt: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8789) mesh_mqtt: sent publish returned msg_id=12411[0m
+[0;32mI (8789) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (8789) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (9089) mesh_mqtt: MQTT_EVENT_SUBSCRIBED, msg_id=55359[0m
+[0;32mI (9449) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=12411[0m
+[0;32mI (10799) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (10799) mesh_mqtt: sent publish returned msg_id=53216[0m
+[0;32mI (10799) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (10799) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (11109) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=53216[0m
+[0;32mI (12809) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (12809) mesh_mqtt: sent publish returned msg_id=37014[0m
+[0;32mI (12809) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (12809) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (13119) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=37014[0m
+[0;32mI (14819) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (14819) mesh_mqtt: sent publish returned msg_id=32636[0m
+[0;32mI (14819) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (14819) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (15109) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=32636[0m
+I (15799) wifi:new:<3,1>, old:<3,1>, ap:<3,1>, sta:<3,0>, prof:3
+I (15799) wifi:station: f4:12:fa:86:7a:68 join, AID=1, bgn, 40U
+[0;32mI (15809) mesh_main: unknown id:25[0m
+[0;33mW (15829) mesh_main: <MESH_EVENT_ROUTING_TABLE_ADD>add 1, new:2[0m
+[0;32mI (15829) mesh_main: <MESH_EVENT_CHILD_CONNECTED>aid:1, f4:12:fa:86:7a:68[0m
+[0;32mI (15829) mesh_main: Root got child[0m
+[0;32mI (15839) mesh_main: Root got child2,2[0m
+[0;32mI (15839) mesh_main: Child mac wrong, child=f4:12:fa:86:7a:68, chosen mac=f4:12:fa:86:79:20[0m
+[0;32mI (15849) mesh_main: Child connected index:1, f4:12:fa:86:7a:68, f4:12:fa:86:7a:68[0m
+[0;32mI (15909) mesh_main: Corresponding child function:32,record=0[0m
+[0;32mI (15939) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 10.0.0.2[0m
+[0;32mI (16829) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (16829) mesh_mqtt: sent publish returned msg_id=16856[0m
+[0;32mI (16829) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (16829) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (16839) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (16839) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (17109) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=16856[0m
+[0;32mI (18849) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (18849) mesh_mqtt: sent publish returned msg_id=62556[0m
+[0;32mI (18849) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (18849) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (18859) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (18859) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (19189) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=62556[0m
+[0;32mI (20869) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (20869) mesh_mqtt: sent publish returned msg_id=22619[0m
+[0;32mI (20869) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (20869) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (20879) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (20879) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (21139) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=22619[0m
+[0;32mI (22889) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (22889) mesh_mqtt: sent publish returned msg_id=63013[0m
+[0;32mI (22889) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (22889) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (22899) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (22899) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (23269) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=63013[0m
+Enter check button2,2
+[0;32mI (24909) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (24909) mesh_mqtt: sent publish returned msg_id=49236[0m
+[0;32mI (24909) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (24909) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (24919) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (24919) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (25159) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=49236[0m
+[0;32mI (26929) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (26929) mesh_mqtt: sent publish returned msg_id=10187[0m
+[0;32mI (26929) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (26929) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (26939) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (26939) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (27199) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=10187[0m
+[0;32mI (28949) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (28949) mesh_mqtt: sent publish returned msg_id=18861[0m
+[0;32mI (28949) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (28949) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (28959) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (28959) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (29199) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=18861[0m
+[0;32mI (30969) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (30969) mesh_mqtt: sent publish returned msg_id=7396[0m
+[0;32mI (30969) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (30969) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (30979) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (30979) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (31269) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=7396[0m
+Enter check button2,2
+[0;32mI (32989) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (32989) mesh_mqtt: sent publish returned msg_id=14948[0m
+[0;32mI (32989) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (32989) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (32999) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (32999) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (33259) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=14948[0m
+[0;32mI (35009) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (35009) mesh_mqtt: sent publish returned msg_id=33227[0m
+[0;32mI (35009) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (35009) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (35019) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (35019) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (35269) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=33227[0m
+[0;32mI (37029) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (37029) mesh_mqtt: sent publish returned msg_id=30026[0m
+[0;32mI (37029) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (37029) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (37039) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (37039) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (37349) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=30026[0m
+[0;33mW (37979) mesh_main: Keypressed detected on node: f4:12:fa:86:7a:68[0m
+[0;32mI (38319) mesh_mqtt: MQTT_EVENT_DATA[0m
+[0;32mI (38319) mesh_mqtt: TOPIC=/topic/ip_mesh/key_pressed[0m
+[0;32mI (38319) mesh_mqtt: DATA=f4:12:fa:86:7a:68[0m
+[0;32mI (39049) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (39049) mesh_mqtt: sent publish returned msg_id=14739[0m
+[0;32mI (39049) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (39049) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (39059) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (39059) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (39429) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=14739[0m
+[0;33mW (40999) mesh_main: Keypressed detected on node: f4:12:fa:86:7a:68[0m
+[0;32mI (41069) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (41069) mesh_mqtt: sent publish returned msg_id=33141[0m
+[0;32mI (41069) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (41069) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (41079) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (41079) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (41269) mesh_mqtt: MQTT_EVENT_DATA[0m
+[0;32mI (41269) mesh_mqtt: TOPIC=/topic/ip_mesh/key_pressed[0m
+[0;32mI (41269) mesh_mqtt: DATA=f4:12:fa:86:7a:68[0m
+[0;32mI (41759) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=33141[0m
+[0;33mW (43009) mesh_main: Keypressed detected on node: f4:12:fa:86:7a:68[0m
+[0;32mI (43089) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (43089) mesh_mqtt: sent publish returned msg_id=3[0m
+[0;32mI (43089) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (43089) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (43099) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (43099) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (43289) mesh_mqtt: MQTT_EVENT_DATA[0m
+[0;32mI (43289) mesh_mqtt: TOPIC=/topic/ip_mesh/key_pressed[0m
+[0;32mI (43289) mesh_mqtt: DATA=f4:12:fa:86:7a:68[0m
+[0;32mI (43749) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=3[0m
+[0;32mI (45109) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (45109) mesh_mqtt: sent publish returned msg_id=14601[0m
+[0;32mI (45109) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (45109) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (45119) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (45119) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (45429) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=14601[0m
+[0;32mI (47129) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (47129) mesh_mqtt: sent publish returned msg_id=59377[0m
+[0;32mI (47129) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (47129) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (47139) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (47139) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (47429) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=59377[0m
+[0;32mI (49149) mesh_main: Tried to publish layer:1 IP:172.20.10.4[0m
+[0;32mI (49149) mesh_mqtt: sent publish returned msg_id=23070[0m
+[0;32mI (49149) mesh_main: Sending routing table tstao [0] f4:12:fa:86:79:20: sent with err code: 0[0m
+[0;32mI (49149) mesh_main: Received Routing table [0] f4:12:fa:86:79:20[0m
+[0;32mI (49159) mesh_main: Sending routing table tstao [1] f4:12:fa:86:7a:68: sent with err code: 0[0m
+[0;32mI (49159) mesh_main: Received Routing table [1] f4:12:fa:86:7a:68[0m
+[0;32mI (49439) mesh_mqtt: MQTT_EVENT_PUBLISHED, msg_id=23070[0m
