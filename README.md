@@ -10,7 +10,7 @@ Ubuntu22.04 in VMware workstation player 17, ESP-IDF 5.1.1, VSCode
 
 Converting the whole environment from Windows to Linux
 
-###2024/2/5
+### 2024/2/5
 
 Complete the whole mesh network using the IP internal networking example
 I originally tried the manual networking example but there are [some bugs in data transmission by just using esp_mesh_send()](ref:https://esp32.com/viewtopic.php?t=9181). So I have to switch to the new example.
