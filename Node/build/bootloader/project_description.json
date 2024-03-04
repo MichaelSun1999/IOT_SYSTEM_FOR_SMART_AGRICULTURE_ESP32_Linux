@@ -4,8 +4,8 @@
     "project_version":    "v5.1.1",
     "project_path":       "/home/szm/esp/esp-idf/components/bootloader/subproject",
     "idf_path":           "/home/szm/esp/esp-idf",
-    "build_dir":          "/home/szm/Desktop/ip_node/build/bootloader",
-    "config_file":        "/home/szm/Desktop/ip_node/sdkconfig",
+    "build_dir":          "/home/szm/Desktop/Combined_node/build/bootloader",
+    "config_file":        "/home/szm/Desktop/Combined_node/sdkconfig",
     "config_defaults":    "",
     "bootloader_elf":     "",
     "app_elf":            "bootloader.elf",
@@ -54,7 +54,7 @@
             "priv_reqs": [ "micro-ecc", "spi_flash", "efuse", "esp_app_format", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/bootloader_support/libbootloader_support.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/bootloader_support/libbootloader_support.a",
             "sources": [ "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_common.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_clock_init.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_random.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32s3.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_efuse.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/secure_boot.c", "/home/szm/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "/home/szm/esp/esp-idf/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "/home/szm/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_utility.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/flash_partitions.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/esp_image_format.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_init.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_clock_loader.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_console.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_console_loader.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/esp32s3/bootloader_sha.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/esp32s3/bootloader_soc.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/esp32s3/bootloader_esp32s3.c", "/home/szm/esp/esp-idf/components/bootloader_support/src/bootloader_panic.c" ],
             "include_dirs": [ "include", "bootloader_flash/include", "private_include" ]
         },
@@ -69,7 +69,7 @@
             "priv_reqs": [ "bootloader_support", "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/efuse/libefuse.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/efuse/libefuse.a",
             "sources": [ "/home/szm/esp/esp-idf/components/efuse/esp32s3/esp_efuse_table.c", "/home/szm/esp/esp-idf/components/efuse/esp32s3/esp_efuse_fields.c", "/home/szm/esp/esp-idf/components/efuse/esp32s3/esp_efuse_rtc_calib.c", "/home/szm/esp/esp-idf/components/efuse/esp32s3/esp_efuse_utility.c", "/home/szm/esp/esp-idf/components/efuse/src/esp_efuse_api.c", "/home/szm/esp/esp-idf/components/efuse/src/esp_efuse_fields.c", "/home/szm/esp/esp-idf/components/efuse/src/esp_efuse_utility.c", "/home/szm/esp/esp-idf/components/efuse/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c" ],
             "include_dirs": [ "include", "esp32s3/include" ]
         },
@@ -84,7 +84,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/esp_app_format/libesp_app_format.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/esp_app_format/libesp_app_format.a",
             "sources": [ "/home/szm/esp/esp-idf/components/esp_app_format/esp_app_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -99,7 +99,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/esp_common/libesp_common.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/esp_common/libesp_common.a",
             "sources": [ "/home/szm/esp/esp-idf/components/esp_common/src/esp_err_to_name.c" ],
             "include_dirs": [ "include" ]
         },
@@ -114,7 +114,7 @@
             "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_system" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/esp_hw_support/libesp_hw_support.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/esp_hw_support/libesp_hw_support.a",
             "sources": [ "/home/szm/esp/esp-idf/components/esp_hw_support/cpu.c", "/home/szm/esp/esp-idf/components/esp_hw_support/esp_memory_utils.c", "/home/szm/esp/esp-idf/components/esp_hw_support/port/esp32s3/cpu_region_protect.c", "/home/szm/esp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c", "/home/szm/esp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk_init.c", "/home/szm/esp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c", "/home/szm/esp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_sleep.c", "/home/szm/esp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_time.c", "/home/szm/esp/esp-idf/components/esp_hw_support/port/esp32s3/chip_info.c" ],
             "include_dirs": [ "include", "include/soc", "include/soc/esp32s3" ]
         },
@@ -129,7 +129,7 @@
             "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/esp_rom/libesp_rom.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/esp_rom/libesp_rom.a",
             "sources": [ "/home/szm/esp/esp-idf/components/esp_rom/patches/esp_rom_crc.c", "/home/szm/esp/esp-idf/components/esp_rom/patches/esp_rom_sys.c", "/home/szm/esp/esp-idf/components/esp_rom/patches/esp_rom_uart.c", "/home/szm/esp/esp-idf/components/esp_rom/patches/esp_rom_spiflash.c", "/home/szm/esp/esp-idf/components/esp_rom/patches/esp_rom_efuse.c", "/home/szm/esp/esp-idf/components/esp_rom/patches/esp_rom_longjmp.S", "/home/szm/esp/esp-idf/components/esp_rom/patches/esp_rom_systimer.c", "/home/szm/esp/esp-idf/components/esp_rom/patches/esp_rom_wdt.c", "/home/szm/esp/esp-idf/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c", "/home/szm/esp/esp-idf/components/esp_rom/patches/esp_rom_cache_writeback_esp32s3.S" ],
             "include_dirs": [ "include", "include/esp32s3", "esp32s3" ]
         },
@@ -144,7 +144,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/esp_system/libesp_system.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/esp_system/libesp_system.a",
             "sources": [ "/home/szm/esp/esp-idf/components/esp_system/esp_err.c" ],
             "include_dirs": []
         },
@@ -189,7 +189,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/hal/libhal.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/hal/libhal.a",
             "sources": [ "/home/szm/esp/esp-idf/components/hal/mpu_hal.c", "/home/szm/esp/esp-idf/components/hal/efuse_hal.c", "/home/szm/esp/esp-idf/components/hal/esp32s3/efuse_hal.c", "/home/szm/esp/esp-idf/components/hal/mmu_hal.c", "/home/szm/esp/esp-idf/components/hal/cache_hal.c" ],
             "include_dirs": [ "esp32s3/include", "include", "platform_port/include" ]
         },
@@ -204,7 +204,7 @@
             "priv_reqs": [ "soc", "hal", "esp_hw_support" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/log/liblog.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/log/liblog.a",
             "sources": [ "/home/szm/esp/esp-idf/components/log/log.c", "/home/szm/esp/esp-idf/components/log/log_buffers.c", "/home/szm/esp/esp-idf/components/log/log_noos.c" ],
             "include_dirs": [ "include" ]
         },
@@ -219,7 +219,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/main/libmain.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/main/libmain.a",
             "sources": [ "/home/szm/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c" ],
             "include_dirs": []
         },
@@ -234,7 +234,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/micro-ecc/libmicro-ecc.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/micro-ecc/libmicro-ecc.a",
             "sources": [ "/home/szm/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/uECC_verify_antifault.c" ],
             "include_dirs": [ ".", "micro-ecc" ]
         },
@@ -279,7 +279,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/soc/libsoc.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/soc/libsoc.a",
             "sources": [ "/home/szm/esp/esp-idf/components/soc/lldesc.c", "/home/szm/esp/esp-idf/components/soc/dport_access_common.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/interrupts.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/gpio_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/uart_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/adc_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/dedic_gpio_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/gdma_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/spi_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/ledc_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/pcnt_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/rmt_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/sdm_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/i2s_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/i2c_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/temperature_sensor_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/timer_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/lcd_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/mcpwm_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/sdmmc_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/touch_sensor_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/twai_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/usb_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/usb_otg_periph.c", "/home/szm/esp/esp-idf/components/soc/esp32s3/rtc_io_periph.c" ],
             "include_dirs": [ "include", "esp32s3", "esp32s3/include" ]
         },
@@ -294,7 +294,7 @@
             "priv_reqs": [ "bootloader_support", "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/spi_flash/libspi_flash.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/spi_flash/libspi_flash.a",
             "sources": [ "/home/szm/esp/esp-idf/components/spi_flash/spi_flash_wrap.c" ],
             "include_dirs": [ "include" ]
         },
@@ -309,7 +309,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/szm/Desktop/ip_node/build/bootloader/esp-idf/xtensa/libxtensa.a",
+            "file": "/home/szm/Desktop/Combined_node/build/bootloader/esp-idf/xtensa/libxtensa.a",
             "sources": [ "/home/szm/esp/esp-idf/components/xtensa/eri.c", "/home/szm/esp/esp-idf/components/xtensa/xt_trax.c" ],
             "include_dirs": [ "include", "esp32s3/include" ]
         }

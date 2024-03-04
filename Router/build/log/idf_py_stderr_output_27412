@@ -1,0 +1,12 @@
+warning: the default selection BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) of <choice> (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:10) is not contained in the choice
+warning: the choice symbol BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) is defined with a prompt outside the choice
+warning: the choice symbol BT_BLUEDROID_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:18, /home/szm/esp/esp-idf/components/bt/Kconfig:17) is defined with a prompt outside the choice
+warning: the choice symbol BT_BLUEDROID_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:18, /home/szm/esp/esp-idf/components/bt/Kconfig:17) is defined with a prompt outside the choice
+warning: the choice symbol BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) is defined with a prompt outside the choice
+Compiler supported targets: xtensa-esp32s3-elf
+
+warning: the default selection BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) of <choice> (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:10) is not contained in the choice
+warning: the choice symbol BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) is defined with a prompt outside the choice
+warning: the choice symbol BT_BLUEDROID_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:18, /home/szm/esp/esp-idf/components/bt/Kconfig:17) is defined with a prompt outside the choice
+warning: the choice symbol BT_BLUEDROID_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:18, /home/szm/esp/esp-idf/components/bt/Kconfig:17) is defined with a prompt outside the choice
+warning: the choice symbol BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) is defined with a prompt outside the choice

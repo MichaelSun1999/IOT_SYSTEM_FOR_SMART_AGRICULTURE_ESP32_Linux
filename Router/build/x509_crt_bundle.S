@@ -1,4 +1,4 @@
-/* * Data converted from /home/szm/Desktop/ip_root/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/szm/Desktop/Combined_root/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

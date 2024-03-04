@@ -1,4 +1,4 @@
-# Install script for directory: /home/szm/Desktop/ip_root/main
+# Install script for directory: /home/szm/Desktop/Combined_root/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

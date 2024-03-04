@@ -1,0 +1,42 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/szm/Desktop/Combined_root/build/bootloader/esp-idf/esptool_py && /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/szm/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/szm/Desktop/Combined_root/build/bootloader/bootloader.bin
+Bootloader binary size 0x51f0 bytes. 0x2e10 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mesh_main.c.obj
+/home/szm/Desktop/Combined_root/main/mesh_main.c:87:31: warning: 'gl_sta_conn_info' defined but not used [-Wunused-variable]
+   87 | static esp_blufi_extra_info_t gl_sta_conn_info;
+      |                               ^~~~~~~~~~~~~~~~
+/home/szm/Desktop/Combined_root/main/mesh_main.c:86:13: warning: 'gl_sta_is_connecting' defined but not used [-Wunused-variable]
+   86 | static bool gl_sta_is_connecting = false;
+      |             ^~~~~~~~~~~~~~~~~~~~
+/home/szm/Desktop/Combined_root/main/mesh_main.c:85:24: warning: 'gl_sta_list' defined but not used [-Wunused-variable]
+   85 | static wifi_sta_list_t gl_sta_list;
+      |                        ^~~~~~~~~~~
+/home/szm/Desktop/Combined_root/main/mesh_main.c:84:12: warning: 'gl_sta_ssid_len' defined but not used [-Wunused-variable]
+   84 | static int gl_sta_ssid_len;
+      |            ^~~~~~~~~~~~~~~
+/home/szm/Desktop/Combined_root/main/mesh_main.c:83:16: warning: 'gl_sta_ssid' defined but not used [-Wunused-variable]
+   83 | static uint8_t gl_sta_ssid[32];
+      |                ^~~~~~~~~~~
+/home/szm/Desktop/Combined_root/main/mesh_main.c:82:16: warning: 'gl_sta_bssid' defined but not used [-Wunused-variable]
+   82 | static uint8_t gl_sta_bssid[6];
+      |                ^~~~~~~~~~~~
+/home/szm/Desktop/Combined_root/main/mesh_main.c:74:16: warning: 'example_wifi_retry' defined but not used [-Wunused-variable]
+   74 | static uint8_t example_wifi_retry = 0;
+      |                ^~~~~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+warning: the default selection BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) of <choice> (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:10) is not contained in the choice
+warning: the choice symbol BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) is defined with a prompt outside the choice
+warning: the choice symbol BT_BLUEDROID_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:18, /home/szm/esp/esp-idf/components/bt/Kconfig:17) is defined with a prompt outside the choice
+warning: the choice symbol BT_BLUEDROID_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:18, /home/szm/esp/esp-idf/components/bt/Kconfig:17) is defined with a prompt outside the choice
+warning: the choice symbol BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/Combined_root/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) is defined with a prompt outside the choice
+[5/8] Building C object CMakeFiles/ip_internal_network.elf.dir/project_elf_src_esp32s3.c.obj
+[6/8] Linking CXX executable ip_internal_network.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.7.dev2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/szm/Desktop/Combined_root/build/ip_internal_network.bin
+[8/8] cd /home/szm/Desktop/Combined_root/build/esp-idf/esptool_py && /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/szm/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/szm/Desktop/Combined_root/build/partition_table/partition-table.bin /home/szm/Desktop/Combined_root/build/ip_internal_network.bin
+ip_internal_network.bin binary size 0x1368a0 bytes. Smallest app partition is 0x16e360 bytes. 0x37ac0 bytes (15%) free.

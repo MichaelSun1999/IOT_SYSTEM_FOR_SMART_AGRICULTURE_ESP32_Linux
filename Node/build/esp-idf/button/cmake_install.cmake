@@ -1,4 +1,4 @@
-# Install script for directory: /home/szm/Desktop/ip_node/components/button
+# Install script for directory: /home/szm/Desktop/Combined_node/components/button
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
