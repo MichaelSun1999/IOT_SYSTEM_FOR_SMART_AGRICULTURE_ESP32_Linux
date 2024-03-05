@@ -19,3 +19,6 @@ Data transmission:
  -Root->Node: Router table transmission
  -Node->Root: Switch pressing detection
 ```
+### 2024/3/5
+
+Complete the wifi provisioning by blufi (GATT is too complex), packing the functions into components and do some minor changes for stability.
