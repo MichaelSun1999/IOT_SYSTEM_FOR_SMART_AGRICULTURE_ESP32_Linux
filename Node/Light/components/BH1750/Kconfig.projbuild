@@ -1,0 +1,22 @@
+menu "BH1750 Configuration"
+    config I2C_BH1750_SCL_IO
+        int "I2C SCL IO number"
+        default 34
+        help
+            I2C SCL port number.
+    config I2C_BH1750_SDA_IO
+        int "I2C SDA IO number"
+        default 33
+        help
+            I2C SDA port number.
+    config I2C_BH1750_NUM
+        int "I2C port number"
+        default 1
+        help
+            I2C port number; I2C_NUM_i=i.
+    config I2C_BH1750_FREQ
+        int "I2C frequency"
+        default 100000
+        help
+            I2C frequency.
+endmenu

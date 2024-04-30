@@ -1,0 +1,32 @@
+[0;33m--- esp-idf-monitor 1.3.2 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40375a2c: call_start_cpu1 at /home/szm/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4205deeb: task_wdt_timeout_handling at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461
+ (inlined by) task_wdt_isr at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x40377dbd: _xt_lowint1 at /home/szm/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1236
+[0m
+[0;33m0x4200c772: app_main at /home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:1672 (discriminator 13)
+[0m
+[0;33m0x420faa2b: main_task at /home/szm/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4205deeb: task_wdt_timeout_handling at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461
+ (inlined by) task_wdt_isr at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x40377dbd: _xt_lowint1 at /home/szm/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1236
+[0m
+[0;33m0x4200c772: app_main at /home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:1672 (discriminator 13)
+[0m
+[0;33m0x420faa2b: main_task at /home/szm/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4205deeb: task_wdt_timeout_handling at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461
+ (inlined by) task_wdt_isr at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x40377dbd: _xt_lowint1 at /home/szm/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1236
+[0m
+[0;33m0x4200c772: app_main at /home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:1672 (discriminator 13)
+[0m
+[0;33m0x420faa2b: main_task at /home/szm/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0m

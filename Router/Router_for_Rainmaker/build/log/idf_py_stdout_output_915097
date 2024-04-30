@@ -1,0 +1,1460 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x16e8
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2eb0
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 23 2024 07:05:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (72) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (80) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (87) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (95) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (102) boot:  5 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (110) boot:  6 fctry            WiFi data        01 02 001b0000 00006000[0m
+[0;32mI (117) boot: End of partition table[0m
+[0;32mI (122) esp_image: segment 0: paddr=00020020 vaddr=3c0e0020 size=4f248h (324168) map[0m
+[0;32mI (188) esp_image: segment 1: paddr=0006f270 vaddr=3fc9bd00 size=00da8h (  3496) load[0m
+[0;32mI (189) esp_image: segment 2: paddr=00070020 vaddr=42000020 size=de238h (909880) map[0m
+[0;32mI (357) esp_image: segment 3: paddr=0014e260 vaddr=3fc9caa8 size=03ed4h ( 16084) load[0m
+[0;32mI (361) esp_image: segment 4: paddr=0015213c vaddr=40374000 size=17ccch ( 97484) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (395) boot: Disabling RNG early entropy source...[0m
+[0;32mI (406) cpu_start: Multicore app[0m
+[0;32mI (406) cpu_start: Pro cpu up.[0m
+[0;32mI (406) cpu_start: Starting app cpu, entry point is 0x40375718[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) cpu_start: Application information:[0m
+[0;32mI (428) cpu_start: Project name:     ip_internal_network[0m
+[0;32mI (434) cpu_start: App version:      1[0m
+[0;32mI (438) cpu_start: Compile time:     Apr 23 2024 07:05:40[0m
+[0;32mI (444) cpu_start: ELF file SHA256:  9f9c5e23c152b3cb...[0m
+[0;32mI (450) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (455) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (460) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (465) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (470) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FCA6D30 len 000429E0 (266 KiB): DRAM[0m
+[0;32mI (483) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (490) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (496) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (503) spi_flash: detected chip: gd[0m
+[0;32mI (507) spi_flash: flash io: dio[0m
+[0;32mI (511) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (517) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (524) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (530) coexist: coexist rom version e7ae62f[0m
+[0;32mI (535) app_start: Starting scheduler on CPU0[0m
+[0;32mI (540) app_start: Starting scheduler on CPU1[0m
+[0;32mI (540) main_task: Started on CPU0[0m
+[0;32mI (550) main_task: Calling app_main()[0m
+[0;32mI (590) uart: queue free spaces: 20[0m
+[0;32mI (590) UART: uart rx break[0m
+[0;32mI (590) pp: pp rom version: e7ae62f[0m
+[0;32mI (590) net80211: net80211 rom version: e7ae62f[0m
+I (600) wifi:wifi driver task: 3fcb447c, prio:23, stack:6656, core=0
+I (610) wifi:wifi firmware version: ce9244d
+I (610) wifi:wifi certification version: v7.0
+I (610) wifi:config NVS flash: enabled
+I (610) wifi:config nano formating: disabled
+I (620) wifi:Init data frame dynamic rx buffer num: 32
+I (620) wifi:Init management frame dynamic rx buffer num: 32
+I (630) wifi:Init management short buffer num: 32
+I (630) wifi:Init dynamic tx buffer num: 32
+I (640) wifi:Init static tx FG buffer num: 2
+I (640) wifi:Init static rx buffer size: 1600
+I (640) wifi:Init static rx buffer num: 10
+I (650) wifi:Init dynamic rx buffer num: 32
+[0;32mI (650) wifi_init: rx ba win: 6[0m
+[0;32mI (660) wifi_init: tcpip mbox: 32[0m
+[0;32mI (660) wifi_init: udp mbox: 6[0m
+[0;32mI (660) wifi_init: tcp mbox: 6[0m
+[0;32mI (670) wifi_init: tcp tx win: 5744[0m
+[0;32mI (670) wifi_init: tcp rx win: 5744[0m
+[0;32mI (680) wifi_init: tcp mss: 624[0m
+[0;32mI (680) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (680) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (700) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (720) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|DC5475C7E8BC[0m
+[0;32mI (720) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (720) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (730) esp_rmaker_node: Node ID ----- DC5475C7E8BC[0m
+[0;32mI (740) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (750) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (750) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (750) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (760) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (760) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (770) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (780) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (780) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (790) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (800) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (800) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (810) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+I (850) wifi:mode : sta (dc:54:75:c7:e8:bc)
+I (850) wifi:enable tsf
+[0;32mI (1320) UART: [UART DATA]: 29[0m
+[0;32mI (1320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (2320) UART: [UART DATA]: 29[0m
+[0;32mI (2320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+I (3260) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3260) wifi:state: init -> auth (b0)
+I (3260) wifi:state: auth -> assoc (0)
+I (3270) wifi:state: assoc -> run (10)
+I (3310) wifi:connected with SINGTEL-EEU3, aid = 32, channel 1, BW20, bssid = 6a:99:b2:98:55:02
+I (3310) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (3310) wifi:pm start, type: 1
+
+I (3310) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+[0;32mI (3320) UART: [UART DATA]: 29[0m
+[0;32mI (3320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+I (3350) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+I (3360) wifi:<ba-add>idx:0 (ifx:0, 6a:99:b2:98:55:02), tid:0, ssn:1, winSize:64
+[0;32mI (4320) app_wifi: Connected with IP Address:192.168.1.25[0m
+[0;32mI (4320) esp_netif_handlers: sta ip: 192.168.1.25, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (4320) UART: [UART DATA]: 29[0m
+[0;32mI (4320) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (4320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+[0;32mI (4330) esp_rmaker_node: Node attribute cmd-resp created[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (4340) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (4320) main_task: Returned from app_main()[0m
+[0;32mI (4350) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (4430) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (4440) esp_rmaker_time: The current time is: Tue Apr 23 10:42:10 2024 +0800[+08], DST: No.[0m
+[0;32mI (5320) UART: [UART DATA]: 29[0m
+[0;32mI (5320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (6320) UART: [UART DATA]: 29[0m
+[0;32mI (6320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (7160) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (7320) UART: [UART DATA]: 29[0m
+[0;32mI (7320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (8320) UART: [UART DATA]: 29[0m
+[0;32mI (8320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (9320) UART: [UART DATA]: 29[0m
+[0;32mI (9320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (9830) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (9830) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (9840) esp_rmaker_node_config: Generated Node config of length 2997[0m
+[0;32mI (10110) esp_rmaker_param: Params MQTT Init done.[0m
+[0;32mI (10110) esp_rmaker_param: Reporting params (init): {"Relay":{"Name":"Relay","Power":true},"Light matrix":{"Name":"Light matrix","Power":true,"Brightness":10},"Temperature Sensor":{"Name":"Temperature Sensor","Temperature":0.00000},"Humidity Sensor":{"Name":"Humidity Sensor","Temperature":0.00000},"Soil humidity Sensor":{"Name":"Soil humidity Sensor","Temperature":0.00000},"Light Sensor":{"Name":"Light Sensor","Temperature":0.00000},"Time":{"TZ":"Asia/Singapore","TZ-POSIX":"<+08>-8"},"Schedule":{"Schedules":[]},"Scenes":{"Scenes":[]}}[0m
+[0;32mI (10160) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (10170) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (10180) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (10190) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (10320) UART: [UART DATA]: 29[0m
+[0;32mI (10320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (11320) UART: [UART DATA]: 29[0m
+[0;32mI (11320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (12320) UART: [UART DATA]: 29[0m
+[0;32mI (12320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (13320) UART: [UART DATA]: 29[0m
+[0;32mI (13320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (14320) UART: [UART DATA]: 29[0m
+[0;32mI (14320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (15320) UART: [UART DATA]: 29[0m
+[0;32mI (15320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (16320) UART: [UART DATA]: 29[0m
+[0;32mI (16320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (17320) UART: [UART DATA]: 29[0m
+[0;32mI (17320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (18320) UART: [UART DATA]: 29[0m
+[0;32mI (18320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (19320) UART: [UART DATA]: 29[0m
+[0;32mI (19320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (20320) UART: [UART DATA]: 29[0m
+[0;32mI (20320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (20320) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (20330) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":25.80000}}[0m
+[0;32mI (20340) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (20350) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (20360) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (20370) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (20380) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (20380) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (21320) UART: [UART DATA]: 29[0m
+[0;32mI (21320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (22320) UART: [UART DATA]: 29[0m
+[0;32mI (22320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (23320) UART: [UART DATA]: 29[0m
+[0;32mI (23320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (24320) UART: [UART DATA]: 29[0m
+[0;32mI (24320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (25320) UART: [UART DATA]: 29[0m
+[0;32mI (25320) UART: Read 29 bytes: '=25.80=100.00=4095.00=140.00='[0m
+25.80,100.00,4095.00,140.00
+[0;32mI (26320) UART: [UART DATA]: 29[0m
+[0;32mI (26320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (27320) UART: [UART DATA]: 29[0m
+[0;32mI (27320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (28320) UART: [UART DATA]: 29[0m
+[0;32mI (28320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (29320) UART: [UART DATA]: 29[0m
+[0;32mI (29320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (30320) UART: [UART DATA]: 29[0m
+[0;32mI (30320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (31320) UART: [UART DATA]: 29[0m
+[0;32mI (31320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (32320) UART: [UART DATA]: 29[0m
+[0;32mI (32320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (33320) UART: [UART DATA]: 29[0m
+[0;32mI (33320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (34320) UART: [UART DATA]: 29[0m
+[0;32mI (34320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (35320) UART: [UART DATA]: 29[0m
+[0;32mI (35320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (36320) UART: [UART DATA]: 29[0m
+[0;32mI (36320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (37320) UART: [UART DATA]: 29[0m
+[0;32mI (37320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (38320) UART: [UART DATA]: 29[0m
+[0;32mI (38320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (39320) UART: [UART DATA]: 29[0m
+[0;32mI (39320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (40320) UART: [UART DATA]: 29[0m
+[0;32mI (40320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (40320) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (40330) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (40340) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (40350) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (40360) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (40370) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (40370) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (40380) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (41320) UART: [UART DATA]: 29[0m
+[0;32mI (41320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (42320) UART: [UART DATA]: 29[0m
+[0;32mI (42320) UART: Read 29 bytes: '=25.90=100.00=4095.00=140.00='[0m
+25.90,100.00,4095.00,140.00
+[0;32mI (43320) UART: [UART DATA]: 29[0m
+[0;32mI (43320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (44320) UART: [UART DATA]: 29[0m
+[0;32mI (44320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (45320) UART: [UART DATA]: 29[0m
+[0;32mI (45320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (46320) UART: [UART DATA]: 29[0m
+[0;32mI (46320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (47320) UART: [UART DATA]: 29[0m
+[0;32mI (47320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (48320) UART: [UART DATA]: 29[0m
+[0;32mI (48320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (49320) UART: [UART DATA]: 29[0m
+[0;32mI (49320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (50320) UART: [UART DATA]: 29[0m
+[0;32mI (50320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (51320) UART: [UART DATA]: 29[0m
+[0;32mI (51320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (52320) UART: [UART DATA]: 29[0m
+[0;32mI (52320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (53320) UART: [UART DATA]: 29[0m
+[0;32mI (53320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (54320) UART: [UART DATA]: 29[0m
+[0;32mI (54320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (55320) UART: [UART DATA]: 29[0m
+[0;32mI (55320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (56320) UART: [UART DATA]: 29[0m
+[0;32mI (56320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (57320) UART: [UART DATA]: 29[0m
+[0;32mI (57320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (58320) UART: [UART DATA]: 29[0m
+[0;32mI (58320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (59320) UART: [UART DATA]: 29[0m
+[0;32mI (59320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (60320) UART: [UART DATA]: 29[0m
+[0;32mI (60320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (60320) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (60330) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.10000}}[0m
+[0;32mI (60340) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (60350) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (60360) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (60370) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (60380) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (60380) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (61320) UART: [UART DATA]: 29[0m
+[0;32mI (61320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (62320) UART: [UART DATA]: 29[0m
+[0;32mI (62320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (63320) UART: [UART DATA]: 29[0m
+[0;32mI (63320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (64320) UART: [UART DATA]: 29[0m
+[0;32mI (64320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (65320) UART: [UART DATA]: 29[0m
+[0;32mI (65320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (66320) UART: [UART DATA]: 29[0m
+[0;32mI (66320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (67320) UART: [UART DATA]: 29[0m
+[0;32mI (67320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (68320) UART: [UART DATA]: 29[0m
+[0;32mI (68320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (69320) UART: [UART DATA]: 29[0m
+[0;32mI (69320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (70320) UART: [UART DATA]: 29[0m
+[0;32mI (70320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (71320) UART: [UART DATA]: 29[0m
+[0;32mI (71320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (72320) UART: [UART DATA]: 29[0m
+[0;32mI (72320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (73320) UART: [UART DATA]: 29[0m
+[0;32mI (73320) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (74320) UART: [UART DATA]: 29[0m
+[0;32mI (74320) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (75320) UART: [UART DATA]: 29[0m
+[0;32mI (75320) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (76320) UART: [UART DATA]: 29[0m
+[0;32mI (76320) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (77320) UART: [UART DATA]: 29[0m
+[0;32mI (77320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (78320) UART: [UART DATA]: 29[0m
+[0;32mI (78320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (79320) UART: [UART DATA]: 29[0m
+[0;32mI (79320) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (80320) UART: [UART DATA]: 29[0m
+[0;32mI (80320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (80320) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (80330) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.10000}}[0m
+[0;32mI (80340) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (80350) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (80360) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (80370) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (80370) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (80380) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (81320) UART: [UART DATA]: 29[0m
+[0;32mI (81320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (82320) UART: [UART DATA]: 29[0m
+[0;32mI (82320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (83320) UART: [UART DATA]: 29[0m
+[0;32mI (83320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (84320) UART: [UART DATA]: 29[0m
+[0;32mI (84320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (85320) UART: [UART DATA]: 29[0m
+[0;32mI (85320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (86320) UART: [UART DATA]: 29[0m
+[0;32mI (86320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (87320) UART: [UART DATA]: 29[0m
+[0;32mI (87320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (88320) UART: [UART DATA]: 29[0m
+[0;32mI (88320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (89320) UART: [UART DATA]: 29[0m
+[0;32mI (89320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (90320) UART: [UART DATA]: 29[0m
+[0;32mI (90320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (91320) UART: [UART DATA]: 29[0m
+[0;32mI (91320) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (92320) UART: [UART DATA]: 29[0m
+[0;32mI (92320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (93320) UART: [UART DATA]: 29[0m
+[0;32mI (93320) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (94320) UART: [UART DATA]: 29[0m
+[0;32mI (94320) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (95320) UART: [UART DATA]: 29[0m
+[0;32mI (95320) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (96320) UART: [UART DATA]: 29[0m
+[0;32mI (96320) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (97320) UART: [UART DATA]: 29[0m
+[0;32mI (97320) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (98320) UART: [UART DATA]: 29[0m
+[0;32mI (98330) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (99330) UART: [UART DATA]: 29[0m
+[0;32mI (99330) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (100330) UART: [UART DATA]: 29[0m
+[0;32mI (100330) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (100340) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (100350) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.20000}}[0m
+[0;32mI (100360) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (100360) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (100370) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (100380) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (100390) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (100400) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (101340) UART: [UART DATA]: 29[0m
+[0;32mI (101340) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (102340) UART: [UART DATA]: 29[0m
+[0;32mI (102340) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (103340) UART: [UART DATA]: 29[0m
+[0;32mI (103340) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (104350) UART: [UART DATA]: 29[0m
+[0;32mI (104350) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (105350) UART: [UART DATA]: 29[0m
+[0;32mI (105350) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (106350) UART: [UART DATA]: 29[0m
+[0;32mI (106350) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (107360) UART: [UART DATA]: 29[0m
+[0;32mI (107360) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (108360) UART: [UART DATA]: 29[0m
+[0;32mI (108360) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (109370) UART: [UART DATA]: 29[0m
+[0;32mI (109370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (110370) UART: [UART DATA]: 29[0m
+[0;32mI (110370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (111370) UART: [UART DATA]: 29[0m
+[0;32mI (111370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (112370) UART: [UART DATA]: 29[0m
+[0;32mI (112370) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (113370) UART: [UART DATA]: 29[0m
+[0;32mI (113370) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (114370) UART: [UART DATA]: 29[0m
+[0;32mI (114370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (115370) UART: [UART DATA]: 29[0m
+[0;32mI (115370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (116370) UART: [UART DATA]: 29[0m
+[0;32mI (116370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (117370) UART: [UART DATA]: 29[0m
+[0;32mI (117370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (118370) UART: [UART DATA]: 29[0m
+[0;32mI (118370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (119370) UART: [UART DATA]: 29[0m
+[0;32mI (119370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (120370) UART: [UART DATA]: 29[0m
+[0;32mI (120370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (120370) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (120390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.20000}}[0m
+[0;32mI (120390) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (120400) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (120410) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (120420) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (120430) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (120440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (121370) UART: [UART DATA]: 29[0m
+[0;32mI (121370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (122370) UART: [UART DATA]: 29[0m
+[0;32mI (122370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (123370) UART: [UART DATA]: 29[0m
+[0;32mI (123370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (124370) UART: [UART DATA]: 29[0m
+[0;32mI (124370) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (125370) UART: [UART DATA]: 29[0m
+[0;32mI (125370) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (126370) UART: [UART DATA]: 29[0m
+[0;32mI (126370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (127370) UART: [UART DATA]: 29[0m
+[0;32mI (127370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (128370) UART: [UART DATA]: 29[0m
+[0;32mI (128370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (129370) UART: [UART DATA]: 29[0m
+[0;32mI (129370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (130370) UART: [UART DATA]: 29[0m
+[0;32mI (130370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (131370) UART: [UART DATA]: 29[0m
+[0;32mI (131370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (132370) UART: [UART DATA]: 29[0m
+[0;32mI (132370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (133370) UART: [UART DATA]: 29[0m
+[0;32mI (133370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (134370) UART: [UART DATA]: 29[0m
+[0;32mI (134370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (135370) UART: [UART DATA]: 29[0m
+[0;32mI (135370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (136370) UART: [UART DATA]: 29[0m
+[0;32mI (136370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (137370) UART: [UART DATA]: 29[0m
+[0;32mI (137370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (138370) UART: [UART DATA]: 29[0m
+[0;32mI (138370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (139370) UART: [UART DATA]: 29[0m
+[0;32mI (139370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (140370) UART: [UART DATA]: 29[0m
+[0;32mI (140370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (140370) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (140390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.30000}}[0m
+[0;32mI (140390) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (140400) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (140410) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (140420) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (140430) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (140440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (141370) UART: [UART DATA]: 29[0m
+[0;32mI (141370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (142370) UART: [UART DATA]: 29[0m
+[0;32mI (142370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (143370) UART: [UART DATA]: 29[0m
+[0;32mI (143370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (144370) UART: [UART DATA]: 29[0m
+[0;32mI (144370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (145370) UART: [UART DATA]: 29[0m
+[0;32mI (145370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (146370) UART: [UART DATA]: 29[0m
+[0;32mI (146370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (147370) UART: [UART DATA]: 29[0m
+[0;32mI (147370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (148370) UART: [UART DATA]: 29[0m
+[0;32mI (148370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (149370) UART: [UART DATA]: 29[0m
+[0;32mI (149370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (150370) UART: [UART DATA]: 29[0m
+[0;32mI (150370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (151370) UART: [UART DATA]: 29[0m
+[0;32mI (151370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (152370) UART: [UART DATA]: 29[0m
+[0;32mI (152370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (153370) UART: [UART DATA]: 29[0m
+[0;32mI (153370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (154370) UART: [UART DATA]: 29[0m
+[0;32mI (154370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (155370) UART: [UART DATA]: 29[0m
+[0;32mI (155370) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (156370) UART: [UART DATA]: 29[0m
+[0;32mI (156370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (157370) UART: [UART DATA]: 29[0m
+[0;32mI (157370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (158370) UART: [UART DATA]: 29[0m
+[0;32mI (158370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (159370) UART: [UART DATA]: 29[0m
+[0;32mI (159370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (160370) UART: [UART DATA]: 29[0m
+[0;32mI (160370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (160370) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (160390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.30000}}[0m
+[0;32mI (160390) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (160400) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (160410) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (160420) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (160430) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (160440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (161370) UART: [UART DATA]: 29[0m
+[0;32mI (161370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (162370) UART: [UART DATA]: 29[0m
+[0;32mI (162370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (163370) UART: [UART DATA]: 29[0m
+[0;32mI (163370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (164370) UART: [UART DATA]: 29[0m
+[0;32mI (164370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (165370) UART: [UART DATA]: 29[0m
+[0;32mI (165370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (166370) UART: [UART DATA]: 29[0m
+[0;32mI (166370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (167370) UART: [UART DATA]: 29[0m
+[0;32mI (167370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (168370) UART: [UART DATA]: 29[0m
+[0;32mI (168370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (169370) UART: [UART DATA]: 29[0m
+[0;32mI (169370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (170370) UART: [UART DATA]: 29[0m
+[0;32mI (170370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (171370) UART: [UART DATA]: 29[0m
+[0;32mI (171370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (172370) UART: [UART DATA]: 29[0m
+[0;32mI (172370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (173370) UART: [UART DATA]: 29[0m
+[0;32mI (173370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (174370) UART: [UART DATA]: 29[0m
+[0;32mI (174370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (175370) UART: [UART DATA]: 29[0m
+[0;32mI (175370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (176370) UART: [UART DATA]: 29[0m
+[0;32mI (176370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (177370) UART: [UART DATA]: 29[0m
+[0;32mI (177370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (178370) UART: [UART DATA]: 29[0m
+[0;32mI (178370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (179370) UART: [UART DATA]: 29[0m
+[0;32mI (179370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (180370) UART: [UART DATA]: 29[0m
+[0;32mI (180370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (180370) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (180390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.40000}}[0m
+[0;32mI (180390) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (180400) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (180410) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (180420) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (180430) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (180440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (181370) UART: [UART DATA]: 29[0m
+[0;32mI (181370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (182370) UART: [UART DATA]: 29[0m
+[0;32mI (182370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (183370) UART: [UART DATA]: 29[0m
+[0;32mI (183370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (184370) UART: [UART DATA]: 29[0m
+[0;32mI (184370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (185370) UART: [UART DATA]: 29[0m
+[0;32mI (185370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (186370) UART: [UART DATA]: 29[0m
+[0;32mI (186370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (187370) UART: [UART DATA]: 29[0m
+[0;32mI (187370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (188370) UART: [UART DATA]: 29[0m
+[0;32mI (188370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (189370) UART: [UART DATA]: 29[0m
+[0;32mI (189370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (190370) UART: [UART DATA]: 29[0m
+[0;32mI (190370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (191370) UART: [UART DATA]: 29[0m
+[0;32mI (191370) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (192370) UART: [UART DATA]: 29[0m
+[0;32mI (192370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (193370) UART: [UART DATA]: 29[0m
+[0;32mI (193370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (194370) UART: [UART DATA]: 29[0m
+[0;32mI (194370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (195370) UART: [UART DATA]: 29[0m
+[0;32mI (195370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (196370) UART: [UART DATA]: 29[0m
+[0;32mI (196370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (197370) UART: [UART DATA]: 29[0m
+[0;32mI (197370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (198370) UART: [UART DATA]: 29[0m
+[0;32mI (198370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (199370) UART: [UART DATA]: 29[0m
+[0;32mI (199370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (200370) UART: [UART DATA]: 29[0m
+[0;32mI (200370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (200370) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (200390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.50000}}[0m
+[0;32mI (200390) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (200400) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (200410) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (200420) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (200430) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (200440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (201370) UART: [UART DATA]: 29[0m
+[0;32mI (201370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (202370) UART: [UART DATA]: 29[0m
+[0;32mI (202370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (203370) UART: [UART DATA]: 29[0m
+[0;32mI (203370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (204370) UART: [UART DATA]: 29[0m
+[0;32mI (204370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (205370) UART: [UART DATA]: 29[0m
+[0;32mI (205370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (206370) UART: [UART DATA]: 29[0m
+[0;32mI (206370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (207370) UART: [UART DATA]: 29[0m
+[0;32mI (207370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (208370) UART: [UART DATA]: 29[0m
+[0;32mI (208370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (209370) UART: [UART DATA]: 29[0m
+[0;32mI (209370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (210370) UART: [UART DATA]: 29[0m
+[0;32mI (210370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (211370) UART: [UART DATA]: 29[0m
+[0;32mI (211370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (212370) UART: [UART DATA]: 29[0m
+[0;32mI (212370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (213370) UART: [UART DATA]: 29[0m
+[0;32mI (213370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (214370) UART: [UART DATA]: 29[0m
+[0;32mI (214370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (215370) UART: [UART DATA]: 29[0m
+[0;32mI (215370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (216370) UART: [UART DATA]: 29[0m
+[0;32mI (216370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (217370) UART: [UART DATA]: 29[0m
+[0;32mI (217370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (218370) UART: [UART DATA]: 29[0m
+[0;32mI (218370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (219370) UART: [UART DATA]: 29[0m
+[0;32mI (219370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (220370) UART: [UART DATA]: 29[0m
+[0;32mI (220370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (220370) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (220390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.50000}}[0m
+[0;32mI (220390) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (220400) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (220410) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (220420) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (220430) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (220440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (221370) UART: [UART DATA]: 29[0m
+[0;32mI (221370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (222370) UART: [UART DATA]: 29[0m
+[0;32mI (222370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (223370) UART: [UART DATA]: 29[0m
+[0;32mI (223370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (224370) UART: [UART DATA]: 29[0m
+[0;32mI (224370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (225370) UART: [UART DATA]: 29[0m
+[0;32mI (225370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (226370) UART: [UART DATA]: 29[0m
+[0;32mI (226370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (227370) UART: [UART DATA]: 29[0m
+[0;32mI (227370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (228370) UART: [UART DATA]: 29[0m
+[0;32mI (228370) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (229370) UART: [UART DATA]: 29[0m
+[0;32mI (229370) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (230380) UART: [UART DATA]: 29[0m
+[0;32mI (230380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (231380) UART: [UART DATA]: 29[0m
+[0;32mI (231380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (232380) UART: [UART DATA]: 29[0m
+[0;32mI (232380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (233380) UART: [UART DATA]: 29[0m
+[0;32mI (233380) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (234380) UART: [UART DATA]: 29[0m
+[0;32mI (234380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (235380) UART: [UART DATA]: 29[0m
+[0;32mI (235380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (236380) UART: [UART DATA]: 29[0m
+[0;32mI (236380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (237380) UART: [UART DATA]: 29[0m
+[0;32mI (237380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (238380) UART: [UART DATA]: 29[0m
+[0;32mI (238380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (239380) UART: [UART DATA]: 29[0m
+[0;32mI (239380) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (240380) UART: [UART DATA]: 29[0m
+[0;32mI (240380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (240380) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (240390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.40000}}[0m
+[0;32mI (240400) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (240410) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (240420) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (240430) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (240440) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (240440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (241380) UART: [UART DATA]: 29[0m
+[0;32mI (241380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (242380) UART: [UART DATA]: 29[0m
+[0;32mI (242380) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (243380) UART: [UART DATA]: 29[0m
+[0;32mI (243380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (244380) UART: [UART DATA]: 29[0m
+[0;32mI (244380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (245380) UART: [UART DATA]: 29[0m
+[0;32mI (245380) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (246380) UART: [UART DATA]: 29[0m
+[0;32mI (246380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (247380) UART: [UART DATA]: 29[0m
+[0;32mI (247380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (248380) UART: [UART DATA]: 29[0m
+[0;32mI (248380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (249380) UART: [UART DATA]: 29[0m
+[0;32mI (249380) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (250380) UART: [UART DATA]: 29[0m
+[0;32mI (250380) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (251380) UART: [UART DATA]: 29[0m
+[0;32mI (251380) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (252380) UART: [UART DATA]: 29[0m
+[0;32mI (252380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (253380) UART: [UART DATA]: 29[0m
+[0;32mI (253380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (254380) UART: [UART DATA]: 29[0m
+[0;32mI (254380) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (255380) UART: [UART DATA]: 29[0m
+[0;32mI (255380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (256370) UART: [UART DATA]: 29[0m
+[0;32mI (256380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (257370) UART: [UART DATA]: 29[0m
+[0;32mI (257380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (258370) UART: [UART DATA]: 29[0m
+[0;32mI (258380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (259370) UART: [UART DATA]: 29[0m
+[0;32mI (259380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (260370) UART: [UART DATA]: 29[0m
+[0;32mI (260380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (260380) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (260390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.40000}}[0m
+[0;32mI (260400) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (260410) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (260420) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (260430) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (260440) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (260440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (261380) UART: [UART DATA]: 29[0m
+[0;32mI (261380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (262370) UART: [UART DATA]: 29[0m
+[0;32mI (262380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (263380) UART: [UART DATA]: 29[0m
+[0;32mI (263380) UART: Read 29 bytes: '=26.50=100.00=4095.00=140.00='[0m
+26.50,100.00,4095.00,140.00
+[0;32mI (264380) UART: [UART DATA]: 29[0m
+[0;32mI (264380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (265370) UART: [UART DATA]: 29[0m
+[0;32mI (265380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (266380) UART: [UART DATA]: 29[0m
+[0;32mI (266380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (267370) UART: [UART DATA]: 29[0m
+[0;32mI (267380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (268370) UART: [UART DATA]: 29[0m
+[0;32mI (268380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (269370) UART: [UART DATA]: 29[0m
+[0;32mI (269380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (270370) UART: [UART DATA]: 29[0m
+[0;32mI (270380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (271370) UART: [UART DATA]: 29[0m
+[0;32mI (271380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (272370) UART: [UART DATA]: 29[0m
+[0;32mI (272380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (273370) UART: [UART DATA]: 29[0m
+[0;32mI (273380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (274370) UART: [UART DATA]: 29[0m
+[0;32mI (274380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (275370) UART: [UART DATA]: 29[0m
+[0;32mI (275380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (276380) UART: [UART DATA]: 29[0m
+[0;32mI (276380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (277370) UART: [UART DATA]: 29[0m
+[0;32mI (277380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (278380) UART: [UART DATA]: 29[0m
+[0;32mI (278380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (279380) UART: [UART DATA]: 29[0m
+[0;32mI (279380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (280370) UART: [UART DATA]: 29[0m
+[0;32mI (280380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (280380) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (280390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.30000}}[0m
+[0;32mI (280400) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (280410) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (280420) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (280430) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (280440) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (280440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (281370) UART: [UART DATA]: 29[0m
+[0;32mI (281380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (282370) UART: [UART DATA]: 29[0m
+[0;32mI (282380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (283370) UART: [UART DATA]: 29[0m
+[0;32mI (283380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (284370) UART: [UART DATA]: 29[0m
+[0;32mI (284380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (285370) UART: [UART DATA]: 29[0m
+[0;32mI (285380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (286370) UART: [UART DATA]: 29[0m
+[0;32mI (286380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (287370) UART: [UART DATA]: 29[0m
+[0;32mI (287380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (288370) UART: [UART DATA]: 29[0m
+[0;32mI (288380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (289370) UART: [UART DATA]: 29[0m
+[0;32mI (289380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (290370) UART: [UART DATA]: 29[0m
+[0;32mI (290380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (291370) UART: [UART DATA]: 29[0m
+[0;32mI (291380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (292370) UART: [UART DATA]: 29[0m
+[0;32mI (292380) UART: Read 29 bytes: '=26.40=100.00=4095.00=140.00='[0m
+26.40,100.00,4095.00,140.00
+[0;32mI (293370) UART: [UART DATA]: 29[0m
+[0;32mI (293380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (294370) UART: [UART DATA]: 29[0m
+[0;32mI (294380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (295370) UART: [UART DATA]: 29[0m
+[0;32mI (295380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (296370) UART: [UART DATA]: 29[0m
+[0;32mI (296380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (297370) UART: [UART DATA]: 29[0m
+[0;32mI (297380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (298370) UART: [UART DATA]: 29[0m
+[0;32mI (298380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (299370) UART: [UART DATA]: 29[0m
+[0;32mI (299380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (300370) UART: [UART DATA]: 29[0m
+[0;32mI (300380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (300380) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (300390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.30000}}[0m
+[0;32mI (300400) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (300410) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (300420) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (300430) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (300440) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (300440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (301370) UART: [UART DATA]: 29[0m
+[0;32mI (301380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (302370) UART: [UART DATA]: 29[0m
+[0;32mI (302380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (303370) UART: [UART DATA]: 29[0m
+[0;32mI (303380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (304370) UART: [UART DATA]: 29[0m
+[0;32mI (304380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (305370) UART: [UART DATA]: 29[0m
+[0;32mI (305380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (306370) UART: [UART DATA]: 29[0m
+[0;32mI (306380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (307370) UART: [UART DATA]: 29[0m
+[0;32mI (307380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (308370) UART: [UART DATA]: 29[0m
+[0;32mI (308380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (309370) UART: [UART DATA]: 29[0m
+[0;32mI (309380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (310370) UART: [UART DATA]: 29[0m
+[0;32mI (310380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (311370) UART: [UART DATA]: 29[0m
+[0;32mI (311380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (312370) UART: [UART DATA]: 29[0m
+[0;32mI (312380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (313370) UART: [UART DATA]: 29[0m
+[0;32mI (313380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (314370) UART: [UART DATA]: 29[0m
+[0;32mI (314380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (315370) UART: [UART DATA]: 29[0m
+[0;32mI (315380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (316370) UART: [UART DATA]: 29[0m
+[0;32mI (316380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (317370) UART: [UART DATA]: 29[0m
+[0;32mI (317380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (318370) UART: [UART DATA]: 29[0m
+[0;32mI (318380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (319370) UART: [UART DATA]: 29[0m
+[0;32mI (319380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (320370) UART: [UART DATA]: 29[0m
+[0;32mI (320380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (320380) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (320390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.30000}}[0m
+[0;32mI (320400) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (320410) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (320420) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (320430) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (320430) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (320440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (321370) UART: [UART DATA]: 29[0m
+[0;32mI (321380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (322370) UART: [UART DATA]: 29[0m
+[0;32mI (322380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (323370) UART: [UART DATA]: 29[0m
+[0;32mI (323380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (324370) UART: [UART DATA]: 29[0m
+[0;32mI (324380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (325370) UART: [UART DATA]: 29[0m
+[0;32mI (325380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (326370) UART: [UART DATA]: 29[0m
+[0;32mI (326380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (327370) UART: [UART DATA]: 29[0m
+[0;32mI (327380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (328370) UART: [UART DATA]: 29[0m
+[0;32mI (328380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (329370) UART: [UART DATA]: 29[0m
+[0;32mI (329380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (330370) UART: [UART DATA]: 29[0m
+[0;32mI (330380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (331370) UART: [UART DATA]: 29[0m
+[0;32mI (331380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (332370) UART: [UART DATA]: 29[0m
+[0;32mI (332380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (333370) UART: [UART DATA]: 29[0m
+[0;32mI (333380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (334370) UART: [UART DATA]: 29[0m
+[0;32mI (334380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (335370) UART: [UART DATA]: 29[0m
+[0;32mI (335380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (336370) UART: [UART DATA]: 29[0m
+[0;32mI (336380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (337370) UART: [UART DATA]: 29[0m
+[0;32mI (337380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (338370) UART: [UART DATA]: 29[0m
+[0;32mI (338380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (339370) UART: [UART DATA]: 29[0m
+[0;32mI (339380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (340370) UART: [UART DATA]: 29[0m
+[0;32mI (340380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (340380) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (340390) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.20000}}[0m
+[0;32mI (340400) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (340410) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (340420) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (340430) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (340430) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (340440) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (341370) UART: [UART DATA]: 29[0m
+[0;32mI (341380) UART: Read 29 bytes: '=26.30=100.00=4095.00=140.00='[0m
+26.30,100.00,4095.00,140.00
+[0;32mI (342370) UART: [UART DATA]: 29[0m
+[0;32mI (342380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (343370) UART: [UART DATA]: 29[0m
+[0;32mI (343380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (344370) UART: [UART DATA]: 29[0m
+[0;32mI (344380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (345370) UART: [UART DATA]: 29[0m
+[0;32mI (345380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (346370) UART: [UART DATA]: 29[0m
+[0;32mI (346380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (347370) UART: [UART DATA]: 29[0m
+[0;32mI (347380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (348370) UART: [UART DATA]: 29[0m
+[0;32mI (348380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (349380) UART: [UART DATA]: 29[0m
+[0;32mI (349380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (350380) UART: [UART DATA]: 29[0m
+[0;32mI (350380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (351380) UART: [UART DATA]: 29[0m
+[0;32mI (351380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (352380) UART: [UART DATA]: 29[0m
+[0;32mI (352380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (353380) UART: [UART DATA]: 29[0m
+[0;32mI (353380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (354380) UART: [UART DATA]: 29[0m
+[0;32mI (354380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (355380) UART: [UART DATA]: 29[0m
+[0;32mI (355380) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (356380) UART: [UART DATA]: 29[0m
+[0;32mI (356380) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (357390) UART: [UART DATA]: 29[0m
+[0;32mI (357390) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (358390) UART: [UART DATA]: 29[0m
+[0;32mI (358390) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (359390) UART: [UART DATA]: 29[0m
+[0;32mI (359390) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (360400) UART: [UART DATA]: 29[0m
+[0;32mI (360400) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (360400) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (360410) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.10000}}[0m
+[0;32mI (360420) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (360430) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (360440) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (360450) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (360460) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (360470) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (361400) UART: [UART DATA]: 29[0m
+[0;32mI (361400) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (362410) UART: [UART DATA]: 29[0m
+[0;32mI (362410) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (363410) UART: [UART DATA]: 29[0m
+[0;32mI (363410) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (364410) UART: [UART DATA]: 29[0m
+[0;32mI (364410) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (365420) UART: [UART DATA]: 29[0m
+[0;32mI (365420) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (366420) UART: [UART DATA]: 29[0m
+[0;32mI (366420) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (367420) UART: [UART DATA]: 29[0m
+[0;32mI (367420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (368420) UART: [UART DATA]: 29[0m
+[0;32mI (368420) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (369420) UART: [UART DATA]: 29[0m
+[0;32mI (369420) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (370420) UART: [UART DATA]: 29[0m
+[0;32mI (370420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (371420) UART: [UART DATA]: 29[0m
+[0;32mI (371420) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (372420) UART: [UART DATA]: 29[0m
+[0;32mI (372420) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (373420) UART: [UART DATA]: 29[0m
+[0;32mI (373420) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (374420) UART: [UART DATA]: 29[0m
+[0;32mI (374420) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (375420) UART: [UART DATA]: 29[0m
+[0;32mI (375420) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (376420) UART: [UART DATA]: 29[0m
+[0;32mI (376420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (377420) UART: [UART DATA]: 29[0m
+[0;32mI (377420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (378420) UART: [UART DATA]: 29[0m
+[0;32mI (378420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (379420) UART: [UART DATA]: 29[0m
+[0;32mI (379420) UART: Read 29 bytes: '=26.20=100.00=4095.00=140.00='[0m
+26.20,100.00,4095.00,140.00
+[0;32mI (380420) UART: [UART DATA]: 29[0m
+[0;32mI (380420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (380420) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (380430) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.10000}}[0m
+[0;32mI (380440) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (380450) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (380460) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (380470) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (380480) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (380490) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (381420) UART: [UART DATA]: 29[0m
+[0;32mI (381420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (382420) UART: [UART DATA]: 29[0m
+[0;32mI (382420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (383420) UART: [UART DATA]: 29[0m
+[0;32mI (383420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (384420) UART: [UART DATA]: 29[0m
+[0;32mI (384420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (385420) UART: [UART DATA]: 29[0m
+[0;32mI (385420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (386420) UART: [UART DATA]: 29[0m
+[0;32mI (386420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (387420) UART: [UART DATA]: 29[0m
+[0;32mI (387420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (388420) UART: [UART DATA]: 29[0m
+[0;32mI (388420) UART: Read 29 bytes: '=26.10=100.00=4095.00=140.00='[0m
+26.10,100.00,4095.00,140.00
+[0;32mI (389420) UART: [UART DATA]: 29[0m
+[0;32mI (389420) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00

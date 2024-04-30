@@ -1,0 +1,83 @@
+-- Existing sdkconfig '/home/szm/Desktop/Combined/RM/sdkconfig' renamed to '/home/szm/Desktop/Combined/RM/sdkconfig.old'.
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- Component directory /home/szm/esp-rainmaker/components/esp-insights does not contain a CMakeLists.txt file. No component will be added
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/szm/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/szm/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/szm/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+Dependency "espressif/rmaker_common(1.4.3)" version has changed from 1.4.3 to 1.4.2, solving dependencies.
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.0)(introduced by component esp_diagnostics)
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/esp_diag_data_store for dependency espressif/esp_diag_data_store(~1.0)(introduced by component esp_insights)
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/esp_diagnostics for dependency espressif/esp_diagnostics(~1.0)(introduced by component esp_insights)
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.0)(introduced by component esp_insights)
+Using component placed at /home/szm/esp-rainmaker/components/esp_schedule for dependency espressif/esp_schedule(~1.1.0)(introduced by component esp_rainmaker)
+Using component placed at /home/szm/esp-rainmaker/components/json_generator for dependency espressif/json_generator(~1.1.1)(introduced by component esp_rainmaker)
+Using component placed at /home/szm/esp-rainmaker/components/json_parser for dependency espressif/json_parser(~1.0.3)(introduced by component esp_rainmaker)
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.2)(introduced by component esp_rainmaker)
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.2)(introduced by component esp_schedule)
+.Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.0), specified in /home/szm/esp-rainmaker/components/esp-insights/components/esp_diagnostics/idf_component.yml
+.Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/esp_diag_data_store for dependency espressif/esp_diag_data_store(~1.0), specified in /home/szm/esp-rainmaker/components/esp-insights/components/esp_insights/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/esp_diagnostics for dependency espressif/esp_diagnostics(~1.0), specified in /home/szm/esp-rainmaker/components/esp-insights/components/esp_insights/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.0), specified in /home/szm/esp-rainmaker/components/esp-insights/components/esp_insights/idf_component.yml
+...Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.0)(introduced by component espressif/esp_diagnostics), specified in /home/szm/esp-rainmaker/components/esp-insights/components/esp_insights/idf_component.yml
+.Using component placed at /home/szm/esp-rainmaker/components/esp_schedule for dependency espressif/esp_schedule(~1.1.0), specified in /home/szm/esp-rainmaker/components/esp_rainmaker/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/json_generator for dependency espressif/json_generator(~1.1.1), specified in /home/szm/esp-rainmaker/components/esp_rainmaker/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/json_parser for dependency espressif/json_parser(~1.0.3), specified in /home/szm/esp-rainmaker/components/esp_rainmaker/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.2), specified in /home/szm/esp-rainmaker/components/esp_rainmaker/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.2)(introduced by component espressif/esp_schedule), specified in /home/szm/esp-rainmaker/components/esp_rainmaker/idf_component.yml
+........Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.2), specified in /home/szm/esp-rainmaker/components/esp_schedule/idf_component.yml
+.Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/esp_insights for dependency espressif/esp_insights(~1.0.1), specified in /home/szm/esp-rainmaker/examples/common/app_insights/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/esp_rainmaker for dependency espressif/esp_rainmaker(~=1.0), specified in /home/szm/esp-rainmaker/examples/common/app_insights/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/esp_diag_data_store for dependency espressif/esp_diag_data_store(~1.0)(introduced by component espressif/esp_insights), specified in /home/szm/esp-rainmaker/examples/common/app_insights/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/esp_diagnostics for dependency espressif/esp_diagnostics(~1.0)(introduced by component espressif/esp_insights), specified in /home/szm/esp-rainmaker/examples/common/app_insights/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.0)(introduced by component espressif/esp_insights), specified in /home/szm/esp-rainmaker/examples/common/app_insights/idf_component.yml
+.Using component placed at /home/szm/esp-rainmaker/components/esp_schedule for dependency espressif/esp_schedule(~1.1.0)(introduced by component espressif/esp_rainmaker), specified in /home/szm/esp-rainmaker/examples/common/app_insights/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/json_generator for dependency espressif/json_generator(~1.1.1)(introduced by component espressif/esp_rainmaker), specified in /home/szm/esp-rainmaker/examples/common/app_insights/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/json_parser for dependency espressif/json_parser(~1.0.3)(introduced by component espressif/esp_rainmaker), specified in /home/szm/esp-rainmaker/examples/common/app_insights/idf_component.yml
+Using component placed at /home/szm/esp-rainmaker/components/esp-insights/components/rmaker_common for dependency espressif/rmaker_common(~1.4.2)(introduced by component espressif/esp_rainmaker), specified in /home/szm/esp-rainmaker/examples/common/app_insights/idf_component.yml
+..Updating lock file at /home/szm/Desktop/Combined/RM/dependencies.lock
+Processing 4 dependencies:
+[1/4] espressif/cbor (0.6.0~1)
+[2/4] espressif/esp_secure_cert_mgr (2.4.1)
+[3/4] espressif/mdns (1.3.0)
+[4/4] idf (5.1.1)
+-- Project sdkconfig file /home/szm/Desktop/Combined/RM/sdkconfig
+Loading defaults file /home/szm/Desktop/Combined/RM/sdkconfig.defaults...
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python (found version "3.10.12") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "ip_internal_network" version: 1
+-- Adding linker script /home/szm/Desktop/Combined/RM/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/szm/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/szm/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/szm/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/szm/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/szm/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/szm/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/szm/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_insights app_reset app_trace app_update app_wifi bootloader bootloader_support bt button cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_diag_data_store esp_diagnostics esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_insights esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_rainmaker esp_ringbuf esp_rom esp_schedule esp_system esp_timer esp_wifi espcoredump espressif__cbor espressif__esp_secure_cert_mgr espressif__led_strip espressif__mdns esptool_py fatfs freertos gpio_button hal heap http_parser idf_test ieee802154 jsmn json json_generator json_parser log lwip main mbedtls mesh_light mqtt mynvs newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread qrcode rmaker_common sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant ws2812_led xtensa
+-- Component paths: /home/szm/esp-rainmaker/examples/common/app_insights /home/szm/esp-rainmaker/examples/common/app_reset /home/szm/esp/esp-idf/components/app_trace /home/szm/esp/esp-idf/components/app_update /home/szm/esp-rainmaker/examples/common/app_wifi /home/szm/esp/esp-idf/components/bootloader /home/szm/esp/esp-idf/components/bootloader_support /home/szm/esp/esp-idf/components/bt /home/szm/Desktop/Combined/RM/components/button /home/szm/esp/esp-idf/components/cmock /home/szm/esp/esp-idf/components/console /home/szm/esp/esp-idf/components/cxx /home/szm/esp/esp-idf/components/driver /home/szm/esp/esp-idf/components/efuse /home/szm/esp/esp-idf/components/esp-tls /home/szm/esp/esp-idf/components/esp_adc /home/szm/esp/esp-idf/components/esp_app_format /home/szm/esp/esp-idf/components/esp_coex /home/szm/esp/esp-idf/components/esp_common /home/szm/esp-rainmaker/components/esp-insights/components/esp_diag_data_store /home/szm/esp-rainmaker/components/esp-insights/components/esp_diagnostics /home/szm/esp/esp-idf/components/esp_eth /home/szm/esp/esp-idf/components/esp_event /home/szm/esp/esp-idf/components/esp_gdbstub /home/szm/esp/esp-idf/components/esp_hid /home/szm/esp/esp-idf/components/esp_http_client /home/szm/esp/esp-idf/components/esp_http_server /home/szm/esp/esp-idf/components/esp_https_ota /home/szm/esp/esp-idf/components/esp_https_server /home/szm/esp/esp-idf/components/esp_hw_support /home/szm/esp-rainmaker/components/esp-insights/components/esp_insights /home/szm/esp/esp-idf/components/esp_lcd /home/szm/esp/esp-idf/components/esp_local_ctrl /home/szm/esp/esp-idf/components/esp_mm /home/szm/esp/esp-idf/components/esp_netif /home/szm/esp/esp-idf/components/esp_netif_stack /home/szm/esp/esp-idf/components/esp_partition /home/szm/esp/esp-idf/components/esp_phy /home/szm/esp/esp-idf/components/esp_pm /home/szm/esp/esp-idf/components/esp_psram /home/szm/esp-rainmaker/components/esp_rainmaker /home/szm/esp/esp-idf/components/esp_ringbuf /home/szm/esp/esp-idf/components/esp_rom /home/szm/esp-rainmaker/components/esp_schedule /home/szm/esp/esp-idf/components/esp_system /home/szm/esp/esp-idf/components/esp_timer /home/szm/esp/esp-idf/components/esp_wifi /home/szm/esp/esp-idf/components/espcoredump /home/szm/Desktop/Combined/RM/managed_components/espressif__cbor /home/szm/Desktop/Combined/RM/managed_components/espressif__esp_secure_cert_mgr /home/szm/Desktop/Combined/RM/components/espressif__led_strip /home/szm/Desktop/Combined/RM/managed_components/espressif__mdns /home/szm/esp/esp-idf/components/esptool_py /home/szm/esp/esp-idf/components/fatfs /home/szm/esp/esp-idf/components/freertos /home/szm/esp-rainmaker/examples/common/gpio_button /home/szm/esp/esp-idf/components/hal /home/szm/esp/esp-idf/components/heap /home/szm/esp/esp-idf/components/http_parser /home/szm/esp/esp-idf/components/idf_test /home/szm/esp/esp-idf/components/ieee802154 /home/szm/esp-rainmaker/components/jsmn /home/szm/esp/esp-idf/components/json /home/szm/esp-rainmaker/components/json_generator /home/szm/esp-rainmaker/components/json_parser /home/szm/esp/esp-idf/components/log /home/szm/esp/esp-idf/components/lwip /home/szm/Desktop/Combined/RM/main /home/szm/esp/esp-idf/components/mbedtls /home/szm/Desktop/Combined/RM/components/mesh_light /home/szm/esp/esp-idf/components/mqtt /home/szm/Desktop/Combined/RM/components/mynvs /home/szm/esp/esp-idf/components/newlib /home/szm/esp/esp-idf/components/nvs_flash /home/szm/esp/esp-idf/components/openthread /home/szm/esp/esp-idf/components/partition_table /home/szm/esp/esp-idf/components/perfmon /home/szm/esp/esp-idf/components/protobuf-c /home/szm/esp/esp-idf/components/protocomm /home/szm/esp/esp-idf/components/pthread /home/szm/esp-rainmaker/examples/common/qrcode /home/szm/esp-rainmaker/components/rmaker_common /home/szm/esp/esp-idf/components/sdmmc /home/szm/esp/esp-idf/components/soc /home/szm/esp/esp-idf/components/spi_flash /home/szm/esp/esp-idf/components/spiffs /home/szm/esp/esp-idf/components/tcp_transport /home/szm/esp/esp-idf/components/touch_element /home/szm/esp/esp-idf/components/ulp /home/szm/esp/esp-idf/components/unity /home/szm/esp/esp-idf/components/usb /home/szm/esp/esp-idf/components/vfs /home/szm/esp/esp-idf/components/wear_levelling /home/szm/esp/esp-idf/components/wifi_provisioning /home/szm/esp/esp-idf/components/wpa_supplicant /home/szm/esp-rainmaker/examples/common/ws2812_led /home/szm/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/szm/Desktop/Combined/RM/build

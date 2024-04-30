@@ -1,0 +1,5 @@
+[0/1] Re-running CMake...
+-- Component directory /home/szm/esp-rainmaker/components/esp-insights does not contain a CMakeLists.txt file. No component will be added
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3

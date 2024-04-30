@@ -1,0 +1,76 @@
+[1/37] Performing build step for 'bootloader'
+[1/1] cd /home/szm/Desktop/Combined/RM/build/bootloader/esp-idf/esptool_py && /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/szm/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/szm/Desktop/Combined/RM/build/bootloader/bootloader.bin
+Bootloader binary size 0x5200 bytes. 0x2e00 bytes (36%) free.
+[2/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/core/esp_rmaker_cmd_resp_manager.c.obj
+[3/35] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mesh_main.c.obj
+/home/szm/Desktop/Combined/RM/main/mesh_main.c: In function 'UART_tx':
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:131:24: warning: unused variable 'TX_TASK_TAG' [-Wunused-variable]
+  131 |     static const char *TX_TASK_TAG = "TX_TASK";
+      |                        ^~~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c: In function 'uart_event_task':
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:141:14: warning: unused variable 'data' [-Wunused-variable]
+  141 |     uint8_t* data = (uint8_t*) malloc(BUF_SIZE+1);
+      |              ^~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c: At top level:
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:131:24: warning: 'TX_TASK_TAG' defined but not used [-Wunused-variable]
+  131 |     static const char *TX_TASK_TAG = "TX_TASK";
+      |                        ^~~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:61:16: warning: 'rx_buf' defined but not used [-Wunused-variable]
+   61 | static uint8_t rx_buf[200] = { 0, };
+      |                ^~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:60:16: warning: 'tx_buf' defined but not used [-Wunused-variable]
+   60 | static uint8_t tx_buf[200] = { 0, };
+      |                ^~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:58:22: warning: 'sta_config' defined but not used [-Wunused-variable]
+   58 | static wifi_config_t sta_config;
+      |                      ^~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:56:12: warning: 'mesh_layer' defined but not used [-Wunused-variable]
+   56 | static int mesh_layer = -1;
+      |            ^~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:55:37: warning: 'mesh_root_addr' defined but not used [-Wunused-variable]
+   55 | static mesh_addr_t mesh_parent_addr,mesh_root_addr;
+      |                                     ^~~~~~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:55:20: warning: 'mesh_parent_addr' defined but not used [-Wunused-variable]
+   55 | static mesh_addr_t mesh_parent_addr,mesh_root_addr;
+      |                    ^~~~~~~~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:52:23: warning: 's_current_ip' defined but not used [-Wunused-variable]
+   52 | static esp_ip4_addr_t s_current_ip;
+      |                       ^~~~~~~~~~~~
+[4/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/mqtt/esp_rmaker_mqtt_budget.c.obj
+[5/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/core/esp_rmaker_secure_boot_digest.c.obj
+[6/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/mqtt/esp_rmaker_mqtt.c.obj
+[7/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/ota/esp_rmaker_ota.c.obj
+[8/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/console/esp_rmaker_console.c.obj
+[9/35] Building ASM object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/__/__/rmaker_claim_service_server.crt.S.obj
+[10/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/core/esp_rmaker_claim.c.obj
+[11/35] Building ASM object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/__/__/rmaker_ota_server.crt.S.obj
+[12/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/ota/esp_rmaker_ota_using_params.c.obj
+[13/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/console/esp_rmaker_commands.c.obj
+[14/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/standard_types/esp_rmaker_standard_devices.c.obj
+[15/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/ota/esp_rmaker_ota_using_topics.c.obj
+[16/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/standard_types/esp_rmaker_standard_params.c.obj
+[17/35] Building ASM object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/__/__/rmaker_mqtt_server.crt.S.obj
+[18/35] Building C object esp-idf/esp_rainmaker/CMakeFiles/__idf_esp_rainmaker.dir/src/standard_types/esp_rmaker_standard_services.c.obj
+[19/35] Building C object esp-idf/app_insights/CMakeFiles/__idf_app_insights.dir/app_insights.c.obj
+[20/35] Building C object esp-idf/mesh_light/CMakeFiles/__idf_mesh_light.dir/mesh_light.c.obj
+[21/35] Linking C static library esp-idf/esp_rainmaker/libesp_rainmaker.a
+[22/35] Linking C static library esp-idf/app_insights/libapp_insights.a
+[23/35] Building C object esp-idf/espressif__led_strip/CMakeFiles/__idf_espressif__led_strip.dir/src/led_strip_rmt_dev.c.obj
+[24/35] Building C object esp-idf/espressif__led_strip/CMakeFiles/__idf_espressif__led_strip.dir/src/led_strip_rmt_encoder.c.obj
+[25/35] Building C object esp-idf/mynvs/CMakeFiles/__idf_mynvs.dir/mynvs.c.obj
+[26/35] Linking C static library esp-idf/mynvs/libmynvs.a
+[27/35] Building C object esp-idf/espressif__led_strip/CMakeFiles/__idf_espressif__led_strip.dir/src/led_strip_spi_dev.c.obj
+[28/35] Linking C static library esp-idf/espressif__led_strip/libespressif__led_strip.a
+[29/35] Linking C static library esp-idf/mesh_light/libmesh_light.a
+[30/35] Linking C static library esp-idf/main/libmain.a
+[31/35] Generating ld/sections.ld
+[32/35] Building C object CMakeFiles/ip_internal_network.elf.dir/project_elf_src_esp32s3.c.obj
+[33/35] Linking CXX executable ip_internal_network.elf
+[34/35] Generating binary image from built executable
+esptool.py v4.7.dev2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/szm/Desktop/Combined/RM/build/ip_internal_network.bin
+[35/35] cd /home/szm/Desktop/Combined/RM/build/esp-idf/esptool_py && /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/szm/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/szm/Desktop/Combined/RM/build/partition_table/partition-table.bin /home/szm/Desktop/Combined/RM/build/ip_internal_network.bin
+ip_internal_network.bin binary size 0x149d90 bytes. Smallest app partition is 0x2dc6c0 bytes. 0x192930 bytes (55%) free.

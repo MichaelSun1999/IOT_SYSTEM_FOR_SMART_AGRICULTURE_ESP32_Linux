@@ -1,0 +1,795 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x16e8
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2eb0
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 23 2024 07:05:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (72) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (80) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (87) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (95) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (102) boot:  5 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (110) boot:  6 fctry            WiFi data        01 02 001b0000 00006000[0m
+[0;32mI (117) boot: End of partition table[0m
+[0;32mI (122) boot: No factory image, trying OTA 0[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3c0e0020 size=4f258h (324184) map[0m
+[0;32mI (193) esp_image: segment 1: paddr=0006f280 vaddr=3fc9bd00 size=00d98h (  3480) load[0m
+[0;32mI (194) esp_image: segment 2: paddr=00070020 vaddr=42000020 size=de18ch (909708) map[0m
+[0;32mI (362) esp_image: segment 3: paddr=0014e1b4 vaddr=3fc9ca98 size=03ee4h ( 16100) load[0m
+[0;32mI (366) esp_image: segment 4: paddr=001520a0 vaddr=40374000 size=17ccch ( 97484) load[0m
+[0;32mI (399) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (426) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (426) boot: Disabling RNG early entropy source...[0m
+[0;32mI (437) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu up.[0m
+[0;32mI (437) cpu_start: Starting app cpu, entry point is 0x40375718[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (455) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (458) cpu_start: Project name:     ip_internal_network[0m
+[0;32mI (464) cpu_start: App version:      1[0m
+[0;32mI (469) cpu_start: Compile time:     Apr 23 2024 07:05:40[0m
+[0;32mI (475) cpu_start: ELF file SHA256:  805edc01e15e014d...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FCA6D28 len 000429E8 (266 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (521) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (534) spi_flash: detected chip: gd[0m
+[0;32mI (537) spi_flash: flash io: dio[0m
+[0;32mI (542) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (548) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (555) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (561) coexist: coexist rom version e7ae62f[0m
+[0;32mI (566) app_start: Starting scheduler on CPU0[0m
+[0;32mI (570) app_start: Starting scheduler on CPU1[0m
+[0;32mI (570) main_task: Started on CPU0[0m
+[0;32mI (580) main_task: Calling app_main()[0m
+[0;32mI (590) uart: queue free spaces: 20[0m
+[0;32mI (590) UART: uart rx break[0m
+[0;32mI (600) pp: pp rom version: e7ae62f[0m
+[0;32mI (600) net80211: net80211 rom version: e7ae62f[0m
+I (620) wifi:wifi driver task: 3fcb4250, prio:23, stack:6656, core=0
+I (620) wifi:wifi firmware version: ce9244d
+I (620) wifi:wifi certification version: v7.0
+I (620) wifi:config NVS flash: enabled
+I (620) wifi:config nano formating: disabled
+I (630) wifi:Init data frame dynamic rx buffer num: 32
+I (630) wifi:Init management frame dynamic rx buffer num: 32
+I (640) wifi:Init management short buffer num: 32
+I (640) wifi:Init dynamic tx buffer num: 32
+I (640) wifi:Init static tx FG buffer num: 2
+I (650) wifi:Init static rx buffer size: 1600
+I (650) wifi:Init static rx buffer num: 10
+I (660) wifi:Init dynamic rx buffer num: 32
+[0;32mI (660) wifi_init: rx ba win: 6[0m
+[0;32mI (660) wifi_init: tcpip mbox: 32[0m
+[0;32mI (670) wifi_init: udp mbox: 6[0m
+[0;32mI (670) wifi_init: tcp mbox: 6[0m
+[0;32mI (680) wifi_init: tcp tx win: 5744[0m
+[0;32mI (680) wifi_init: tcp rx win: 5744[0m
+[0;32mI (680) wifi_init: tcp mss: 624[0m
+[0;32mI (690) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (690) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (710) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (710) esp_claim: Initialising Self Claiming. This may take time.[0m
+[0;33mW (710) esp_claim: Generating the private key. This may take time.[0m
+[0;32mI (69100) esp_rmaker_node: Node ID ----- DC5475C7E8BC[0m
+[0;32mI (69110) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (69110) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (69110) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (69120) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (69130) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (69130) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (69140) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (69140) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (69150) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (69160) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (69160) app_wifi: Starting provisioning[0m
+[0;32mI (69180) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+[0;33mW (69180) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+I (69220) wifi:mode : sta (dc:54:75:c7:e8:bc)
+I (69220) wifi:enable tsf
+[0;32mI (69220) BLE_INIT: BT controller compile version [963cad4][0m
+[0;32mI (69230) BLE_INIT: Bluetooth MAC: dc:54:75:c7:e8:be
+[0m
+[0;32mI (69230) protocomm_nimble: BLE Host Task Started[0m
+[0;32mI (69240) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (69240) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (69250) NimBLE: disc_mode=2[0m
+[0;32mI (69250) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (69260) NimBLE: 
+[0m
+[0;32mI (69260) wifi_prov_mgr: Provisioning started with service name : PROV_7bb3d4 [0m
+[0;32mI (69270) app_wifi: Provisioning started[0m
+[0;32mI (69270) app_wifi: Scan this QR code from the ESP RainMaker phone app for Provisioning.[0m
+                                      
+  █▀▀▀▀▀█ ▄█ ▄▄ █▄▀▄▄▀ ▀ ▀▄ █▀▀▀▀▀█   
+  █ ███ █ ▄█▀█ ▄ ▄▄▄▄▀▄▀ ▀█ █ ███ █   
+  █ ▀▀▀ █ ▄ █ ▀▄ ▄█ ▄▀▄▀▀▀  █ ▀▀▀ █   
+  ▀▀▀▀▀▀▀ ▀ ▀ █ ▀ █ ▀▄█▄█▄▀ ▀▀▀▀▀▀▀   
+  █▀▀██▄▀███▀ ▀█▄ ▄▀▀▄▀▄▀▄▄▀▄▀ ▀▄█▄   
+  ▄██▄ ▀▀▄▄█▄█▀▀ █  █▄▄█▀▄ █▀▄  ▄█    
+      █▄▀▄▄█▄▀▄▀ ▀█▀▄▄▄▄▄▀ ▀▄▀▀ ▄▀▄   
+  █▀█ ▄▄▀▄ ▄█ ▄▀ ▀▀ ▀▄ █▀▄▀█ ▀█ ▄▀▄   
+  ▄  ▀▄▀▀ ▄▀█ ▀▀▀▀█▀▄▄ ▄    ▄▀▀▀ █▄   
+  ▀▀ ▄█ ▀█▄█▄█▀▀ ▀▄▀▄▄ ▄ ▄  ▄█▀ ▄▀▄   
+  ▄▀█▄ ▄▀▀ ▀ ▀▄█▀ ▄▀██▀  ▀▀▄▄█▀ ▄ ▄   
+  █ ▀ ▄ ▀▀█ ▀ ▄ ▀█▀▀█▄ █▀▄█ █▀▄▄▄▄▄   
+  ▀ ▀▀ ▀▀ ▄▀  ▀▀▀▀▄██▄ ▄ ▄█▀▀▀██▄▄█   
+  █▀▀▀▀▀█ ▀▄ █▀ █▀  ▄  ▄ ▄█ ▀ █ ▄▀    
+  █ ███ █ █▄█▀█▀ ▀█▀█▄█▄█ █▀▀██▀▄▀    
+  █ ▀▀▀ █ █▀   ▀ █▄▀█▄██ ▄█ ▀█▄▀█▀    
+  ▀▀▀▀▀▀▀ ▀  ▀ ▀▀▀▀▀ ▀  ▀▀▀ ▀▀   ▀    
+                                      
+
+[0;32mI (69480) app_wifi: If QR code is not visible, copy paste the below URL in a browser.
+https://rainmaker.espressif.com/qrcode.html?data={"ver":"v1","name":"PROV_7bb3d4","pop":"f72310af","transport":"ble"}[0m
+[0;32mI (69500) app_wifi: Provisioning Started. Name : PROV_7bb3d4, POP : f72310af[0m
+[0;32mI (69500) app_wifi: Provisioning will auto stop after 30 minute(s).[0m
+[0;32mI (79440) protocomm_nimble: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (87240) esp_rmaker_user_mapping: Received request for node details[0m
+[0;32mI (87240) esp_rmaker_user_mapping: Got user_id = SignInWithApple_EYNz2cf9CZjsBdqjM8EUBg, secret_key = C613E0DA-C5FA-42B1-8609-EA770709CDDD[0m
+[0;32mI (87250) esp_rmaker_user_mapping: Sending status SUCCESS[0m
+[0;32mI (87500) app_wifi: Received Wi-Fi credentials
+	SSID     : SINGTEL-EEU3
+	Password : e7mafrtaem[0m
+I (91870) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (92940) wifi:state: init -> auth (b0)
+I (92940) wifi:state: auth -> assoc (0)
+I (92950) wifi:state: assoc -> run (10)
+I (92980) wifi:connected with SINGTEL-EEU3, aid = 22, channel 1, BW20, bssid = 6a:99:b2:98:55:02
+I (92980) wifi:security: WPA2-PSK, phy: bgn, rssi: -41
+I (92990) wifi:pm start, type: 1
+
+I (92990) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (93050) wifi:<ba-add>idx:0 (ifx:0, 6a:99:b2:98:55:02), tid:0, ssn:1, winSize:64
+I (93050) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (93990) app_wifi: Connected with IP Address:192.168.1.25[0m
+[0;32mI (93990) esp_netif_handlers: sta ip: 192.168.1.25, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (93990) wifi_prov_mgr: STA Got IP[0m
+[0;32mI (94000) app_wifi: Provisioning successful[0m
+[0;32mI (94000) main_task: Returned from app_main()[0m
+[0;32mI (94000) esp_claim: Starting the Self Claim Process. This may take time.[0m
+[0;32mI (94850) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (97380) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (99020) esp_claim: Self Claiming was successful. Certificate received.[0m
+[0;32mI (99030) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|DC5475C7E8BC[0m
+[0;32mI (99030) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (99040) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (99050) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (99050) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (99060) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (99070) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (99070) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (99080) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (99090) NimBLE: GAP procedure initiated: terminate connection; conn_handle=1 hci_reason=19
+[0m
+[0;31mE (99150) protocomm_nimble: Error setting advertisement data; rc = 30[0m
+[0;32mI (99150) wifi_prov_mgr: Provisioning stopped[0m
+[0;32mI (99150) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (100660) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (100660) esp_rmaker_time: The current time is: Tue Apr 23 07:18:49 2024 +0800[CST], DST: No.[0m
+[0;32mI (101980) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (104630) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (104630) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (104640) esp_rmaker_node_config: Generated Node config of length 3286[0m
+[0;32mI (104940) esp_rmaker_param: Params MQTT Init done.[0m
+[0;32mI (104940) esp_rmaker_param: Reporting params (init): {"Mesh topology":{"Name":"Mesh topology","Power":false},"Relay":{"Name":"Relay","Power":true},"Light matrix":{"Name":"Light matrix","Power":true,"Brightness":10},"Temperature Sensor":{"Name":"Temperature Sensor","Temperature":0.00000},"Humidity Sensor":{"Name":"Humidity Sensor","Temperature":0.00000},"Soil humidity Sensor":{"Name":"Soil humidity Sensor","Temperature":0.00000},"Light Sensor":{"Name":"Light Sensor","Temperature":0.00000},"Time":{"TZ":"","TZ-POSIX":""},"Schedule":{"Schedules":[]},"Scenes":{"Scenes":[]}}[0m
+[0;32mI (104990) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (105000) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (105010) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (105020) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (105030) esp_rmaker_user_mapping: MQTT Publish: {"node_id":"DC5475C7E8BC","user_id":"SignInWithApple_EYNz2cf9CZjsBdqjM8EUBg","secret_key":"C613E0DA-C5FA-42B1-8609-EA770709CDDD"}[0m
+[0;32mI (105560) esp_rmaker_user_mapping: User Node association message published successfully.[0m
+[0;32mI (108010) esp_rmaker_param: Received params: {"Time":{"TZ":"Asia/Singapore"}}[0m
+[0;32mI (108010) esp_rmaker_time_service: Received value = Asia/Singapore for Time - TZ[0m
+[0;32mI (108020) esp_rmaker_time: The current time is: Tue Apr 23 07:18:56 2024 +0800[+08], DST: No.[0m
+[0;32mI (108030) esp_rmaker_param: Reporting params: {"Time":{"TZ-POSIX":"<+08>-8"}}[0m
+[0;32mI (108030) esp_rmaker_param: Reporting params: {"Time":{"TZ":"Asia/Singapore"}}[0m
+[0;32mI (129000) UART: [UART DATA]: 21[0m
+[0;32mI (129000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (130000) UART: [UART DATA]: 21[0m
+[0;32mI (130000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (131000) UART: [UART DATA]: 21[0m
+[0;32mI (131000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (132000) UART: [UART DATA]: 21[0m
+[0;32mI (132000) UART: Read 21 bytes: '������������������?��'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (133000) UART: [UART DATA]: 21[0m
+[0;32mI (133000) UART: Read 21 bytes: '������������������?��'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (134000) UART: [UART DATA]: 21[0m
+[0;32mI (134000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (135000) UART: [UART DATA]: 21[0m
+[0;32mI (135000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (136000) UART: [UART DATA]: 21[0m
+[0;32mI (136000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (137000) UART: [UART DATA]: 21[0m
+[0;32mI (137000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (138000) UART: [UART DATA]: 21[0m
+[0;32mI (138000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (139000) UART: [UART DATA]: 21[0m
+[0;32mI (139000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (140000) UART: [UART DATA]: 21[0m
+[0;32mI (140000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (141000) UART: [UART DATA]: 21[0m
+[0;32mI (141000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (142000) UART: [UART DATA]: 21[0m
+[0;32mI (142000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (143000) UART: [UART DATA]: 21[0m
+[0;32mI (143000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (144000) UART: [UART DATA]: 21[0m
+[0;32mI (144000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (145000) UART: [UART DATA]: 21[0m
+[0;32mI (145000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (146000) UART: [UART DATA]: 21[0m
+[0;32mI (146000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (147000) UART: [UART DATA]: 21[0m
+[0;32mI (147000) UART: Read 21 bytes: '����������������{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (148000) UART: [UART DATA]: 21[0m
+[0;32mI (148000) UART: Read 21 bytes: '�������/�������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (149000) UART: [UART DATA]: 21[0m
+[0;32mI (149000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (150000) UART: [UART DATA]: 21[0m
+[0;32mI (150000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (151000) UART: [UART DATA]: 21[0m
+[0;32mI (151000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (152000) UART: [UART DATA]: 21[0m
+[0;32mI (152000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (153000) UART: [UART DATA]: 21[0m
+[0;32mI (153000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (154000) UART: [UART DATA]: 21[0m
+[0;32mI (154000) UART: Read 21 bytes: '������������������?��'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (155000) UART: [UART DATA]: 21[0m
+[0;32mI (155000) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (156010) UART: [UART DATA]: 21[0m
+[0;32mI (156010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (157010) UART: [UART DATA]: 21[0m
+[0;32mI (157010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (158010) UART: [UART DATA]: 21[0m
+[0;32mI (158010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (159010) UART: [UART DATA]: 21[0m
+[0;32mI (159010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (160010) UART: [UART DATA]: 21[0m
+[0;32mI (160010) UART: Read 21 bytes: '��/�����?������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (161010) UART: [UART DATA]: 21[0m
+[0;32mI (161010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (162010) UART: [UART DATA]: 21[0m
+[0;32mI (162010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (163010) UART: [UART DATA]: 21[0m
+[0;32mI (163010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (164010) UART: [UART DATA]: 21[0m
+[0;32mI (164010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (165010) UART: [UART DATA]: 21[0m
+[0;32mI (165010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (166010) UART: [UART DATA]: 21[0m
+[0;32mI (166010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (167010) UART: [UART DATA]: 21[0m
+[0;32mI (167010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (168010) UART: [UART DATA]: 21[0m
+[0;32mI (168010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (169010) UART: [UART DATA]: 21[0m
+[0;32mI (169010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (170010) UART: [UART DATA]: 21[0m
+[0;32mI (170010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (171010) UART: [UART DATA]: 21[0m
+[0;32mI (171010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (172010) UART: [UART DATA]: 21[0m
+[0;32mI (172010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (173010) UART: [UART DATA]: 21[0m
+[0;32mI (173010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (174010) UART: [UART DATA]: 21[0m
+[0;32mI (174010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (175010) UART: [UART DATA]: 21[0m
+[0;32mI (175010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (176010) UART: [UART DATA]: 21[0m
+[0;32mI (176010) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (177020) UART: [UART DATA]: 21[0m
+[0;32mI (177020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (178020) UART: [UART DATA]: 21[0m
+[0;32mI (178020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (179020) UART: [UART DATA]: 21[0m
+[0;32mI (179020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (180020) UART: [UART DATA]: 21[0m
+[0;32mI (180020) UART: Read 21 bytes: '�������������?�������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (181020) UART: [UART DATA]: 21[0m
+[0;32mI (181020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (182020) UART: [UART DATA]: 21[0m
+[0;32mI (182020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (183020) UART: [UART DATA]: 21[0m
+[0;32mI (183020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (184020) UART: [UART DATA]: 21[0m
+[0;32mI (184020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (185020) UART: [UART DATA]: 21[0m
+[0;32mI (185020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (186020) UART: [UART DATA]: 21[0m
+[0;32mI (186020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (187020) UART: [UART DATA]: 21[0m
+[0;32mI (187020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (188010) UART: [UART DATA]: 21[0m
+[0;32mI (188020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (189010) UART: [UART DATA]: 21[0m
+[0;32mI (189020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (190010) UART: [UART DATA]: 21[0m
+[0;32mI (190020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (191010) UART: [UART DATA]: 21[0m
+[0;32mI (191020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (192010) UART: [UART DATA]: 21[0m
+[0;32mI (192020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (193020) UART: [UART DATA]: 21[0m
+[0;32mI (193020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (194020) UART: [UART DATA]: 21[0m
+[0;32mI (194020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (195020) UART: [UART DATA]: 21[0m
+[0;32mI (195020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (196020) UART: [UART DATA]: 21[0m
+[0;32mI (196020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (197020) UART: [UART DATA]: 21[0m
+[0;32mI (197020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (198010) UART: [UART DATA]: 21[0m
+[0;32mI (198020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (199010) UART: [UART DATA]: 21[0m
+[0;32mI (199020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (200010) UART: [UART DATA]: 21[0m
+[0;32mI (200020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (201010) UART: [UART DATA]: 21[0m
+[0;32mI (201020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (202010) UART: [UART DATA]: 21[0m
+[0;32mI (202020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (203010) UART: [UART DATA]: 21[0m
+[0;32mI (203020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (204010) UART: [UART DATA]: 21[0m
+[0;32mI (204020) UART: Read 21 bytes: '������{����{����{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (205010) UART: [UART DATA]: 21[0m
+[0;32mI (205020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (206010) UART: [UART DATA]: 21[0m
+[0;32mI (206020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (207010) UART: [UART DATA]: 21[0m
+[0;32mI (207020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (208010) UART: [UART DATA]: 21[0m
+[0;32mI (208020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (209010) UART: [UART DATA]: 21[0m
+[0;32mI (209020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (210010) UART: [UART DATA]: 21[0m
+[0;32mI (210020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (211010) UART: [UART DATA]: 21[0m
+[0;32mI (211020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (212010) UART: [UART DATA]: 21[0m
+[0;32mI (212020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (213010) UART: [UART DATA]: 21[0m
+[0;32mI (213020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (214010) UART: [UART DATA]: 21[0m
+[0;32mI (214020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (215010) UART: [UART DATA]: 21[0m
+[0;32mI (215020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (216010) UART: [UART DATA]: 21[0m
+[0;32mI (216020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (217010) UART: [UART DATA]: 21[0m
+[0;32mI (217020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (218010) UART: [UART DATA]: 17[0m
+[0;32mI (218020) UART: Read 17 bytes: '�������.��m��{��'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (219010) UART: [UART DATA]: 21[0m
+[0;32mI (219020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (220010) UART: [UART DATA]: 21[0m
+[0;32mI (220020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (221010) UART: [UART DATA]: 21[0m
+[0;32mI (221020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (222010) UART: [UART DATA]: 17[0m
+[0;32mI (222020) UART: Read 17 bytes: '�m��������s6�����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (223010) UART: [UART DATA]: 21[0m
+[0;32mI (223020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (224010) UART: [UART DATA]: 21[0m
+[0;32mI (224020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (225010) UART: [UART DATA]: 21[0m
+[0;32mI (225020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (226010) UART: [UART DATA]: 21[0m
+[0;32mI (226020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (227010) UART: [UART DATA]: 18[0m
+[0;32mI (227020) UART: Read 18 bytes: '���7?=6.������{���'[0m
+0.00,7.00,6.00,0.00
+[0;32mI (228010) UART: [UART DATA]: 21[0m
+[0;32mI (228020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (229010) UART: [UART DATA]: 21[0m
+[0;32mI (229020) UART: Read 21 bytes: '������{����{����{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (230010) UART: [UART DATA]: 21[0m
+[0;32mI (230020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (231010) UART: [UART DATA]: 21[0m
+[0;32mI (231020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (232010) UART: [UART DATA]: 21[0m
+[0;32mI (232020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (233010) UART: [UART DATA]: 21[0m
+[0;32mI (233020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (234010) UART: [UART DATA]: 21[0m
+[0;32mI (234020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (235010) UART: [UART DATA]: 21[0m
+[0;32mI (235020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (236010) UART: [UART DATA]: 21[0m
+[0;32mI (236020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (237010) UART: [UART DATA]: 21[0m
+[0;32mI (237020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (238010) UART: [UART DATA]: 21[0m
+[0;32mI (238020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (239010) UART: [UART DATA]: 21[0m
+[0;32mI (239020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (240010) UART: [UART DATA]: 21[0m
+[0;32mI (240020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (241010) UART: [UART DATA]: 21[0m
+[0;32mI (241020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (242010) UART: [UART DATA]: 21[0m
+[0;32mI (242020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (243010) UART: [UART DATA]: 21[0m
+[0;32mI (243020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (244010) UART: [UART DATA]: 21[0m
+[0;32mI (244020) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (246930) UART: [UART DATA]: 21[0m
+[0;32mI (246930) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (247940) UART: [UART DATA]: 21[0m
+[0;32mI (247940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (248940) UART: [UART DATA]: 21[0m
+[0;32mI (248940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (249940) UART: [UART DATA]: 21[0m
+[0;32mI (249940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (250940) UART: [UART DATA]: 21[0m
+[0;32mI (250940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (251940) UART: [UART DATA]: 21[0m
+[0;32mI (251940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (252940) UART: [UART DATA]: 21[0m
+[0;32mI (252940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (253940) UART: [UART DATA]: 21[0m
+[0;32mI (253940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (254940) UART: [UART DATA]: 21[0m
+[0;32mI (254940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (255940) UART: [UART DATA]: 21[0m
+[0;32mI (255940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (256940) UART: [UART DATA]: 21[0m
+[0;32mI (256940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (257940) UART: [UART DATA]: 21[0m
+[0;32mI (257940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (258940) UART: [UART DATA]: 21[0m
+[0;32mI (258940) UART: Read 21 bytes: '������{����{����{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (259940) UART: [UART DATA]: 21[0m
+[0;32mI (259940) UART: Read 21 bytes: '���������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (260940) UART: [UART DATA]: 26[0m
+[0;32mI (260940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (261940) UART: [UART DATA]: 26[0m
+[0;32mI (261940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (262940) UART: [UART DATA]: 26[0m
+[0;32mI (262940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (263940) UART: [UART DATA]: 26[0m
+[0;32mI (263940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (264940) UART: [UART DATA]: 26[0m
+[0;32mI (264940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (265940) UART: [UART DATA]: 26[0m
+[0;32mI (265940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (266940) UART: [UART DATA]: 26[0m
+[0;32mI (266940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (267940) UART: [UART DATA]: 26[0m
+[0;32mI (267940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (268940) UART: [UART DATA]: 26[0m
+[0;32mI (268940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (269940) UART: [UART DATA]: 26[0m
+[0;32mI (269940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (270940) UART: [UART DATA]: 26[0m
+[0;32mI (270940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (271940) UART: [UART DATA]: 26[0m
+[0;32mI (271940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (272940) UART: [UART DATA]: 26[0m
+[0;32mI (272940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (273940) UART: [UART DATA]: 26[0m
+[0;32mI (273940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (274940) UART: [UART DATA]: 26[0m
+[0;32mI (274940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (275940) UART: [UART DATA]: 26[0m
+[0;32mI (275940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (276940) UART: [UART DATA]: 26[0m
+[0;32mI (276940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (277940) UART: [UART DATA]: 26[0m
+[0;32mI (277940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (278940) UART: [UART DATA]: 26[0m
+[0;32mI (278940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (279940) UART: [UART DATA]: 26[0m
+[0;32mI (279940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (280940) UART: [UART DATA]: 26[0m
+[0;32mI (280940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (281940) UART: [UART DATA]: 26[0m
+[0;32mI (281940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (282940) UART: [UART DATA]: 26[0m
+[0;32mI (282940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (283940) UART: [UART DATA]: 26[0m
+[0;32mI (283940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (284940) UART: [UART DATA]: 26[0m
+[0;32mI (284940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (285940) UART: [UART DATA]: 26[0m
+[0;32mI (285940) UART: Read 26 bytes: '���������{���ۻ{���ۻ{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (286940) UART: [UART DATA]: 26[0m
+[0;32mI (286940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (287940) UART: [UART DATA]: 26[0m
+[0;32mI (287940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (288940) UART: [UART DATA]: 26[0m
+[0;32mI (288940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (289940) UART: [UART DATA]: 26[0m
+[0;32mI (289940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (290940) UART: [UART DATA]: 26[0m
+[0;32mI (290940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (291940) UART: [UART DATA]: 26[0m
+[0;32mI (291940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (292940) UART: [UART DATA]: 26[0m
+[0;32mI (292940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (293940) UART: [UART DATA]: 26[0m
+[0;32mI (293940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (294940) UART: [UART DATA]: 26[0m
+[0;32mI (294940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (295940) UART: [UART DATA]: 26[0m
+[0;32mI (295940) UART: Read 26 bytes: '���������{���ۻ{���ۻ{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (296940) UART: [UART DATA]: 26[0m
+[0;32mI (296940) UART: Read 26 bytes: '���������{���ۻ{���ۻ{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (297940) UART: [UART DATA]: 26[0m
+[0;32mI (297940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (298940) UART: [UART DATA]: 26[0m
+[0;32mI (298940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (299940) UART: [UART DATA]: 26[0m
+[0;32mI (299940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (300940) UART: [UART DATA]: 26[0m
+[0;32mI (300940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (301940) UART: [UART DATA]: 26[0m
+[0;32mI (301940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (302940) UART: [UART DATA]: 26[0m
+[0;32mI (302940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (303940) UART: [UART DATA]: 26[0m
+[0;32mI (303940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (304940) UART: [UART DATA]: 26[0m
+[0;32mI (304940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (305940) UART: [UART DATA]: 26[0m
+[0;32mI (305940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (306940) UART: [UART DATA]: 26[0m
+[0;32mI (306940) UART: Read 26 bytes: '���������������������{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (307940) UART: [UART DATA]: 26[0m
+[0;32mI (307940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (308940) UART: [UART DATA]: 26[0m
+[0;32mI (308940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (309940) UART: [UART DATA]: 26[0m
+[0;32mI (309940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (310940) UART: [UART DATA]: 26[0m
+[0;32mI (310940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (311940) UART: [UART DATA]: 26[0m
+[0;32mI (311940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (312940) UART: [UART DATA]: 26[0m
+[0;32mI (312940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (313940) UART: [UART DATA]: 26[0m
+[0;32mI (313940) UART: Read 26 bytes: '�������o�{���ۻ{���ۻ{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (314940) UART: [UART DATA]: 26[0m
+[0;32mI (314940) UART: Read 26 bytes: '���������{���ۻ{���ۻ{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (315940) UART: [UART DATA]: 26[0m
+[0;32mI (315940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (316940) UART: [UART DATA]: 26[0m
+[0;32mI (316940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (317940) UART: [UART DATA]: 26[0m
+[0;32mI (317940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (318940) UART: [UART DATA]: 26[0m
+[0;32mI (318940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (319940) UART: [UART DATA]: 26[0m
+[0;32mI (319940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (320940) UART: [UART DATA]: 26[0m
+[0;32mI (320940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (321940) UART: [UART DATA]: 26[0m
+[0;32mI (321940) UART: Read 26 bytes: '�������o�{���ۻ{���ۻ{����'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (322940) UART: [UART DATA]: 26[0m
+[0;32mI (322940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00
+[0;32mI (323940) UART: [UART DATA]: 26[0m
+[0;32mI (323940) UART: Read 26 bytes: '��������������������������'[0m
+0.00,0.00,0.00,0.00

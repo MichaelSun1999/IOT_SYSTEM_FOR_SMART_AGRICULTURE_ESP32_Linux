@@ -1,0 +1,80 @@
+[0;33m--- esp-idf-monitor 1.3.2 on /dev/ttyUSB1 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403756ec: call_start_cpu1 at /home/szm/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4202fc3a: task_wdt_timeout_handling at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x4202fde6: task_wdt_isr at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4037727d: _xt_lowint1 at /home/szm/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1236
+[0m
+[0;33m0x4200c3ad: app_main at /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:1009 (discriminator 3)
+[0m
+[0;33m0x420cbdcf: main_task at /home/szm/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40384c35: vPortTaskWrapper at /home/szm/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x4202fc3a: task_wdt_timeout_handling at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x4202fde6: task_wdt_isr at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4037727d: _xt_lowint1 at /home/szm/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1236
+[0m
+[0;33m0x4200c3aa: app_main at /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:1008 (discriminator 13)
+[0m
+[0;33m0x420cbdcf: main_task at /home/szm/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40384c35: vPortTaskWrapper at /home/szm/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x4202fc3a: task_wdt_timeout_handling at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x4202fde6: task_wdt_isr at /home/szm/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x4037727d: _xt_lowint1 at /home/szm/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1236
+[0m
+[0;33m0x4200c3b6: app_main at /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:1009 (discriminator 2)
+[0m
+[0;33m0x420cbdcf: main_task at /home/szm/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40384c35: vPortTaskWrapper at /home/szm/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375c36: panic_abort at /home/szm/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40382211: esp_system_abort at /home/szm/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x40388fa9: __assert_func at /home/szm/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x420101b1: osi_thread_post at /home/szm/esp/esp-idf/components/bt/common/osi/thread.c:332 (discriminator 1)
+[0m
+[0;33m0x4200e755: btc_task_post at /home/szm/esp/esp-idf/components/bt/common/btc/core/btc_task.c:218
+[0m
+[0;33m0x4200e818: btc_transfer_context at /home/szm/esp/esp-idf/components/bt/common/btc/core/btc_task.c:263
+[0m
+[0;33m0x42015e85: esp_blufi_gap_event at /home/szm/esp/esp-idf/components/bt/common/btc/profile/esp/blufi/nimble_host/esp_blufi.c:295
+[0m
+[0;33m0x420107f1: ble_gap_call_event_cb at /home/szm/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c:769
+[0m
+[0;33m0x42011d55: ble_gap_conn_broken at /home/szm/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c:1327
+[0m
+[0;33m0x42011d82: ble_gap_rx_disconn_complete at /home/szm/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c:1355 (discriminator 4)
+[0m
+[0;33m0x4201a5c5: ble_hs_hci_evt_disconn_complete at /home/szm/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_hci_evt.c:281
+[0m
+[0;33m0x4201a92d: ble_hs_hci_evt_process at /home/szm/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_hci_evt.c:1023
+[0m
+[0;33m0x42019d65: ble_hs_event_rx_hci_ev at /home/szm/esp/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c:526
+[0m
+[0;33m0x4037fb31: npl_freertos_event_run at /home/szm/esp/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c:450
+[0m
+[0;33m0x40377e15: ble_npl_event_run at /home/szm/esp/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h:185
+ (inlined by) nimble_port_run at /home/szm/esp/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c:255
+[0m
+[0;33m0x4200cf02: bleprph_host_task at /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/components/mesh_blufi/blufi_init.c:136
+[0m
+[0;33m0x40384c35: vPortTaskWrapper at /home/szm/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375ab8: esp_restart_noos_dig at /home/szm/esp/esp-idf/components/esp_system/port/esp_system_chip.c:57 (discriminator 1)
+[0m
+[0;33m0x403756ec: call_start_cpu1 at /home/szm/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m

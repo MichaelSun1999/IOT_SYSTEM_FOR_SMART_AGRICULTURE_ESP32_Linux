@@ -1,0 +1,138 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/build/bootloader/esp-idf/esptool_py && /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/szm/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/build/bootloader/bootloader.bin
+Bootloader binary size 0x5200 bytes. 0x2e00 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mesh_main.c.obj
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c: In function 'HTS221_read':
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:140:15: warning: unused variable 'err' [-Wunused-variable]
+  140 |     esp_err_t err;
+      |               ^~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c: In function 'esp_mesh_p2p_tx_main':
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:356:9: warning: unused variable 'route_table_size' [-Wunused-variable]
+  356 |     int route_table_size = 0;
+      |         ^~~~~~~~~~~~~~~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:355:17: warning: unused variable 'route_table' [-Wunused-variable]
+  355 |     mesh_addr_t route_table[CONFIG_MESH_ROUTE_TABLE_SIZE];
+      |                 ^~~~~~~~~~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:354:15: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+  354 |     esp_err_t err;
+      |               ^~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c: In function 'esp_mesh_p2p_rx_main':
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:413:15: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+  413 |     esp_err_t err;
+      |               ^~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c: At top level:
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:179:13: warning: 'check_button' defined but not used [-Wunused-function]
+  179 | static void check_button(void* args)
+      |             ^~~~~~~~~~~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:152:13: warning: 'recv_cb' defined but not used [-Wunused-function]
+  152 | static void recv_cb(mesh_addr_t *from, mesh_data_t *data)
+      |             ^~~~~~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:73:16: warning: 'example_wifi_retry' defined but not used [-Wunused-variable]
+   73 | static uint8_t example_wifi_retry = 0;
+      |                ^~~~~~~~~~~~~~~~~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:70:74: warning: 's_data_transmission_lock' defined but not used [-Wunused-variable]
+   70 | static SemaphoreHandle_t s_recv_cb_lock = NULL,s_route_table_lock = NULL,s_data_transmission_lock=NULL;
+      |                                                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:70:26: warning: 's_recv_cb_lock' defined but not used [-Wunused-variable]
+   70 | static SemaphoreHandle_t s_recv_cb_lock = NULL,s_route_table_lock = NULL,s_data_transmission_lock=NULL;
+      |                          ^~~~~~~~~~~~~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:67:20: warning: 'mesh_route_table_record' defined but not used [-Wunused-variable]
+   67 | static mesh_addr_t mesh_route_table_record[8];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/main/mesh_main.c:60:13: warning: 'is_running' defined but not used [-Wunused-variable]
+   60 | static bool is_running = true;
+      |             ^~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+warning: the default selection BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) of <choice> (defined at /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/components/mesh_blufi/Kconfig.projbuild:10) is not contained in the choice
+warning: the choice symbol BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) is defined with a prompt outside the choice
+warning: the choice symbol BT_BLUEDROID_ENABLED (defined at /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/components/mesh_blufi/Kconfig.projbuild:18, /home/szm/esp/esp-idf/components/bt/Kconfig:17) is defined with a prompt outside the choice
+warning: the choice symbol BT_BLUEDROID_ENABLED (defined at /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/components/mesh_blufi/Kconfig.projbuild:18, /home/szm/esp/esp-idf/components/bt/Kconfig:17) is defined with a prompt outside the choice
+warning: the choice symbol BT_NIMBLE_ENABLED (defined at /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/components/mesh_blufi/Kconfig.projbuild:16, /home/szm/esp/esp-idf/components/bt/Kconfig:23) is defined with a prompt outside the choice
+[5/8] Linking CXX executable ip_internal_network.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/build/ip_internal_network.bin
+[7/8] cd /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/build/esp-idf/esptool_py && /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/szm/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/build/partition_table/partition-table.bin /home/szm/Desktop/MESH_SEND/Node/Temp_Humi/build/ip_internal_network.bin
+ip_internal_network.bin binary size 0x11b7d0 bytes. Smallest app partition is 0x1e8480 bytes. 0xcccb0 bytes (42%) free.
+[7/8] cd /home/szm/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/szm/esp/esp-idf -D "SERIAL_TOOL=/home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/szm/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/szm/Desktop/MESH_SEND/Node/Temp_Humi/build -P /home/szm/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB1 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 ip_internal_network.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev2
+Serial port /dev/ttyUSB1
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded Flash 8MB (GD)
+Crystal is 40MHz
+MAC: f4:12:fa:87:c4:70
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0012bfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20992 bytes to 13327...
+Writing at 0x00000000... (100 %)
+Wrote 20992 bytes (13327 compressed) at 0x00000000 in 0.6 seconds (effective 288.6 kbit/s)...
+Hash of data verified.
+Compressed 1161168 bytes to 741807...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c0a4... (4 %)
+Writing at 0x000263ad... (6 %)
+Writing at 0x0002b693... (8 %)
+Writing at 0x00036dfd... (10 %)
+Writing at 0x00042c31... (13 %)
+Writing at 0x0004b43a... (15 %)
+Writing at 0x00050906... (17 %)
+Writing at 0x00056b0b... (19 %)
+Writing at 0x0005ca71... (21 %)
+Writing at 0x000629f4... (23 %)
+Writing at 0x000685aa... (26 %)
+Writing at 0x0006ebb5... (28 %)
+Writing at 0x00074311... (30 %)
+Writing at 0x00079e28... (32 %)
+Writing at 0x00080277... (34 %)
+Writing at 0x00086209... (36 %)
+Writing at 0x0008c00f... (39 %)
+Writing at 0x00091fd9... (41 %)
+Writing at 0x000975ea... (43 %)
+Writing at 0x0009caa5... (45 %)
+Writing at 0x000a1d78... (47 %)
+Writing at 0x000a6fbb... (50 %)
+Writing at 0x000ac1b8... (52 %)
+Writing at 0x000b14b9... (54 %)
+Writing at 0x000b67f6... (56 %)
+Writing at 0x000bbcbd... (58 %)
+Writing at 0x000c0c13... (60 %)
+Writing at 0x000c5dd8... (63 %)
+Writing at 0x000cadef... (65 %)
+Writing at 0x000d0138... (67 %)
+Writing at 0x000d5510... (69 %)
+Writing at 0x000dafb9... (71 %)
+Writing at 0x000e06c0... (73 %)
+Writing at 0x000e5dcc... (76 %)
+Writing at 0x000eb686... (78 %)
+Writing at 0x000f0eb3... (80 %)
+Writing at 0x000f66f6... (82 %)
+Writing at 0x000fc193... (84 %)
+Writing at 0x00101fcb... (86 %)
+Writing at 0x0010769a... (89 %)
+Writing at 0x001101c7... (91 %)
+Writing at 0x00118690... (93 %)
+Writing at 0x0011e3d5... (95 %)
+Writing at 0x001240fb... (97 %)
+Writing at 0x001298ba... (100 %)
+Wrote 1161168 bytes (741807 compressed) at 0x00010000 in 16.8 seconds (effective 553.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 106...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (106 compressed) at 0x00008000 in 0.0 seconds (effective 535.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

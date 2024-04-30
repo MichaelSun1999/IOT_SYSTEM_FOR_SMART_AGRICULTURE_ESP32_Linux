@@ -1,0 +1,150 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/szm/Desktop/Combined/LCD/build/bootloader/esp-idf/esptool_py && /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/szm/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/szm/Desktop/Combined/LCD/build/bootloader/bootloader.bin
+Bootloader binary size 0x57b0 bytes. 0x2850 bytes (31%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/dispaly_lvgl_demos_main.c.obj
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c: In function 'esp_mesh_p2p_tx_main':
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:142:15: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+  142 |     esp_err_t err;
+      |               ^~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c: In function 'esp_mesh_p2p_rx_main':
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:204:15: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+  204 |     esp_err_t err;
+      |               ^~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c: In function 'button_confirm_event_cb':
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:963:15: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+  963 |     esp_err_t err;
+      |               ^~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c: In function 'tx_task':
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:1264:24: warning: unused variable 'TX_TASK_TAG' [-Wunused-variable]
+ 1264 |     static const char *TX_TASK_TAG = "TX_TASK";
+      |                        ^~~~~~~~~~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c: In function 'uart_event_task':
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:1367:14: warning: unused variable 'data' [-Wunused-variable]
+ 1367 |     uint8_t* data = (uint8_t*) malloc(BUF_SIZE+1);
+      |              ^~~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c: At top level:
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:1264:24: warning: 'TX_TASK_TAG' defined but not used [-Wunused-variable]
+ 1264 |     static const char *TX_TASK_TAG = "TX_TASK";
+      |                        ^~~~~~~~~~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:60:74: warning: 's_data_transmission_lock' defined but not used [-Wunused-variable]
+   60 | static SemaphoreHandle_t s_recv_cb_lock = NULL,s_route_table_lock = NULL,s_data_transmission_lock=NULL;
+      |                                                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:60:48: warning: 's_route_table_lock' defined but not used [-Wunused-variable]
+   60 | static SemaphoreHandle_t s_recv_cb_lock = NULL,s_route_table_lock = NULL,s_data_transmission_lock=NULL;
+      |                                                ^~~~~~~~~~~~~~~~~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:60:26: warning: 's_recv_cb_lock' defined but not used [-Wunused-variable]
+   60 | static SemaphoreHandle_t s_recv_cb_lock = NULL,s_route_table_lock = NULL,s_data_transmission_lock=NULL;
+      |                          ^~~~~~~~~~~~~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:59:12: warning: 's_route_table_size' defined but not used [-Wunused-variable]
+   59 | static int s_route_table_size = 0;
+      |            ^~~~~~~~~~~~~~~~~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:57:20: warning: 'mesh_route_table_record' defined but not used [-Wunused-variable]
+   57 | static mesh_addr_t mesh_route_table_record[8];
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:56:20: warning: 's_route_table' defined but not used [-Wunused-variable]
+   56 | static mesh_addr_t s_route_table[CONFIG_MESH_ROUTE_TABLE_SIZE];
+      |                    ^~~~~~~~~~~~~
+/home/szm/Desktop/Combined/LCD/main/dispaly_lvgl_demos_main.c:50:13: warning: 'is_running' defined but not used [-Wunused-variable]
+   50 | static bool is_running = true;
+      |             ^~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable display_lvgl_demos.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/szm/Desktop/Combined/LCD/build/display_lvgl_demos.bin
+[7/8] cd /home/szm/Desktop/Combined/LCD/build/esp-idf/esptool_py && /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/szm/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/szm/Desktop/Combined/LCD/build/partition_table/partition-table.bin /home/szm/Desktop/Combined/LCD/build/display_lvgl_demos.bin
+display_lvgl_demos.bin binary size 0x157810 bytes. Smallest app partition is 0x1e8480 bytes. 0x90c70 bytes (30%) free.
+[7/8] cd /home/szm/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/szm/esp/esp-idf -D "SERIAL_TOOL=/home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/szm/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/szm/Desktop/Combined/LCD/build -P /home/szm/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 display_lvgl_demos.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev2
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 48:27:e2:f0:2c:d8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00167fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 22448 bytes to 14257...
+Writing at 0x00000000... (100 %)
+Wrote 22448 bytes (14257 compressed) at 0x00000000 in 0.7 seconds (effective 265.2 kbit/s)...
+Hash of data verified.
+Compressed 1406992 bytes to 945998...
+Writing at 0x00010000... (1 %)
+Writing at 0x0001cd0c... (3 %)
+Writing at 0x00024e19... (5 %)
+Writing at 0x0002e3a8... (6 %)
+Writing at 0x0003397a... (8 %)
+Writing at 0x000400e8... (10 %)
+Writing at 0x0004cdf7... (12 %)
+Writing at 0x00053ce2... (13 %)
+Writing at 0x000595e5... (15 %)
+Writing at 0x0005ea2b... (17 %)
+Writing at 0x0006422a... (18 %)
+Writing at 0x000697f5... (20 %)
+Writing at 0x0006e75e... (22 %)
+Writing at 0x00073651... (24 %)
+Writing at 0x00078b9c... (25 %)
+Writing at 0x0007f031... (27 %)
+Writing at 0x00083f41... (29 %)
+Writing at 0x0008933b... (31 %)
+Writing at 0x0008ea94... (32 %)
+Writing at 0x00093ed4... (34 %)
+Writing at 0x0009972f... (36 %)
+Writing at 0x0009f311... (37 %)
+Writing at 0x000a49ea... (39 %)
+Writing at 0x000aa521... (41 %)
+Writing at 0x000aff92... (43 %)
+Writing at 0x000b57c5... (44 %)
+Writing at 0x000bae15... (46 %)
+Writing at 0x000c04f0... (48 %)
+Writing at 0x000c58ec... (50 %)
+Writing at 0x000cafe3... (51 %)
+Writing at 0x000d0209... (53 %)
+Writing at 0x000d5249... (55 %)
+Writing at 0x000da616... (56 %)
+Writing at 0x000df7f9... (58 %)
+Writing at 0x000e4a89... (60 %)
+Writing at 0x000ea1de... (62 %)
+Writing at 0x000ef0eb... (63 %)
+Writing at 0x000f42c3... (65 %)
+Writing at 0x000f923e... (67 %)
+Writing at 0x000fe5ce... (68 %)
+Writing at 0x001038a2... (70 %)
+Writing at 0x00108b80... (72 %)
+Writing at 0x0010e6ea... (74 %)
+Writing at 0x001135b2... (75 %)
+Writing at 0x0011864f... (77 %)
+Writing at 0x0011d8bb... (79 %)
+Writing at 0x0012290f... (81 %)
+Writing at 0x001278af... (82 %)
+Writing at 0x0012c97d... (84 %)
+Writing at 0x001324f8... (86 %)
+Writing at 0x00137c92... (87 %)
+Writing at 0x00140577... (89 %)
+Writing at 0x00148803... (91 %)
+Writing at 0x0014dfdf... (93 %)
+Writing at 0x00153185... (94 %)
+Writing at 0x00158633... (96 %)
+Writing at 0x0015defa... (98 %)
+Writing at 0x0016375f... (100 %)
+Wrote 1406992 bytes (945998 compressed) at 0x00010000 in 21.4 seconds (effective 526.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 106...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (106 compressed) at 0x00008000 in 0.1 seconds (effective 411.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

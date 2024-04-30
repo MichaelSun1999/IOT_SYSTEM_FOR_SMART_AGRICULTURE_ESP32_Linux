@@ -1,0 +1,15 @@
+menu "Blufi Configuration"
+
+    config EXAMPLE_WIFI_CONNECTION_MAXIMUM_RETRY
+        int "WiFi connection maximum retry"
+        range 0 255
+        default 2
+        help
+            WiFi connection maximum retry, from 0 to 255.
+
+    config DEVICE_NAME
+        string "Device name"
+        default "ESP32"
+        help
+            Device name.
+endmenu

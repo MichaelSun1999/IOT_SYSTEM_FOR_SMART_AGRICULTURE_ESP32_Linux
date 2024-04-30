@@ -1,0 +1,137 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/szm/Desktop/Combined/RM/build/bootloader/esp-idf/esptool_py && /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/szm/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/szm/Desktop/Combined/RM/build/bootloader/bootloader.bin
+Bootloader binary size 0x5200 bytes. 0x2e00 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mesh_main.c.obj
+/home/szm/Desktop/Combined/RM/main/mesh_main.c: In function 'UART_tx':
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:131:24: warning: unused variable 'TX_TASK_TAG' [-Wunused-variable]
+  131 |     static const char *TX_TASK_TAG = "TX_TASK";
+      |                        ^~~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c: In function 'uart_event_task':
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:141:14: warning: unused variable 'data' [-Wunused-variable]
+  141 |     uint8_t* data = (uint8_t*) malloc(BUF_SIZE+1);
+      |              ^~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c: At top level:
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:131:24: warning: 'TX_TASK_TAG' defined but not used [-Wunused-variable]
+  131 |     static const char *TX_TASK_TAG = "TX_TASK";
+      |                        ^~~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:61:16: warning: 'rx_buf' defined but not used [-Wunused-variable]
+   61 | static uint8_t rx_buf[200] = { 0, };
+      |                ^~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:60:16: warning: 'tx_buf' defined but not used [-Wunused-variable]
+   60 | static uint8_t tx_buf[200] = { 0, };
+      |                ^~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:58:22: warning: 'sta_config' defined but not used [-Wunused-variable]
+   58 | static wifi_config_t sta_config;
+      |                      ^~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:56:12: warning: 'mesh_layer' defined but not used [-Wunused-variable]
+   56 | static int mesh_layer = -1;
+      |            ^~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:55:37: warning: 'mesh_root_addr' defined but not used [-Wunused-variable]
+   55 | static mesh_addr_t mesh_parent_addr,mesh_root_addr;
+      |                                     ^~~~~~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:55:20: warning: 'mesh_parent_addr' defined but not used [-Wunused-variable]
+   55 | static mesh_addr_t mesh_parent_addr,mesh_root_addr;
+      |                    ^~~~~~~~~~~~~~~~
+/home/szm/Desktop/Combined/RM/main/mesh_main.c:52:23: warning: 's_current_ip' defined but not used [-Wunused-variable]
+   52 | static esp_ip4_addr_t s_current_ip;
+      |                       ^~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable ip_internal_network.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/szm/Desktop/Combined/RM/build/ip_internal_network.bin
+[7/8] cd /home/szm/Desktop/Combined/RM/build/esp-idf/esptool_py && /home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/szm/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/szm/Desktop/Combined/RM/build/partition_table/partition-table.bin /home/szm/Desktop/Combined/RM/build/ip_internal_network.bin
+ip_internal_network.bin binary size 0x149dd0 bytes. Smallest app partition is 0x190000 bytes. 0x46230 bytes (18%) free.
+[7/8] cd /home/szm/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/szm/esp/esp-idf -D "SERIAL_TOOL=/home/szm/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/szm/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/szm/Desktop/Combined/RM/build -P /home/szm/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x20000 ip_internal_network.bin 0x8000 partition_table/partition-table.bin 0x16000 ota_data_initial.bin
+esptool.py v4.7.dev2
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded Flash 8MB (GD)
+Crystal is 40MHz
+MAC: dc:54:75:c7:e8:bc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x00169fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00016000 to 0x00017fff...
+Compressed 20992 bytes to 13328...
+Writing at 0x00000000... (100 %)
+Wrote 20992 bytes (13328 compressed) at 0x00000000 in 0.6 seconds (effective 297.2 kbit/s)...
+Hash of data verified.
+Compressed 1351120 bytes to 849679...
+Writing at 0x00020000... (1 %)
+Writing at 0x0002cb7c... (3 %)
+Writing at 0x00039c04... (5 %)
+Writing at 0x0004146d... (7 %)
+Writing at 0x00046469... (9 %)
+Writing at 0x0004b759... (11 %)
+Writing at 0x00053a21... (13 %)
+Writing at 0x0005dd6a... (15 %)
+Writing at 0x00063056... (17 %)
+Writing at 0x0006c2c1... (19 %)
+Writing at 0x0007435c... (21 %)
+Writing at 0x0007a6ab... (23 %)
+Writing at 0x00080979... (25 %)
+Writing at 0x00086a28... (26 %)
+Writing at 0x0008cd4c... (28 %)
+Writing at 0x000931e6... (30 %)
+Writing at 0x00098fe3... (32 %)
+Writing at 0x0009ea65... (34 %)
+Writing at 0x000a40da... (36 %)
+Writing at 0x000a9851... (38 %)
+Writing at 0x000afbf8... (40 %)
+Writing at 0x000b5ace... (42 %)
+Writing at 0x000bb5ad... (44 %)
+Writing at 0x000c0b3f... (46 %)
+Writing at 0x000c6537... (48 %)
+Writing at 0x000cbedc... (50 %)
+Writing at 0x000d18a1... (51 %)
+Writing at 0x000d7d3d... (53 %)
+Writing at 0x000dd603... (55 %)
+Writing at 0x000e2ee8... (57 %)
+Writing at 0x000e8965... (59 %)
+Writing at 0x000ee846... (61 %)
+Writing at 0x000f4531... (63 %)
+Writing at 0x000f9ba3... (65 %)
+Writing at 0x000feaad... (67 %)
+Writing at 0x00103c99... (69 %)
+Writing at 0x00108c51... (71 %)
+Writing at 0x0010df9a... (73 %)
+Writing at 0x00113312... (75 %)
+Writing at 0x00118bbb... (76 %)
+Writing at 0x0011e368... (78 %)
+Writing at 0x00123d8f... (80 %)
+Writing at 0x001298d3... (82 %)
+Writing at 0x0012effc... (84 %)
+Writing at 0x0013453e... (86 %)
+Writing at 0x0013d631... (88 %)
+Writing at 0x00143ad5... (90 %)
+Writing at 0x0014bd30... (92 %)
+Writing at 0x00153f49... (94 %)
+Writing at 0x00159599... (96 %)
+Writing at 0x0015f267... (98 %)
+Writing at 0x00165089... (100 %)
+Wrote 1351120 bytes (849679 compressed) at 0x00020000 in 19.2 seconds (effective 563.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 168...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (168 compressed) at 0x00008000 in 0.0 seconds (effective 505.8 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x00016000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x00016000 in 0.1 seconds (effective 828.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

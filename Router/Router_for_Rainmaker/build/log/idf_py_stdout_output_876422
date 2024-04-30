@@ -1,0 +1,3369 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x16e8
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2eb0
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 23 2024 07:05:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (72) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (80) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (87) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (95) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (102) boot:  5 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (110) boot:  6 fctry            WiFi data        01 02 001b0000 00006000[0m
+[0;32mI (117) boot: End of partition table[0m
+[0;32mI (122) esp_image: segment 0: paddr=00020020 vaddr=3c0e0020 size=4f260h (324192) map[0m
+[0;32mI (188) esp_image: segment 1: paddr=0006f288 vaddr=3fc9bd00 size=00d90h (  3472) load[0m
+[0;32mI (189) esp_image: segment 2: paddr=00070020 vaddr=42000020 size=de1bch (909756) map[0m
+[0;32mI (357) esp_image: segment 3: paddr=0014e1e4 vaddr=3fc9ca90 size=03eech ( 16108) load[0m
+[0;32mI (361) esp_image: segment 4: paddr=001520d8 vaddr=40374000 size=17ccch ( 97484) load[0m
+[0;32mI (394) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (394) boot: Disabling RNG early entropy source...[0m
+[0;32mI (406) cpu_start: Multicore app[0m
+[0;32mI (406) cpu_start: Pro cpu up.[0m
+[0;32mI (406) cpu_start: Starting app cpu, entry point is 0x40375718[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (424) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) cpu_start: Application information:[0m
+[0;32mI (428) cpu_start: Project name:     ip_internal_network[0m
+[0;32mI (434) cpu_start: App version:      1[0m
+[0;32mI (438) cpu_start: Compile time:     Apr 23 2024 07:05:40[0m
+[0;32mI (444) cpu_start: ELF file SHA256:  de05e6d7bc234644...[0m
+[0;32mI (450) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (455) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (460) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (465) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (470) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (477) heap_init: At 3FCA6D28 len 000429E8 (266 KiB): DRAM[0m
+[0;32mI (483) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (490) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (496) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (503) spi_flash: detected chip: gd[0m
+[0;32mI (506) spi_flash: flash io: dio[0m
+[0;32mI (511) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (517) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (524) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (530) coexist: coexist rom version e7ae62f[0m
+[0;32mI (535) app_start: Starting scheduler on CPU0[0m
+[0;32mI (540) app_start: Starting scheduler on CPU1[0m
+[0;32mI (540) main_task: Started on CPU0[0m
+[0;32mI (550) main_task: Calling app_main()[0m
+[0;32mI (590) uart: queue free spaces: 20[0m
+[0;32mI (590) UART: uart rx break[0m
+[0;32mI (590) pp: pp rom version: e7ae62f[0m
+[0;32mI (590) net80211: net80211 rom version: e7ae62f[0m
+I (610) wifi:wifi driver task: 3fcb4494, prio:23, stack:6656, core=0
+I (620) wifi:wifi firmware version: ce9244d
+I (620) wifi:wifi certification version: v7.0
+I (620) wifi:config NVS flash: enabled
+I (620) wifi:config nano formating: disabled
+I (620) wifi:Init data frame dynamic rx buffer num: 32
+I (630) wifi:Init management frame dynamic rx buffer num: 32
+I (630) wifi:Init management short buffer num: 32
+I (640) wifi:Init dynamic tx buffer num: 32
+I (640) wifi:Init static tx FG buffer num: 2
+I (650) wifi:Init static rx buffer size: 1600
+I (650) wifi:Init static rx buffer num: 10
+I (650) wifi:Init dynamic rx buffer num: 32
+[0;32mI (660) wifi_init: rx ba win: 6[0m
+[0;32mI (660) wifi_init: tcpip mbox: 32[0m
+[0;32mI (670) wifi_init: udp mbox: 6[0m
+[0;32mI (670) wifi_init: tcp mbox: 6[0m
+[0;32mI (670) wifi_init: tcp tx win: 5744[0m
+[0;32mI (680) wifi_init: tcp rx win: 5744[0m
+[0;32mI (680) wifi_init: tcp mss: 624[0m
+[0;32mI (690) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (690) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (710) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (720) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|DC5475C7E8BC[0m
+[0;32mI (720) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (720) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (740) esp_rmaker_node: Node ID ----- DC5475C7E8BC[0m
+[0;32mI (740) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (750) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (750) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (760) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (770) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (770) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (780) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (780) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (790) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (800) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (800) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (810) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (810) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+I (860) wifi:mode : sta (dc:54:75:c7:e8:bc)
+I (860) wifi:enable tsf
+[0;32mI (1090) UART: [UART DATA]: 21[0m
+[0;32mI (1090) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (1950) UART: [UART DATA]: 21[0m
+[0;32mI (1950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (2950) UART: [UART DATA]: 21[0m
+[0;32mI (2950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+I (3270) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3270) wifi:state: init -> auth (b0)
+I (3280) wifi:state: auth -> assoc (0)
+I (3280) wifi:state: assoc -> run (10)
+I (3310) wifi:connected with SINGTEL-EEU3, aid = 30, channel 1, BW20, bssid = 6a:99:b2:98:55:02
+I (3310) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (3310) wifi:pm start, type: 1
+
+I (3310) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (3320) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+I (3370) wifi:<ba-add>idx:0 (ifx:0, 6a:99:b2:98:55:02), tid:0, ssn:1, winSize:64
+[0;32mI (3950) UART: [UART DATA]: 21[0m
+[0;32mI (3950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (4330) app_wifi: Connected with IP Address:192.168.1.25[0m
+[0;32mI (4330) esp_netif_handlers: sta ip: 192.168.1.25, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (4330) main_task: Returned from app_main()[0m
+[0;32mI (4330) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (4340) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (4350) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (4360) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (4950) UART: [UART DATA]: 21[0m
+[0;32mI (4950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (5950) UART: [UART DATA]: 21[0m
+[0;32mI (5950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (6750) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (6950) UART: [UART DATA]: 21[0m
+[0;32mI (6950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (7950) UART: [UART DATA]: 21[0m
+[0;32mI (7950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (8950) UART: [UART DATA]: 21[0m
+[0;32mI (8950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (9290) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (9290) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (9300) esp_rmaker_node_config: Generated Node config of length 3286[0m
+[0;32mI (9580) esp_rmaker_param: Params MQTT Init done.[0m
+[0;32mI (9580) esp_rmaker_param: Reporting params (init): {"Mesh topology":{"Name":"Mesh topology","Power":false},"Relay":{"Name":"Relay","Power":true},"Light matrix":{"Name":"Light matrix","Power":true,"Brightness":10},"Temperature Sensor":{"Name":"Temperature Sensor","Temperature":0.00000},"Humidity Sensor":{"Name":"Humidity Sensor","Temperature":0.00000},"Soil humidity Sensor":{"Name":"Soil humidity Sensor","Temperature":0.00000},"Light Sensor":{"Name":"Light Sensor","Temperature":0.00000},"Time":{"TZ":"Asia/Singapore","TZ-POSIX":"<+08>-8"},"Schedule":{"Schedules":[]},"Scenes":{"Scenes":[]}}[0m
+[0;31mE (9630) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;31mE (9640) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;31mE (9640) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;31mE (9650) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (9950) UART: [UART DATA]: 21[0m
+[0;32mI (9950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (10950) UART: [UART DATA]: 21[0m
+[0;32mI (10950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (11950) UART: [UART DATA]: 21[0m
+[0;32mI (11950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (12950) UART: [UART DATA]: 21[0m
+[0;32mI (12950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (13950) UART: [UART DATA]: 21[0m
+[0;32mI (13950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (14950) UART: [UART DATA]: 21[0m
+[0;32mI (14950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (15950) UART: [UART DATA]: 21[0m
+[0;32mI (15950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (16950) UART: [UART DATA]: 21[0m
+[0;32mI (16950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (17950) UART: [UART DATA]: 21[0m
+[0;32mI (17950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (18950) UART: [UART DATA]: 21[0m
+[0;32mI (18950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (19950) UART: [UART DATA]: 21[0m
+[0;32mI (19950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (20950) UART: [UART DATA]: 21[0m
+[0;32mI (20950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (21950) UART: [UART DATA]: 21[0m
+[0;32mI (21950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (22950) UART: [UART DATA]: 21[0m
+[0;32mI (22950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (23950) UART: [UART DATA]: 21[0m
+[0;32mI (23950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (24950) UART: [UART DATA]: 21[0m
+[0;32mI (24950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (25950) UART: [UART DATA]: 21[0m
+[0;32mI (25950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (26950) UART: [UART DATA]: 21[0m
+[0;32mI (26950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (27950) UART: [UART DATA]: 21[0m
+[0;32mI (27950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (28950) UART: [UART DATA]: 21[0m
+[0;32mI (28950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (29950) UART: [UART DATA]: 21[0m
+[0;32mI (29950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (30950) UART: [UART DATA]: 21[0m
+[0;32mI (30950) UART: Read 21 bytes: '=0.00=0.00=0.00=0.00='[0m
+3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 30 2E 30 30 3D 
+0.00,0.00,0.00,0.00
+[0;32mI (31570) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (31580) esp_rmaker_time: The current time is: Tue Apr 23 07:41:31 2024 +0800[+08], DST: No.[0m
+[0;32mI (31950) UART: [UART DATA]: 26[0m
+[0;32mI (31950) UART: Read 26 bytes: '=25.40=100.00=25.40=25.40='[0m
+3D 32 35 2E 34 30 3D 31 30 30 2E 30 30 3D 32 35 2E 34 30 3D 32 35 2E 34 30 3D 
+25.40,100.00,25.40,25.40
+[0;32mI (32960) UART: [UART DATA]: 26[0m
+[0;32mI (32960) UART: Read 26 bytes: '=25.50=100.00=25.50=25.50='[0m
+3D 32 35 2E 35 30 3D 31 30 30 2E 30 30 3D 32 35 2E 35 30 3D 32 35 2E 35 30 3D 
+25.50,100.00,25.50,25.50
+[0;32mI (33960) UART: [UART DATA]: 26[0m
+[0;32mI (33960) UART: Read 26 bytes: '=25.40=100.00=25.40=25.40='[0m
+3D 32 35 2E 34 30 3D 31 30 30 2E 30 30 3D 32 35 2E 34 30 3D 32 35 2E 34 30 3D 
+25.40,100.00,25.40,25.40
+[0;32mI (34960) UART: [UART DATA]: 26[0m
+[0;32mI (34960) UART: Read 26 bytes: '=25.40=100.00=25.40=25.40='[0m
+3D 32 35 2E 34 30 3D 31 30 30 2E 30 30 3D 32 35 2E 34 30 3D 32 35 2E 34 30 3D 
+25.40,100.00,25.40,25.40
+[0;32mI (35960) UART: [UART DATA]: 26[0m
+[0;32mI (35960) UART: Read 26 bytes: '=25.40=100.00=25.40=25.40='[0m
+3D 32 35 2E 34 30 3D 31 30 30 2E 30 30 3D 32 35 2E 34 30 3D 32 35 2E 34 30 3D 
+25.40,100.00,25.40,25.40
+[0;32mI (36960) UART: [UART DATA]: 26[0m
+[0;32mI (36960) UART: Read 26 bytes: '=25.50=100.00=25.50=25.50='[0m
+3D 32 35 2E 35 30 3D 31 30 30 2E 30 30 3D 32 35 2E 35 30 3D 32 35 2E 35 30 3D 
+25.50,100.00,25.50,25.50
+[0;32mI (37960) UART: [UART DATA]: 26[0m
+[0;32mI (37960) UART: Read 26 bytes: '=25.40=100.00=25.40=25.40='[0m
+3D 32 35 2E 34 30 3D 31 30 30 2E 30 30 3D 32 35 2E 34 30 3D 32 35 2E 34 30 3D 
+25.40,100.00,25.40,25.40
+[0;32mI (38970) UART: [UART DATA]: 26[0m
+[0;32mI (38970) UART: Read 26 bytes: '=25.30=100.00=25.30=25.30='[0m
+3D 32 35 2E 33 30 3D 31 30 30 2E 30 30 3D 32 35 2E 33 30 3D 32 35 2E 33 30 3D 
+25.30,100.00,25.30,25.30
+[0;32mI (39970) UART: [UART DATA]: 26[0m
+[0;32mI (39970) UART: Read 26 bytes: '=25.60=100.00=25.60=25.60='[0m
+3D 32 35 2E 36 30 3D 31 30 30 2E 30 30 3D 32 35 2E 36 30 3D 32 35 2E 36 30 3D 
+25.60,100.00,25.60,25.60
+[0;32mI (40970) UART: [UART DATA]: 26[0m
+[0;32mI (40970) UART: Read 26 bytes: '=25.40=100.00=25.40=25.40='[0m
+3D 32 35 2E 34 30 3D 31 30 30 2E 30 30 3D 32 35 2E 34 30 3D 32 35 2E 34 30 3D 
+25.40,100.00,25.40,25.40
+[0;32mI (41970) UART: [UART DATA]: 26[0m
+[0;32mI (41970) UART: Read 26 bytes: '=25.50=100.00=25.50=25.50='[0m
+3D 32 35 2E 35 30 3D 31 30 30 2E 30 30 3D 32 35 2E 35 30 3D 32 35 2E 35 30 3D 
+25.50,100.00,25.50,25.50
+[0;32mI (42970) UART: [UART DATA]: 26[0m
+[0;32mI (42980) UART: Read 26 bytes: '=25.40=100.00=25.40=25.40='[0m
+3D 32 35 2E 34 30 3D 31 30 30 2E 30 30 3D 32 35 2E 34 30 3D 32 35 2E 34 30 3D 
+25.40,100.00,25.40,25.40
+[0;32mI (43980) UART: [UART DATA]: 26[0m
+[0;32mI (43980) UART: Read 26 bytes: '=25.50=100.00=25.50=25.50='[0m
+3D 32 35 2E 35 30 3D 31 30 30 2E 30 30 3D 32 35 2E 35 30 3D 32 35 2E 35 30 3D 
+25.50,100.00,25.50,25.50
+[0;32mI (44980) UART: [UART DATA]: 26[0m
+[0;32mI (44980) UART: Read 26 bytes: '=25.60=100.00=25.60=25.60='[0m
+3D 32 35 2E 36 30 3D 31 30 30 2E 30 30 3D 32 35 2E 36 30 3D 32 35 2E 36 30 3D 
+25.60,100.00,25.60,25.60
+[0;32mI (45980) UART: [UART DATA]: 26[0m
+[0;32mI (45980) UART: Read 26 bytes: '=25.60=100.00=25.60=25.60='[0m
+3D 32 35 2E 36 30 3D 31 30 30 2E 30 30 3D 32 35 2E 36 30 3D 32 35 2E 36 30 3D 
+25.60,100.00,25.60,25.60
+[0;32mI (46980) UART: [UART DATA]: 26[0m
+[0;32mI (46980) UART: Read 26 bytes: '=25.50=100.00=25.50=25.50='[0m
+3D 32 35 2E 35 30 3D 31 30 30 2E 30 30 3D 32 35 2E 35 30 3D 32 35 2E 35 30 3D 
+25.50,100.00,25.50,25.50
+[0;32mI (47980) UART: [UART DATA]: 26[0m
+[0;32mI (47980) UART: Read 26 bytes: '=25.50=100.00=25.50=25.50='[0m
+3D 32 35 2E 35 30 3D 31 30 30 2E 30 30 3D 32 35 2E 35 30 3D 32 35 2E 35 30 3D 
+25.50,100.00,25.50,25.50
+[0;32mI (48980) UART: [UART DATA]: 26[0m
+[0;32mI (48980) UART: Read 26 bytes: '=25.50=100.00=25.50=25.50='[0m
+3D 32 35 2E 35 30 3D 31 30 30 2E 30 30 3D 32 35 2E 35 30 3D 32 35 2E 35 30 3D 
+25.50,100.00,25.50,25.50
+[0;32mI (49980) UART: [UART DATA]: 26[0m
+[0;32mI (49980) UART: Read 26 bytes: '=25.60=100.00=25.60=25.60='[0m
+3D 32 35 2E 36 30 3D 31 30 30 2E 30 30 3D 32 35 2E 36 30 3D 32 35 2E 36 30 3D 
+25.60,100.00,25.60,25.60
+[0;32mI (50980) UART: [UART DATA]: 26[0m
+[0;32mI (50980) UART: Read 26 bytes: '=25.60=100.00=25.60=25.60='[0m
+3D 32 35 2E 36 30 3D 31 30 30 2E 30 30 3D 32 35 2E 36 30 3D 32 35 2E 36 30 3D 
+25.60,100.00,25.60,25.60
+[0;32mI (51990) UART: [UART DATA]: 26[0m
+[0;32mI (51990) UART: Read 26 bytes: '=25.60=100.00=25.60=25.60='[0m
+3D 32 35 2E 36 30 3D 31 30 30 2E 30 30 3D 32 35 2E 36 30 3D 32 35 2E 36 30 3D 
+25.60,100.00,25.60,25.60
+[0;32mI (52990) UART: [UART DATA]: 26[0m
+[0;32mI (52990) UART: Read 26 bytes: '=25.60=100.00=25.60=25.60='[0m
+3D 32 35 2E 36 30 3D 31 30 30 2E 30 30 3D 32 35 2E 36 30 3D 32 35 2E 36 30 3D 
+25.60,100.00,25.60,25.60
+[0;32mI (53990) UART: [UART DATA]: 26[0m
+[0;32mI (53990) UART: Read 26 bytes: '=25.50=100.00=25.50=25.50='[0m
+3D 32 35 2E 35 30 3D 31 30 30 2E 30 30 3D 32 35 2E 35 30 3D 32 35 2E 35 30 3D 
+25.50,100.00,25.50,25.50
+[0;32mI (54990) UART: [UART DATA]: 26[0m
+[0;32mI (54990) UART: Read 26 bytes: '=25.60=100.00=25.60=25.60='[0m
+3D 32 35 2E 36 30 3D 31 30 30 2E 30 30 3D 32 35 2E 36 30 3D 32 35 2E 36 30 3D 
+25.60,100.00,25.60,25.60
+[0;32mI (55990) UART: [UART DATA]: 26[0m
+[0;32mI (55990) UART: Read 26 bytes: '=25.70=100.00=25.70=25.70='[0m
+3D 32 35 2E 37 30 3D 31 30 30 2E 30 30 3D 32 35 2E 37 30 3D 32 35 2E 37 30 3D 
+25.70,100.00,25.70,25.70
+[0;32mI (56990) UART: [UART DATA]: 26[0m
+[0;32mI (56990) UART: Read 26 bytes: '=25.70=100.00=25.70=25.70='[0m
+3D 32 35 2E 37 30 3D 31 30 30 2E 30 30 3D 32 35 2E 37 30 3D 32 35 2E 37 30 3D 
+25.70,100.00,25.70,25.70
+[0;32mI (57990) UART: [UART DATA]: 26[0m
+[0;32mI (57990) UART: Read 26 bytes: '=25.60=100.00=25.60=25.60='[0m
+3D 32 35 2E 36 30 3D 31 30 30 2E 30 30 3D 32 35 2E 36 30 3D 32 35 2E 36 30 3D 
+25.60,100.00,25.60,25.60
+[0;32mI (59000) UART: [UART DATA]: 26[0m
+[0;32mI (59000) UART: Read 26 bytes: '=25.70=100.00=25.70=25.70='[0m
+3D 32 35 2E 37 30 3D 31 30 30 2E 30 30 3D 32 35 2E 37 30 3D 32 35 2E 37 30 3D 
+25.70,100.00,25.70,25.70
+[0;32mI (60000) UART: [UART DATA]: 26[0m
+[0;32mI (60000) UART: Read 26 bytes: '=25.70=100.00=25.70=25.70='[0m
+3D 32 35 2E 37 30 3D 31 30 30 2E 30 30 3D 32 35 2E 37 30 3D 32 35 2E 37 30 3D 
+25.70,100.00,25.70,25.70
+[0;32mI (61000) UART: [UART DATA]: 26[0m
+[0;32mI (61000) UART: Read 26 bytes: '=25.70=100.00=25.70=25.70='[0m
+3D 32 35 2E 37 30 3D 31 30 30 2E 30 30 3D 32 35 2E 37 30 3D 32 35 2E 37 30 3D 
+25.70,100.00,25.70,25.70
+[0;32mI (62000) UART: [UART DATA]: 26[0m
+[0;32mI (62000) UART: Read 26 bytes: '=25.80=100.00=25.80=25.80='[0m
+3D 32 35 2E 38 30 3D 31 30 30 2E 30 30 3D 32 35 2E 38 30 3D 32 35 2E 38 30 3D 
+25.80,100.00,25.80,25.80
+[0;32mI (63000) UART: [UART DATA]: 26[0m
+[0;32mI (63000) UART: Read 26 bytes: '=25.80=100.00=25.80=25.80='[0m
+3D 32 35 2E 38 30 3D 31 30 30 2E 30 30 3D 32 35 2E 38 30 3D 32 35 2E 38 30 3D 
+25.80,100.00,25.80,25.80
+[0;32mI (64000) UART: [UART DATA]: 26[0m
+[0;32mI (64000) UART: Read 26 bytes: '=25.80=100.00=25.80=25.80='[0m
+3D 32 35 2E 38 30 3D 31 30 30 2E 30 30 3D 32 35 2E 38 30 3D 32 35 2E 38 30 3D 
+25.80,100.00,25.80,25.80
+[0;32mI (65010) UART: [UART DATA]: 26[0m
+[0;32mI (65010) UART: Read 26 bytes: '=25.80=100.00=25.80=25.80='[0m
+3D 32 35 2E 38 30 3D 31 30 30 2E 30 30 3D 32 35 2E 38 30 3D 32 35 2E 38 30 3D 
+25.80,100.00,25.80,25.80
+[0;32mI (66010) UART: [UART DATA]: 26[0m
+[0;32mI (66010) UART: Read 26 bytes: '=25.70=100.00=25.70=25.70='[0m
+3D 32 35 2E 37 30 3D 31 30 30 2E 30 30 3D 32 35 2E 37 30 3D 32 35 2E 37 30 3D 
+25.70,100.00,25.70,25.70
+[0;32mI (67010) UART: [UART DATA]: 26[0m
+[0;32mI (67010) UART: Read 26 bytes: '=25.70=100.00=25.70=25.70='[0m
+3D 32 35 2E 37 30 3D 31 30 30 2E 30 30 3D 32 35 2E 37 30 3D 32 35 2E 37 30 3D 
+25.70,100.00,25.70,25.70
+[0;32mI (68010) UART: [UART DATA]: 26[0m
+[0;32mI (68010) UART: Read 26 bytes: '=25.80=100.00=25.80=25.80='[0m
+3D 32 35 2E 38 30 3D 31 30 30 2E 30 30 3D 32 35 2E 38 30 3D 32 35 2E 38 30 3D 
+25.80,100.00,25.80,25.80
+[0;32mI (69010) UART: [UART DATA]: 26[0m
+[0;32mI (69010) UART: Read 26 bytes: '=25.80=100.00=25.80=25.80='[0m
+3D 32 35 2E 38 30 3D 31 30 30 2E 30 30 3D 32 35 2E 38 30 3D 32 35 2E 38 30 3D 
+25.80,100.00,25.80,25.80
+[0;32mI (70010) UART: [UART DATA]: 26[0m
+[0;32mI (70010) UART: Read 26 bytes: '=25.70=100.00=25.70=25.70='[0m
+3D 32 35 2E 37 30 3D 31 30 30 2E 30 30 3D 32 35 2E 37 30 3D 32 35 2E 37 30 3D 
+25.70,100.00,25.70,25.70
+[0;32mI (71020) UART: [UART DATA]: 26[0m
+[0;32mI (71020) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (72020) UART: [UART DATA]: 26[0m
+[0;32mI (72020) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (73020) UART: [UART DATA]: 26[0m
+[0;32mI (73020) UART: Read 26 bytes: '=25.80=100.00=25.80=25.80='[0m
+3D 32 35 2E 38 30 3D 31 30 30 2E 30 30 3D 32 35 2E 38 30 3D 32 35 2E 38 30 3D 
+25.80,100.00,25.80,25.80
+[0;32mI (74020) UART: [UART DATA]: 26[0m
+[0;32mI (74020) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (75020) UART: [UART DATA]: 26[0m
+[0;32mI (75020) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (76020) UART: [UART DATA]: 26[0m
+[0;32mI (76020) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (77020) UART: [UART DATA]: 26[0m
+[0;32mI (77020) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (78020) UART: [UART DATA]: 26[0m
+[0;32mI (78020) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (79020) UART: [UART DATA]: 26[0m
+[0;32mI (79020) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (80030) UART: [UART DATA]: 26[0m
+[0;32mI (80030) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (81030) UART: [UART DATA]: 26[0m
+[0;32mI (81030) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (82030) UART: [UART DATA]: 26[0m
+[0;32mI (82030) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (83030) UART: [UART DATA]: 26[0m
+[0;32mI (83030) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (84030) UART: [UART DATA]: 26[0m
+[0;32mI (84030) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (85030) UART: [UART DATA]: 26[0m
+[0;32mI (85030) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (86030) UART: [UART DATA]: 26[0m
+[0;32mI (86030) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (87030) UART: [UART DATA]: 26[0m
+[0;32mI (87030) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (88040) UART: [UART DATA]: 26[0m
+[0;32mI (88040) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (89040) UART: [UART DATA]: 26[0m
+[0;32mI (89040) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (90040) UART: [UART DATA]: 26[0m
+[0;32mI (90040) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (91040) UART: [UART DATA]: 26[0m
+[0;32mI (91040) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (92040) UART: [UART DATA]: 26[0m
+[0;32mI (92040) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (93040) UART: [UART DATA]: 26[0m
+[0;32mI (93040) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (94040) UART: [UART DATA]: 26[0m
+[0;32mI (94040) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (95040) UART: [UART DATA]: 26[0m
+[0;32mI (95040) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (96040) UART: [UART DATA]: 26[0m
+[0;32mI (96040) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (97050) UART: [UART DATA]: 26[0m
+[0;32mI (97050) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (98050) UART: [UART DATA]: 26[0m
+[0;32mI (98050) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (99050) UART: [UART DATA]: 26[0m
+[0;32mI (99050) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (100050) UART: [UART DATA]: 26[0m
+[0;32mI (100050) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (101050) UART: [UART DATA]: 26[0m
+[0;32mI (101060) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (102060) UART: [UART DATA]: 26[0m
+[0;32mI (102060) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (103060) UART: [UART DATA]: 26[0m
+[0;32mI (103060) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (104060) UART: [UART DATA]: 26[0m
+[0;32mI (104060) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (105060) UART: [UART DATA]: 26[0m
+[0;32mI (105060) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (106060) UART: [UART DATA]: 26[0m
+[0;32mI (106060) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (107060) UART: [UART DATA]: 26[0m
+[0;32mI (107060) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (108060) UART: [UART DATA]: 26[0m
+[0;32mI (108070) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (109070) UART: [UART DATA]: 26[0m
+[0;32mI (109070) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (110070) UART: [UART DATA]: 26[0m
+[0;32mI (110070) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (111070) UART: [UART DATA]: 26[0m
+[0;32mI (111070) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (112070) UART: [UART DATA]: 26[0m
+[0;32mI (112070) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (113070) UART: [UART DATA]: 26[0m
+[0;32mI (113070) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (114070) UART: [UART DATA]: 26[0m
+[0;32mI (114070) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (115070) UART: [UART DATA]: 26[0m
+[0;32mI (115070) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (116070) UART: [UART DATA]: 26[0m
+[0;32mI (116070) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (117080) UART: [UART DATA]: 26[0m
+[0;32mI (117080) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (118080) UART: [UART DATA]: 26[0m
+[0;32mI (118080) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (119080) UART: [UART DATA]: 26[0m
+[0;32mI (119080) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (120080) UART: [UART DATA]: 26[0m
+[0;32mI (120080) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (121080) UART: [UART DATA]: 26[0m
+[0;32mI (121080) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (122080) UART: [UART DATA]: 26[0m
+[0;32mI (122080) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (123080) UART: [UART DATA]: 26[0m
+[0;32mI (123080) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (124080) UART: [UART DATA]: 26[0m
+[0;32mI (124080) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (125080) UART: [UART DATA]: 26[0m
+[0;32mI (125080) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (126090) UART: [UART DATA]: 26[0m
+[0;32mI (126090) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (127090) UART: [UART DATA]: 26[0m
+[0;32mI (127090) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (128090) UART: [UART DATA]: 26[0m
+[0;32mI (128090) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (129090) UART: [UART DATA]: 26[0m
+[0;32mI (129090) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (130090) UART: [UART DATA]: 26[0m
+[0;32mI (130090) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (131090) UART: [UART DATA]: 26[0m
+[0;32mI (131090) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (132090) UART: [UART DATA]: 26[0m
+[0;32mI (132090) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (133090) UART: [UART DATA]: 26[0m
+[0;32mI (133090) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (134090) UART: [UART DATA]: 26[0m
+[0;32mI (134090) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (135090) UART: [UART DATA]: 26[0m
+[0;32mI (135090) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (136100) UART: [UART DATA]: 26[0m
+[0;32mI (136100) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (137100) UART: [UART DATA]: 26[0m
+[0;32mI (137100) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (138100) UART: [UART DATA]: 26[0m
+[0;32mI (138100) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (139100) UART: [UART DATA]: 26[0m
+[0;32mI (139100) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (140100) UART: [UART DATA]: 26[0m
+[0;32mI (140100) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (141100) UART: [UART DATA]: 26[0m
+[0;32mI (141100) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (142100) UART: [UART DATA]: 26[0m
+[0;32mI (142100) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (143100) UART: [UART DATA]: 26[0m
+[0;32mI (143100) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (144110) UART: [UART DATA]: 26[0m
+[0;32mI (144110) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (145110) UART: [UART DATA]: 26[0m
+[0;32mI (145110) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (146110) UART: [UART DATA]: 26[0m
+[0;32mI (146110) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (147110) UART: [UART DATA]: 26[0m
+[0;32mI (147110) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (148110) UART: [UART DATA]: 26[0m
+[0;32mI (148110) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (149110) UART: [UART DATA]: 26[0m
+[0;32mI (149110) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (150120) UART: [UART DATA]: 26[0m
+[0;32mI (150120) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (151120) UART: [UART DATA]: 26[0m
+[0;32mI (151120) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (152120) UART: [UART DATA]: 26[0m
+[0;32mI (152120) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (153120) UART: [UART DATA]: 26[0m
+[0;32mI (153120) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (154120) UART: [UART DATA]: 26[0m
+[0;32mI (154120) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (155120) UART: [UART DATA]: 26[0m
+[0;32mI (155120) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (156130) UART: [UART DATA]: 26[0m
+[0;32mI (156130) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (157130) UART: [UART DATA]: 26[0m
+[0;32mI (157130) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (158130) UART: [UART DATA]: 26[0m
+[0;32mI (158130) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (159130) UART: [UART DATA]: 26[0m
+[0;32mI (159130) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (160130) UART: [UART DATA]: 26[0m
+[0;32mI (160130) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (161130) UART: [UART DATA]: 26[0m
+[0;32mI (161130) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (162130) UART: [UART DATA]: 26[0m
+[0;32mI (162130) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (163130) UART: [UART DATA]: 26[0m
+[0;32mI (163130) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (164130) UART: [UART DATA]: 26[0m
+[0;32mI (164130) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (165140) UART: [UART DATA]: 26[0m
+[0;32mI (165140) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (166140) UART: [UART DATA]: 26[0m
+[0;32mI (166140) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (167140) UART: [UART DATA]: 26[0m
+[0;32mI (167140) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (168140) UART: [UART DATA]: 26[0m
+[0;32mI (168140) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (169140) UART: [UART DATA]: 26[0m
+[0;32mI (169140) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (170140) UART: [UART DATA]: 26[0m
+[0;32mI (170140) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (171140) UART: [UART DATA]: 26[0m
+[0;32mI (171140) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (172140) UART: [UART DATA]: 26[0m
+[0;32mI (172140) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (173150) UART: [UART DATA]: 26[0m
+[0;32mI (173150) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (174150) UART: [UART DATA]: 26[0m
+[0;32mI (174150) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (175150) UART: [UART DATA]: 26[0m
+[0;32mI (175150) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (176150) UART: [UART DATA]: 26[0m
+[0;32mI (176150) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (177150) UART: [UART DATA]: 26[0m
+[0;32mI (177150) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (178150) UART: [UART DATA]: 26[0m
+[0;32mI (178150) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (179150) UART: [UART DATA]: 26[0m
+[0;32mI (179150) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (180150) UART: [UART DATA]: 26[0m
+[0;32mI (180150) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (181160) UART: [UART DATA]: 26[0m
+[0;32mI (181160) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (182160) UART: [UART DATA]: 26[0m
+[0;32mI (182160) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (183160) UART: [UART DATA]: 26[0m
+[0;32mI (183160) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (184160) UART: [UART DATA]: 26[0m
+[0;32mI (184160) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (185160) UART: [UART DATA]: 26[0m
+[0;32mI (185160) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (186160) UART: [UART DATA]: 26[0m
+[0;32mI (186160) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (187160) UART: [UART DATA]: 26[0m
+[0;32mI (187160) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (188160) UART: [UART DATA]: 26[0m
+[0;32mI (188160) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (189160) UART: [UART DATA]: 26[0m
+[0;32mI (189160) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (190160) UART: [UART DATA]: 26[0m
+[0;32mI (190160) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (191170) UART: [UART DATA]: 26[0m
+[0;32mI (191170) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (192170) UART: [UART DATA]: 26[0m
+[0;32mI (192170) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (193170) UART: [UART DATA]: 26[0m
+[0;32mI (193170) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (194170) UART: [UART DATA]: 26[0m
+[0;32mI (194170) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (195170) UART: [UART DATA]: 26[0m
+[0;32mI (195170) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (196170) UART: [UART DATA]: 26[0m
+[0;32mI (196170) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (197170) UART: [UART DATA]: 26[0m
+[0;32mI (197170) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (198180) UART: [UART DATA]: 26[0m
+[0;32mI (198180) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (199180) UART: [UART DATA]: 26[0m
+[0;32mI (199180) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (200180) UART: [UART DATA]: 26[0m
+[0;32mI (200180) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (201180) UART: [UART DATA]: 26[0m
+[0;32mI (201180) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (202190) UART: [UART DATA]: 26[0m
+[0;32mI (202190) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (203190) UART: [UART DATA]: 26[0m
+[0;32mI (203190) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (204190) UART: [UART DATA]: 26[0m
+[0;32mI (204190) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (205190) UART: [UART DATA]: 26[0m
+[0;32mI (205190) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (206190) UART: [UART DATA]: 26[0m
+[0;32mI (206190) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (207190) UART: [UART DATA]: 26[0m
+[0;32mI (207190) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (208190) UART: [UART DATA]: 26[0m
+[0;32mI (208190) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (209190) UART: [UART DATA]: 26[0m
+[0;32mI (209190) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (210190) UART: [UART DATA]: 26[0m
+[0;32mI (210190) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (211190) UART: [UART DATA]: 26[0m
+[0;32mI (211200) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (212190) UART: [UART DATA]: 26[0m
+[0;32mI (212200) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (213200) UART: [UART DATA]: 26[0m
+[0;32mI (213200) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (214200) UART: [UART DATA]: 26[0m
+[0;32mI (214200) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (215200) UART: [UART DATA]: 26[0m
+[0;32mI (215200) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (216200) UART: [UART DATA]: 26[0m
+[0;32mI (216200) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (217200) UART: [UART DATA]: 26[0m
+[0;32mI (217200) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (218200) UART: [UART DATA]: 26[0m
+[0;32mI (218210) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (219210) UART: [UART DATA]: 26[0m
+[0;32mI (219210) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (220210) UART: [UART DATA]: 26[0m
+[0;32mI (220210) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (221210) UART: [UART DATA]: 26[0m
+[0;32mI (221210) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (222210) UART: [UART DATA]: 26[0m
+[0;32mI (222210) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (223210) UART: [UART DATA]: 26[0m
+[0;32mI (223210) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (224210) UART: [UART DATA]: 26[0m
+[0;32mI (224210) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (225220) UART: [UART DATA]: 26[0m
+[0;32mI (225220) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (226220) UART: [UART DATA]: 26[0m
+[0;32mI (226220) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (227220) UART: [UART DATA]: 26[0m
+[0;32mI (227220) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (228220) UART: [UART DATA]: 26[0m
+[0;32mI (228220) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (229220) UART: [UART DATA]: 26[0m
+[0;32mI (229220) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (230220) UART: [UART DATA]: 26[0m
+[0;32mI (230220) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (231220) UART: [UART DATA]: 26[0m
+[0;32mI (231230) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (232230) UART: [UART DATA]: 26[0m
+[0;32mI (232230) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (233230) UART: [UART DATA]: 26[0m
+[0;32mI (233230) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (234230) UART: [UART DATA]: 26[0m
+[0;32mI (234230) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (235230) UART: [UART DATA]: 26[0m
+[0;32mI (235230) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (236230) UART: [UART DATA]: 26[0m
+[0;32mI (236230) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (237230) UART: [UART DATA]: 26[0m
+[0;32mI (237230) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (238230) UART: [UART DATA]: 26[0m
+[0;32mI (238230) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (239230) UART: [UART DATA]: 26[0m
+[0;32mI (239230) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (240230) UART: [UART DATA]: 26[0m
+[0;32mI (240240) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (241240) UART: [UART DATA]: 26[0m
+[0;32mI (241240) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (242240) UART: [UART DATA]: 26[0m
+[0;32mI (242240) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (243240) UART: [UART DATA]: 26[0m
+[0;32mI (243240) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (244240) UART: [UART DATA]: 26[0m
+[0;32mI (244240) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (245240) UART: [UART DATA]: 26[0m
+[0;32mI (245240) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (246240) UART: [UART DATA]: 26[0m
+[0;32mI (246240) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (247240) UART: [UART DATA]: 26[0m
+[0;32mI (247240) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (248240) UART: [UART DATA]: 26[0m
+[0;32mI (248250) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (249250) UART: [UART DATA]: 26[0m
+[0;32mI (249250) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (250250) UART: [UART DATA]: 26[0m
+[0;32mI (250250) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (251250) UART: [UART DATA]: 26[0m
+[0;32mI (251250) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (252250) UART: [UART DATA]: 26[0m
+[0;32mI (252250) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (253250) UART: [UART DATA]: 26[0m
+[0;32mI (253250) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (254250) UART: [UART DATA]: 26[0m
+[0;32mI (254250) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (255250) UART: [UART DATA]: 26[0m
+[0;32mI (255250) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (256250) UART: [UART DATA]: 26[0m
+[0;32mI (256260) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (257260) UART: [UART DATA]: 26[0m
+[0;32mI (257260) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (258260) UART: [UART DATA]: 26[0m
+[0;32mI (258260) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (259260) UART: [UART DATA]: 26[0m
+[0;32mI (259260) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (260260) UART: [UART DATA]: 26[0m
+[0;32mI (260260) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (261260) UART: [UART DATA]: 26[0m
+[0;32mI (261260) UART: Read 26 bytes: '=27.30=100.00=27.30=27.30='[0m
+3D 32 37 2E 33 30 3D 31 30 30 2E 30 30 3D 32 37 2E 33 30 3D 32 37 2E 33 30 3D 
+27.30,100.00,27.30,27.30
+[0;32mI (262260) UART: [UART DATA]: 26[0m
+[0;32mI (262260) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (263260) UART: [UART DATA]: 26[0m
+[0;32mI (263260) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (264260) UART: [UART DATA]: 26[0m
+[0;32mI (264260) UART: Read 26 bytes: '=27.30=100.00=27.30=27.30='[0m
+3D 32 37 2E 33 30 3D 31 30 30 2E 30 30 3D 32 37 2E 33 30 3D 32 37 2E 33 30 3D 
+27.30,100.00,27.30,27.30
+[0;32mI (265270) UART: [UART DATA]: 26[0m
+[0;32mI (265270) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (266270) UART: [UART DATA]: 26[0m
+[0;32mI (266270) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (267270) UART: [UART DATA]: 26[0m
+[0;32mI (267270) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (268270) UART: [UART DATA]: 26[0m
+[0;32mI (268270) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (269270) UART: [UART DATA]: 26[0m
+[0;32mI (269270) UART: Read 26 bytes: '=27.30=100.00=27.30=27.30='[0m
+3D 32 37 2E 33 30 3D 31 30 30 2E 30 30 3D 32 37 2E 33 30 3D 32 37 2E 33 30 3D 
+27.30,100.00,27.30,27.30
+[0;32mI (270280) UART: [UART DATA]: 26[0m
+[0;32mI (270280) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (271280) UART: [UART DATA]: 26[0m
+[0;32mI (271280) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (272280) UART: [UART DATA]: 26[0m
+[0;32mI (272280) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (273280) UART: [UART DATA]: 26[0m
+[0;32mI (273280) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (274280) UART: [UART DATA]: 26[0m
+[0;32mI (274280) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (275280) UART: [UART DATA]: 26[0m
+[0;32mI (275280) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (276280) UART: [UART DATA]: 26[0m
+[0;32mI (276290) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (277290) UART: [UART DATA]: 26[0m
+[0;32mI (277290) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (278290) UART: [UART DATA]: 26[0m
+[0;32mI (278290) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (279290) UART: [UART DATA]: 26[0m
+[0;32mI (279290) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (280290) UART: [UART DATA]: 26[0m
+[0;32mI (280290) UART: Read 26 bytes: '=27.30=100.00=27.30=27.30='[0m
+3D 32 37 2E 33 30 3D 31 30 30 2E 30 30 3D 32 37 2E 33 30 3D 32 37 2E 33 30 3D 
+27.30,100.00,27.30,27.30
+[0;32mI (281290) UART: [UART DATA]: 26[0m
+[0;32mI (281290) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (282290) UART: [UART DATA]: 26[0m
+[0;32mI (282290) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (283290) UART: [UART DATA]: 26[0m
+[0;32mI (283290) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (284290) UART: [UART DATA]: 26[0m
+[0;32mI (284290) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (285290) UART: [UART DATA]: 26[0m
+[0;32mI (285290) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (286290) UART: [UART DATA]: 26[0m
+[0;32mI (286300) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (287300) UART: [UART DATA]: 26[0m
+[0;32mI (287300) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (288300) UART: [UART DATA]: 26[0m
+[0;32mI (288300) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (289300) UART: [UART DATA]: 26[0m
+[0;32mI (289300) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (290300) UART: [UART DATA]: 26[0m
+[0;32mI (290300) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (291300) UART: [UART DATA]: 26[0m
+[0;32mI (291300) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (292300) UART: [UART DATA]: 26[0m
+[0;32mI (292300) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (293300) UART: [UART DATA]: 26[0m
+[0;32mI (293310) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (294310) UART: [UART DATA]: 26[0m
+[0;32mI (294310) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (295310) UART: [UART DATA]: 26[0m
+[0;32mI (295310) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (296310) UART: [UART DATA]: 26[0m
+[0;32mI (296310) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (297310) UART: [UART DATA]: 26[0m
+[0;32mI (297310) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (298310) UART: [UART DATA]: 26[0m
+[0;32mI (298310) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (299310) UART: [UART DATA]: 26[0m
+[0;32mI (299310) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (300310) UART: [UART DATA]: 26[0m
+[0;32mI (300310) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (301310) UART: [UART DATA]: 26[0m
+[0;32mI (301310) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (302310) UART: [UART DATA]: 26[0m
+[0;32mI (302310) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (303310) UART: [UART DATA]: 26[0m
+[0;32mI (303320) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (304320) UART: [UART DATA]: 26[0m
+[0;32mI (304320) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (305320) UART: [UART DATA]: 26[0m
+[0;32mI (305320) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (306320) UART: [UART DATA]: 26[0m
+[0;32mI (306320) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (307320) UART: [UART DATA]: 26[0m
+[0;32mI (307320) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (308320) UART: [UART DATA]: 26[0m
+[0;32mI (308320) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (309320) UART: [UART DATA]: 26[0m
+[0;32mI (309320) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (310320) UART: [UART DATA]: 26[0m
+[0;32mI (310320) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (311320) UART: [UART DATA]: 26[0m
+[0;32mI (311320) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (312320) UART: [UART DATA]: 26[0m
+[0;32mI (312320) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (313320) UART: [UART DATA]: 26[0m
+[0;32mI (313330) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (314330) UART: [UART DATA]: 26[0m
+[0;32mI (314330) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (315330) UART: [UART DATA]: 26[0m
+[0;32mI (315330) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (316330) UART: [UART DATA]: 26[0m
+[0;32mI (316330) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (317330) UART: [UART DATA]: 26[0m
+[0;32mI (317330) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (318330) UART: [UART DATA]: 26[0m
+[0;32mI (318330) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (319330) UART: [UART DATA]: 26[0m
+[0;32mI (319330) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (320330) UART: [UART DATA]: 26[0m
+[0;32mI (320330) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (321330) UART: [UART DATA]: 26[0m
+[0;32mI (321330) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (322330) UART: [UART DATA]: 26[0m
+[0;32mI (322340) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (323340) UART: [UART DATA]: 26[0m
+[0;32mI (323340) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (324340) UART: [UART DATA]: 26[0m
+[0;32mI (324340) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (325340) UART: [UART DATA]: 26[0m
+[0;32mI (325340) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (326340) UART: [UART DATA]: 26[0m
+[0;32mI (326340) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (327340) UART: [UART DATA]: 26[0m
+[0;32mI (327340) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (328350) UART: [UART DATA]: 26[0m
+[0;32mI (328350) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (329350) UART: [UART DATA]: 26[0m
+[0;32mI (329350) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (330350) UART: [UART DATA]: 26[0m
+[0;32mI (330350) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (331350) UART: [UART DATA]: 26[0m
+[0;32mI (331350) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (332350) UART: [UART DATA]: 26[0m
+[0;32mI (332350) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (333350) UART: [UART DATA]: 26[0m
+[0;32mI (333350) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (334350) UART: [UART DATA]: 26[0m
+[0;32mI (334360) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (335360) UART: [UART DATA]: 26[0m
+[0;32mI (335360) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (336360) UART: [UART DATA]: 26[0m
+[0;32mI (336360) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (337360) UART: [UART DATA]: 26[0m
+[0;32mI (337360) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (338360) UART: [UART DATA]: 26[0m
+[0;32mI (338360) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (339360) UART: [UART DATA]: 26[0m
+[0;32mI (339360) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (340360) UART: [UART DATA]: 26[0m
+[0;32mI (340360) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (341360) UART: [UART DATA]: 26[0m
+[0;32mI (341360) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (342360) UART: [UART DATA]: 26[0m
+[0;32mI (342360) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (343360) UART: [UART DATA]: 26[0m
+[0;32mI (343370) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (344370) UART: [UART DATA]: 26[0m
+[0;32mI (344370) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (345370) UART: [UART DATA]: 26[0m
+[0;32mI (345370) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (346370) UART: [UART DATA]: 26[0m
+[0;32mI (346370) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (347370) UART: [UART DATA]: 26[0m
+[0;32mI (347370) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (348370) UART: [UART DATA]: 26[0m
+[0;32mI (348370) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (349370) UART: [UART DATA]: 26[0m
+[0;32mI (349370) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (350370) UART: [UART DATA]: 26[0m
+[0;32mI (350370) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (351370) UART: [UART DATA]: 26[0m
+[0;32mI (351370) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (352370) UART: [UART DATA]: 26[0m
+[0;32mI (352370) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (353370) UART: [UART DATA]: 26[0m
+[0;32mI (353380) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (354380) UART: [UART DATA]: 26[0m
+[0;32mI (354380) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (355380) UART: [UART DATA]: 26[0m
+[0;32mI (355380) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (356380) UART: [UART DATA]: 26[0m
+[0;32mI (356380) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (357380) UART: [UART DATA]: 26[0m
+[0;32mI (357380) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (358380) UART: [UART DATA]: 26[0m
+[0;32mI (358380) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (359380) UART: [UART DATA]: 26[0m
+[0;32mI (359380) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (360380) UART: [UART DATA]: 26[0m
+[0;32mI (360380) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (361380) UART: [UART DATA]: 26[0m
+[0;32mI (361380) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (362380) UART: [UART DATA]: 26[0m
+[0;32mI (362390) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (363390) UART: [UART DATA]: 26[0m
+[0;32mI (363390) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (364390) UART: [UART DATA]: 26[0m
+[0;32mI (364390) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (365390) UART: [UART DATA]: 26[0m
+[0;32mI (365390) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (366390) UART: [UART DATA]: 26[0m
+[0;32mI (366390) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (367390) UART: [UART DATA]: 26[0m
+[0;32mI (367390) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (368390) UART: [UART DATA]: 26[0m
+[0;32mI (368390) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (369400) UART: [UART DATA]: 26[0m
+[0;32mI (369400) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (370400) UART: [UART DATA]: 26[0m
+[0;32mI (370400) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (371400) UART: [UART DATA]: 26[0m
+[0;32mI (371400) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (372400) UART: [UART DATA]: 26[0m
+[0;32mI (372400) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (373400) UART: [UART DATA]: 26[0m
+[0;32mI (373400) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (374410) UART: [UART DATA]: 26[0m
+[0;32mI (374410) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (375410) UART: [UART DATA]: 26[0m
+[0;32mI (375410) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (376410) UART: [UART DATA]: 26[0m
+[0;32mI (376410) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (377410) UART: [UART DATA]: 26[0m
+[0;32mI (377410) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (378410) UART: [UART DATA]: 26[0m
+[0;32mI (378410) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (379410) UART: [UART DATA]: 26[0m
+[0;32mI (379410) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (380410) UART: [UART DATA]: 26[0m
+[0;32mI (380420) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (381420) UART: [UART DATA]: 26[0m
+[0;32mI (381420) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (382420) UART: [UART DATA]: 26[0m
+[0;32mI (382420) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (383420) UART: [UART DATA]: 26[0m
+[0;32mI (383420) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (384420) UART: [UART DATA]: 26[0m
+[0;32mI (384420) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (385420) UART: [UART DATA]: 26[0m
+[0;32mI (385420) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (386420) UART: [UART DATA]: 26[0m
+[0;32mI (386420) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (387420) UART: [UART DATA]: 26[0m
+[0;32mI (387420) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (388420) UART: [UART DATA]: 26[0m
+[0;32mI (388430) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (389430) UART: [UART DATA]: 26[0m
+[0;32mI (389430) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (390430) UART: [UART DATA]: 26[0m
+[0;32mI (390430) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (391430) UART: [UART DATA]: 26[0m
+[0;32mI (391430) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (392430) UART: [UART DATA]: 26[0m
+[0;32mI (392430) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (393430) UART: [UART DATA]: 26[0m
+[0;32mI (393430) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (394430) UART: [UART DATA]: 26[0m
+[0;32mI (394430) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (395430) UART: [UART DATA]: 26[0m
+[0;32mI (395430) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (396440) UART: [UART DATA]: 26[0m
+[0;32mI (396440) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (397440) UART: [UART DATA]: 26[0m
+[0;32mI (397440) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (398440) UART: [UART DATA]: 26[0m
+[0;32mI (398440) UART: Read 26 bytes: '=27.20=100.00=27.20=27.20='[0m
+3D 32 37 2E 32 30 3D 31 30 30 2E 30 30 3D 32 37 2E 32 30 3D 32 37 2E 32 30 3D 
+27.20,100.00,27.20,27.20
+[0;32mI (399440) UART: [UART DATA]: 26[0m
+[0;32mI (399440) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (400440) UART: [UART DATA]: 26[0m
+[0;32mI (400440) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (401440) UART: [UART DATA]: 26[0m
+[0;32mI (401440) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (402440) UART: [UART DATA]: 26[0m
+[0;32mI (402440) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (403440) UART: [UART DATA]: 26[0m
+[0;32mI (403440) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (404450) UART: [UART DATA]: 26[0m
+[0;32mI (404450) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (405450) UART: [UART DATA]: 26[0m
+[0;32mI (405450) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (406450) UART: [UART DATA]: 26[0m
+[0;32mI (406450) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (407450) UART: [UART DATA]: 26[0m
+[0;32mI (407450) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (408450) UART: [UART DATA]: 26[0m
+[0;32mI (408450) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (409450) UART: [UART DATA]: 26[0m
+[0;32mI (409450) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (410460) UART: [UART DATA]: 26[0m
+[0;32mI (410460) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (411460) UART: [UART DATA]: 26[0m
+[0;32mI (411460) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (412460) UART: [UART DATA]: 26[0m
+[0;32mI (412460) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (413460) UART: [UART DATA]: 26[0m
+[0;32mI (413460) UART: Read 26 bytes: '=27.10=100.00=27.10=27.10='[0m
+3D 32 37 2E 31 30 3D 31 30 30 2E 30 30 3D 32 37 2E 31 30 3D 32 37 2E 31 30 3D 
+27.10,100.00,27.10,27.10
+[0;32mI (414460) UART: [UART DATA]: 26[0m
+[0;32mI (414460) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (415460) UART: [UART DATA]: 26[0m
+[0;32mI (415460) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (416460) UART: [UART DATA]: 26[0m
+[0;32mI (416460) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (417460) UART: [UART DATA]: 26[0m
+[0;32mI (417460) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (418470) UART: [UART DATA]: 26[0m
+[0;32mI (418470) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (419470) UART: [UART DATA]: 26[0m
+[0;32mI (419470) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (420470) UART: [UART DATA]: 26[0m
+[0;32mI (420470) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (421470) UART: [UART DATA]: 26[0m
+[0;32mI (421470) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (422470) UART: [UART DATA]: 26[0m
+[0;32mI (422470) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (423470) UART: [UART DATA]: 26[0m
+[0;32mI (423470) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (424470) UART: [UART DATA]: 26[0m
+[0;32mI (424470) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (425470) UART: [UART DATA]: 26[0m
+[0;32mI (425470) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (426480) UART: [UART DATA]: 26[0m
+[0;32mI (426480) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (427480) UART: [UART DATA]: 26[0m
+[0;32mI (427480) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (428480) UART: [UART DATA]: 26[0m
+[0;32mI (428480) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (429480) UART: [UART DATA]: 26[0m
+[0;32mI (429480) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (430480) UART: [UART DATA]: 26[0m
+[0;32mI (430480) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (431480) UART: [UART DATA]: 26[0m
+[0;32mI (431480) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (432480) UART: [UART DATA]: 26[0m
+[0;32mI (432480) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (433490) UART: [UART DATA]: 26[0m
+[0;32mI (433490) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (434490) UART: [UART DATA]: 26[0m
+[0;32mI (434490) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (435490) UART: [UART DATA]: 26[0m
+[0;32mI (435490) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (436490) UART: [UART DATA]: 26[0m
+[0;32mI (436490) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (437490) UART: [UART DATA]: 26[0m
+[0;32mI (437490) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (438490) UART: [UART DATA]: 26[0m
+[0;32mI (438490) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (439490) UART: [UART DATA]: 26[0m
+[0;32mI (439490) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (440500) UART: [UART DATA]: 26[0m
+[0;32mI (440500) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (441500) UART: [UART DATA]: 26[0m
+[0;32mI (441500) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (442500) UART: [UART DATA]: 26[0m
+[0;32mI (442500) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (443500) UART: [UART DATA]: 26[0m
+[0;32mI (443500) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (444500) UART: [UART DATA]: 26[0m
+[0;32mI (444500) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (445500) UART: [UART DATA]: 26[0m
+[0;32mI (445500) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (446500) UART: [UART DATA]: 26[0m
+[0;32mI (446500) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (447510) UART: [UART DATA]: 26[0m
+[0;32mI (447510) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (448510) UART: [UART DATA]: 26[0m
+[0;32mI (448510) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (449510) UART: [UART DATA]: 26[0m
+[0;32mI (449510) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (450510) UART: [UART DATA]: 26[0m
+[0;32mI (450510) UART: Read 26 bytes: '=27.00=100.00=27.00=27.00='[0m
+3D 32 37 2E 30 30 3D 31 30 30 2E 30 30 3D 32 37 2E 30 30 3D 32 37 2E 30 30 3D 
+27.00,100.00,27.00,27.00
+[0;32mI (451510) UART: [UART DATA]: 26[0m
+[0;32mI (451510) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (452510) UART: [UART DATA]: 26[0m
+[0;32mI (452510) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (453510) UART: [UART DATA]: 26[0m
+[0;32mI (453510) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (454510) UART: [UART DATA]: 26[0m
+[0;32mI (454510) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (455520) UART: [UART DATA]: 26[0m
+[0;32mI (455520) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (456520) UART: [UART DATA]: 26[0m
+[0;32mI (456520) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (457520) UART: [UART DATA]: 26[0m
+[0;32mI (457520) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (458520) UART: [UART DATA]: 26[0m
+[0;32mI (458520) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (459520) UART: [UART DATA]: 26[0m
+[0;32mI (459520) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (460520) UART: [UART DATA]: 26[0m
+[0;32mI (460520) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (461520) UART: [UART DATA]: 26[0m
+[0;32mI (461520) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (462520) UART: [UART DATA]: 26[0m
+[0;32mI (462520) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (463520) UART: [UART DATA]: 26[0m
+[0;32mI (463520) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (464520) UART: [UART DATA]: 26[0m
+[0;32mI (464520) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (465530) UART: [UART DATA]: 26[0m
+[0;32mI (465530) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (466530) UART: [UART DATA]: 26[0m
+[0;32mI (466530) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (467530) UART: [UART DATA]: 26[0m
+[0;32mI (467530) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (468530) UART: [UART DATA]: 26[0m
+[0;32mI (468530) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (469530) UART: [UART DATA]: 26[0m
+[0;32mI (469530) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (470530) UART: [UART DATA]: 26[0m
+[0;32mI (470530) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (471530) UART: [UART DATA]: 26[0m
+[0;32mI (471530) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (472540) UART: [UART DATA]: 26[0m
+[0;32mI (472540) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (473540) UART: [UART DATA]: 26[0m
+[0;32mI (473540) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (474540) UART: [UART DATA]: 26[0m
+[0;32mI (474540) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (475540) UART: [UART DATA]: 26[0m
+[0;32mI (475540) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (476540) UART: [UART DATA]: 26[0m
+[0;32mI (476540) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (477540) UART: [UART DATA]: 26[0m
+[0;32mI (477540) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (478540) UART: [UART DATA]: 26[0m
+[0;32mI (478540) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (479540) UART: [UART DATA]: 26[0m
+[0;32mI (479550) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (480550) UART: [UART DATA]: 26[0m
+[0;32mI (480550) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (481550) UART: [UART DATA]: 26[0m
+[0;32mI (481550) UART: Read 26 bytes: '=26.90=100.00=26.90=26.90='[0m
+3D 32 36 2E 39 30 3D 31 30 30 2E 30 30 3D 32 36 2E 39 30 3D 32 36 2E 39 30 3D 
+26.90,100.00,26.90,26.90
+[0;32mI (482550) UART: [UART DATA]: 26[0m
+[0;32mI (482550) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (483550) UART: [UART DATA]: 26[0m
+[0;32mI (483550) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (484550) UART: [UART DATA]: 26[0m
+[0;32mI (484550) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (485560) UART: [UART DATA]: 26[0m
+[0;32mI (485560) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (486560) UART: [UART DATA]: 26[0m
+[0;32mI (486560) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (487560) UART: [UART DATA]: 26[0m
+[0;32mI (487560) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (488560) UART: [UART DATA]: 26[0m
+[0;32mI (488560) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (489560) UART: [UART DATA]: 26[0m
+[0;32mI (489560) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (490560) UART: [UART DATA]: 26[0m
+[0;32mI (490560) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (491570) UART: [UART DATA]: 26[0m
+[0;32mI (491570) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (492570) UART: [UART DATA]: 26[0m
+[0;32mI (492570) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (493570) UART: [UART DATA]: 26[0m
+[0;32mI (493570) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (494570) UART: [UART DATA]: 26[0m
+[0;32mI (494570) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (495570) UART: [UART DATA]: 26[0m
+[0;32mI (495570) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (496570) UART: [UART DATA]: 26[0m
+[0;32mI (496570) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (497570) UART: [UART DATA]: 26[0m
+[0;32mI (497570) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (498570) UART: [UART DATA]: 26[0m
+[0;32mI (498570) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (499580) UART: [UART DATA]: 26[0m
+[0;32mI (499580) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (500580) UART: [UART DATA]: 26[0m
+[0;32mI (500580) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (501580) UART: [UART DATA]: 26[0m
+[0;32mI (501580) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (502580) UART: [UART DATA]: 26[0m
+[0;32mI (502580) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (503580) UART: [UART DATA]: 26[0m
+[0;32mI (503580) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (504580) UART: [UART DATA]: 26[0m
+[0;32mI (504580) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (505580) UART: [UART DATA]: 26[0m
+[0;32mI (505580) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (506580) UART: [UART DATA]: 26[0m
+[0;32mI (506580) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (507580) UART: [UART DATA]: 26[0m
+[0;32mI (507580) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (508580) UART: [UART DATA]: 26[0m
+[0;32mI (508580) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (509590) UART: [UART DATA]: 26[0m
+[0;32mI (509590) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (510590) UART: [UART DATA]: 26[0m
+[0;32mI (510590) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (511590) UART: [UART DATA]: 26[0m
+[0;32mI (511590) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (512590) UART: [UART DATA]: 26[0m
+[0;32mI (512590) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (513590) UART: [UART DATA]: 26[0m
+[0;32mI (513590) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (514590) UART: [UART DATA]: 26[0m
+[0;32mI (514590) UART: Read 26 bytes: '=26.80=100.00=26.80=26.80='[0m
+3D 32 36 2E 38 30 3D 31 30 30 2E 30 30 3D 32 36 2E 38 30 3D 32 36 2E 38 30 3D 
+26.80,100.00,26.80,26.80
+[0;32mI (515590) UART: [UART DATA]: 26[0m
+[0;32mI (515590) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (516590) UART: [UART DATA]: 26[0m
+[0;32mI (516590) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (517590) UART: [UART DATA]: 26[0m
+[0;32mI (517590) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (518590) UART: [UART DATA]: 26[0m
+[0;32mI (518590) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (519600) UART: [UART DATA]: 26[0m
+[0;32mI (519600) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (520600) UART: [UART DATA]: 26[0m
+[0;32mI (520600) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (521600) UART: [UART DATA]: 26[0m
+[0;32mI (521600) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (522600) UART: [UART DATA]: 26[0m
+[0;32mI (522600) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (523600) UART: [UART DATA]: 26[0m
+[0;32mI (523600) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (524600) UART: [UART DATA]: 26[0m
+[0;32mI (524600) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (525600) UART: [UART DATA]: 26[0m
+[0;32mI (525600) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (526600) UART: [UART DATA]: 26[0m
+[0;32mI (526600) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (527600) UART: [UART DATA]: 26[0m
+[0;32mI (527600) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (528610) UART: [UART DATA]: 26[0m
+[0;32mI (528610) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (529610) UART: [UART DATA]: 26[0m
+[0;32mI (529610) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (530610) UART: [UART DATA]: 26[0m
+[0;32mI (530610) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (531610) UART: [UART DATA]: 26[0m
+[0;32mI (531610) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (532610) UART: [UART DATA]: 26[0m
+[0;32mI (532610) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (533610) UART: [UART DATA]: 26[0m
+[0;32mI (533610) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (534610) UART: [UART DATA]: 26[0m
+[0;32mI (534610) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (535610) UART: [UART DATA]: 26[0m
+[0;32mI (535610) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (536610) UART: [UART DATA]: 26[0m
+[0;32mI (536610) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (537620) UART: [UART DATA]: 26[0m
+[0;32mI (537620) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (538620) UART: [UART DATA]: 26[0m
+[0;32mI (538620) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (539620) UART: [UART DATA]: 26[0m
+[0;32mI (539620) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (540620) UART: [UART DATA]: 26[0m
+[0;32mI (540620) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (541620) UART: [UART DATA]: 26[0m
+[0;32mI (541620) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (542630) UART: [UART DATA]: 26[0m
+[0;32mI (542630) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (543630) UART: [UART DATA]: 26[0m
+[0;32mI (543630) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (544630) UART: [UART DATA]: 26[0m
+[0;32mI (544630) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (545630) UART: [UART DATA]: 26[0m
+[0;32mI (545630) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (546630) UART: [UART DATA]: 26[0m
+[0;32mI (546630) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (547630) UART: [UART DATA]: 26[0m
+[0;32mI (547630) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (548630) UART: [UART DATA]: 26[0m
+[0;32mI (548630) UART: Read 26 bytes: '=26.70=100.00=26.70=26.70='[0m
+3D 32 36 2E 37 30 3D 31 30 30 2E 30 30 3D 32 36 2E 37 30 3D 32 36 2E 37 30 3D 
+26.70,100.00,26.70,26.70
+[0;32mI (549630) UART: [UART DATA]: 26[0m
+[0;32mI (549630) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (550640) UART: [UART DATA]: 26[0m
+[0;32mI (550640) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (551640) UART: [UART DATA]: 26[0m
+[0;32mI (551640) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (552640) UART: [UART DATA]: 26[0m
+[0;32mI (552640) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (553640) UART: [UART DATA]: 26[0m
+[0;32mI (553640) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (554640) UART: [UART DATA]: 26[0m
+[0;32mI (554640) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (555640) UART: [UART DATA]: 26[0m
+[0;32mI (555640) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (556640) UART: [UART DATA]: 26[0m
+[0;32mI (556640) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (557640) UART: [UART DATA]: 26[0m
+[0;32mI (557640) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (558640) UART: [UART DATA]: 26[0m
+[0;32mI (558640) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (559650) UART: [UART DATA]: 26[0m
+[0;32mI (559650) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (560650) UART: [UART DATA]: 26[0m
+[0;32mI (560650) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (561650) UART: [UART DATA]: 26[0m
+[0;32mI (561650) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (562650) UART: [UART DATA]: 26[0m
+[0;32mI (562650) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (563650) UART: [UART DATA]: 26[0m
+[0;32mI (563650) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (564650) UART: [UART DATA]: 26[0m
+[0;32mI (564650) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (565650) UART: [UART DATA]: 26[0m
+[0;32mI (565650) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (566650) UART: [UART DATA]: 26[0m
+[0;32mI (566650) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (567650) UART: [UART DATA]: 26[0m
+[0;32mI (567660) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (568660) UART: [UART DATA]: 26[0m
+[0;32mI (568660) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (569660) UART: [UART DATA]: 26[0m
+[0;32mI (569660) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (570660) UART: [UART DATA]: 26[0m
+[0;32mI (570660) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (571660) UART: [UART DATA]: 26[0m
+[0;32mI (571660) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (572660) UART: [UART DATA]: 26[0m
+[0;32mI (572660) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (573660) UART: [UART DATA]: 26[0m
+[0;32mI (573660) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (574660) UART: [UART DATA]: 26[0m
+[0;32mI (574660) UART: Read 26 bytes: '=26.50=100.00=26.50=26.50='[0m
+3D 32 36 2E 35 30 3D 31 30 30 2E 30 30 3D 32 36 2E 35 30 3D 32 36 2E 35 30 3D 
+26.50,100.00,26.50,26.50
+[0;32mI (575660) UART: [UART DATA]: 26[0m
+[0;32mI (575660) UART: Read 26 bytes: '=26.60=100.00=26.60=26.60='[0m
+3D 32 36 2E 36 30 3D 31 30 30 2E 30 30 3D 32 36 2E 36 30 3D 32 36 2E 36 30 3D 
+26.60,100.00,26.60,26.60
+[0;32mI (576660) UART: [UART DATA]: 26[0m
+[0;32mI (576670) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (577670) UART: [UART DATA]: 26[0m
+[0;32mI (577670) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (578670) UART: [UART DATA]: 26[0m
+[0;32mI (578670) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (579670) UART: [UART DATA]: 26[0m
+[0;32mI (579670) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (580670) UART: [UART DATA]: 26[0m
+[0;32mI (580670) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (581670) UART: [UART DATA]: 26[0m
+[0;32mI (581670) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (582670) UART: [UART DATA]: 26[0m
+[0;32mI (582670) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (583670) UART: [UART DATA]: 26[0m
+[0;32mI (583670) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (584670) UART: [UART DATA]: 26[0m
+[0;32mI (584670) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (585670) UART: [UART DATA]: 26[0m
+[0;32mI (585680) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (586680) UART: [UART DATA]: 26[0m
+[0;32mI (586680) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (587680) UART: [UART DATA]: 26[0m
+[0;32mI (587680) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (588680) UART: [UART DATA]: 26[0m
+[0;32mI (588680) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (589680) UART: [UART DATA]: 26[0m
+[0;32mI (589680) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (590680) UART: [UART DATA]: 26[0m
+[0;32mI (590680) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (591680) UART: [UART DATA]: 26[0m
+[0;32mI (591680) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (592680) UART: [UART DATA]: 26[0m
+[0;32mI (592680) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (593680) UART: [UART DATA]: 26[0m
+[0;32mI (593680) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (594690) UART: [UART DATA]: 26[0m
+[0;32mI (594690) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (595690) UART: [UART DATA]: 26[0m
+[0;32mI (595690) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (596690) UART: [UART DATA]: 26[0m
+[0;32mI (596690) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (597690) UART: [UART DATA]: 26[0m
+[0;32mI (597690) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (598690) UART: [UART DATA]: 26[0m
+[0;32mI (598690) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (599690) UART: [UART DATA]: 26[0m
+[0;32mI (599700) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (600700) UART: [UART DATA]: 26[0m
+[0;32mI (600700) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (601700) UART: [UART DATA]: 26[0m
+[0;32mI (601700) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (602700) UART: [UART DATA]: 26[0m
+[0;32mI (602700) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (603700) UART: [UART DATA]: 26[0m
+[0;32mI (603700) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (604700) UART: [UART DATA]: 26[0m
+[0;32mI (604700) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (605700) UART: [UART DATA]: 26[0m
+[0;32mI (605700) UART: Read 26 bytes: '=26.40=100.00=26.40=26.40='[0m
+3D 32 36 2E 34 30 3D 31 30 30 2E 30 30 3D 32 36 2E 34 30 3D 32 36 2E 34 30 3D 
+26.40,100.00,26.40,26.40
+[0;32mI (606700) UART: [UART DATA]: 26[0m
+[0;32mI (606710) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (607710) UART: [UART DATA]: 26[0m
+[0;32mI (607710) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (608710) UART: [UART DATA]: 26[0m
+[0;32mI (608710) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (609710) UART: [UART DATA]: 26[0m
+[0;32mI (609710) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (610710) UART: [UART DATA]: 26[0m
+[0;32mI (610710) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (611710) UART: [UART DATA]: 26[0m
+[0;32mI (611710) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (612710) UART: [UART DATA]: 26[0m
+[0;32mI (612710) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (613710) UART: [UART DATA]: 26[0m
+[0;32mI (613710) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (614720) UART: [UART DATA]: 26[0m
+[0;32mI (614720) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (615720) UART: [UART DATA]: 26[0m
+[0;32mI (615720) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (616720) UART: [UART DATA]: 26[0m
+[0;32mI (616720) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (617720) UART: [UART DATA]: 26[0m
+[0;32mI (617720) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (618720) UART: [UART DATA]: 26[0m
+[0;32mI (618720) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (619720) UART: [UART DATA]: 26[0m
+[0;32mI (619720) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (620720) UART: [UART DATA]: 26[0m
+[0;32mI (620730) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (621730) UART: [UART DATA]: 26[0m
+[0;32mI (621730) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (622730) UART: [UART DATA]: 26[0m
+[0;32mI (622730) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (623730) UART: [UART DATA]: 26[0m
+[0;32mI (623730) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (624730) UART: [UART DATA]: 26[0m
+[0;32mI (624730) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (625730) UART: [UART DATA]: 26[0m
+[0;32mI (625730) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (626740) UART: [UART DATA]: 26[0m
+[0;32mI (626740) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (627740) UART: [UART DATA]: 26[0m
+[0;32mI (627740) UART: Read 26 bytes: '=26.30=100.00=26.30=26.30='[0m
+3D 32 36 2E 33 30 3D 31 30 30 2E 30 30 3D 32 36 2E 33 30 3D 32 36 2E 33 30 3D 
+26.30,100.00,26.30,26.30
+[0;32mI (628740) UART: [UART DATA]: 26[0m
+[0;32mI (628740) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (629740) UART: [UART DATA]: 26[0m
+[0;32mI (629740) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (630740) UART: [UART DATA]: 26[0m
+[0;32mI (630740) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (631740) UART: [UART DATA]: 26[0m
+[0;32mI (631740) UART: Read 26 bytes: '=26.20=100.00=26.20=26.20='[0m
+3D 32 36 2E 32 30 3D 31 30 30 2E 30 30 3D 32 36 2E 32 30 3D 32 36 2E 32 30 3D 
+26.20,100.00,26.20,26.20
+[0;32mI (632740) UART: [UART DATA]: 26[0m
+[0;32mI (632750) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (633750) UART: [UART DATA]: 26[0m
+[0;32mI (633750) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (634750) UART: [UART DATA]: 26[0m
+[0;32mI (634750) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (635750) UART: [UART DATA]: 26[0m
+[0;32mI (635750) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (636750) UART: [UART DATA]: 26[0m
+[0;32mI (636750) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (637750) UART: [UART DATA]: 26[0m
+[0;32mI (637750) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (638750) UART: [UART DATA]: 26[0m
+[0;32mI (638750) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (639750) UART: [UART DATA]: 26[0m
+[0;32mI (639750) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (640750) UART: [UART DATA]: 26[0m
+[0;32mI (640760) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (641760) UART: [UART DATA]: 26[0m
+[0;32mI (641760) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (642760) UART: [UART DATA]: 26[0m
+[0;32mI (642760) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (643760) UART: [UART DATA]: 26[0m
+[0;32mI (643760) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (644760) UART: [UART DATA]: 26[0m
+[0;32mI (644760) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (645760) UART: [UART DATA]: 26[0m
+[0;32mI (645760) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (646760) UART: [UART DATA]: 26[0m
+[0;32mI (646760) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (647760) UART: [UART DATA]: 26[0m
+[0;32mI (647760) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (648760) UART: [UART DATA]: 26[0m
+[0;32mI (648760) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (649760) UART: [UART DATA]: 26[0m
+[0;32mI (649770) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (650770) UART: [UART DATA]: 26[0m
+[0;32mI (650770) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (651770) UART: [UART DATA]: 26[0m
+[0;32mI (651770) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (652770) UART: [UART DATA]: 26[0m
+[0;32mI (652770) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (653770) UART: [UART DATA]: 26[0m
+[0;32mI (653770) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (654770) UART: [UART DATA]: 26[0m
+[0;32mI (654770) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (655770) UART: [UART DATA]: 26[0m
+[0;32mI (655780) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (656780) UART: [UART DATA]: 26[0m
+[0;32mI (656780) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (657780) UART: [UART DATA]: 26[0m
+[0;32mI (657780) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (658780) UART: [UART DATA]: 26[0m
+[0;32mI (658780) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (659780) UART: [UART DATA]: 26[0m
+[0;32mI (659780) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (660780) UART: [UART DATA]: 26[0m
+[0;32mI (660780) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (661780) UART: [UART DATA]: 26[0m
+[0;32mI (661780) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (662790) UART: [UART DATA]: 26[0m
+[0;32mI (662790) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (663790) UART: [UART DATA]: 26[0m
+[0;32mI (663790) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (664790) UART: [UART DATA]: 26[0m
+[0;32mI (664790) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (665790) UART: [UART DATA]: 26[0m
+[0;32mI (665790) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (666790) UART: [UART DATA]: 26[0m
+[0;32mI (666790) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (667790) UART: [UART DATA]: 26[0m
+[0;32mI (667790) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (668790) UART: [UART DATA]: 26[0m
+[0;32mI (668790) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (669790) UART: [UART DATA]: 26[0m
+[0;32mI (669800) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (670800) UART: [UART DATA]: 26[0m
+[0;32mI (670800) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (671800) UART: [UART DATA]: 26[0m
+[0;32mI (671800) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (672800) UART: [UART DATA]: 26[0m
+[0;32mI (672800) UART: Read 26 bytes: '=26.10=100.00=26.10=26.10='[0m
+3D 32 36 2E 31 30 3D 31 30 30 2E 30 30 3D 32 36 2E 31 30 3D 32 36 2E 31 30 3D 
+26.10,100.00,26.10,26.10
+[0;32mI (673800) UART: [UART DATA]: 26[0m
+[0;32mI (673800) UART: Read 26 bytes: '=25.90=100.00=25.90=25.90='[0m
+3D 32 35 2E 39 30 3D 31 30 30 2E 30 30 3D 32 35 2E 39 30 3D 32 35 2E 39 30 3D 
+25.90,100.00,25.90,25.90
+[0;32mI (674800) UART: [UART DATA]: 26[0m
+[0;32mI (674800) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (675800) UART: [UART DATA]: 26[0m
+[0;32mI (675800) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (676800) UART: [UART DATA]: 26[0m
+[0;32mI (676810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (677800) UART: [UART DATA]: 26[0m
+[0;32mI (677810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (678800) UART: [UART DATA]: 26[0m
+[0;32mI (678810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (679800) UART: [UART DATA]: 26[0m
+[0;32mI (679810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (680800) UART: [UART DATA]: 26[0m
+[0;32mI (680810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (681800) UART: [UART DATA]: 26[0m
+[0;32mI (681810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (682800) UART: [UART DATA]: 26[0m
+[0;32mI (682810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (683800) UART: [UART DATA]: 26[0m
+[0;32mI (683810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (684800) UART: [UART DATA]: 26[0m
+[0;32mI (684810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (685800) UART: [UART DATA]: 26[0m
+[0;32mI (685810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (686800) UART: [UART DATA]: 26[0m
+[0;32mI (686810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (687800) UART: [UART DATA]: 26[0m
+[0;32mI (687810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (688800) UART: [UART DATA]: 26[0m
+[0;32mI (688810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (689800) UART: [UART DATA]: 26[0m
+[0;32mI (689810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (690800) UART: [UART DATA]: 26[0m
+[0;32mI (690810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (691800) UART: [UART DATA]: 26[0m
+[0;32mI (691810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (692800) UART: [UART DATA]: 26[0m
+[0;32mI (692810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (693800) UART: [UART DATA]: 26[0m
+[0;32mI (693810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (694800) UART: [UART DATA]: 26[0m
+[0;32mI (694810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (695800) UART: [UART DATA]: 26[0m
+[0;32mI (695810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (696800) UART: [UART DATA]: 26[0m
+[0;32mI (696810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (697800) UART: [UART DATA]: 26[0m
+[0;32mI (697810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (698800) UART: [UART DATA]: 26[0m
+[0;32mI (698810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (699800) UART: [UART DATA]: 26[0m
+[0;32mI (699810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (700800) UART: [UART DATA]: 26[0m
+[0;32mI (700810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (701800) UART: [UART DATA]: 26[0m
+[0;32mI (701810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (702800) UART: [UART DATA]: 26[0m
+[0;32mI (702810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (703800) UART: [UART DATA]: 26[0m
+[0;32mI (703810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (704800) UART: [UART DATA]: 26[0m
+[0;32mI (704810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (705800) UART: [UART DATA]: 26[0m
+[0;32mI (705810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (706800) UART: [UART DATA]: 26[0m
+[0;32mI (706810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (707800) UART: [UART DATA]: 26[0m
+[0;32mI (707810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (708800) UART: [UART DATA]: 26[0m
+[0;32mI (708810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (709800) UART: [UART DATA]: 26[0m
+[0;32mI (709810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (710800) UART: [UART DATA]: 26[0m
+[0;32mI (710810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (711800) UART: [UART DATA]: 26[0m
+[0;32mI (711810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (712800) UART: [UART DATA]: 26[0m
+[0;32mI (712810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (713800) UART: [UART DATA]: 26[0m
+[0;32mI (713810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (714800) UART: [UART DATA]: 26[0m
+[0;32mI (714810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (715800) UART: [UART DATA]: 26[0m
+[0;32mI (715810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (716800) UART: [UART DATA]: 26[0m
+[0;32mI (716810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (717800) UART: [UART DATA]: 26[0m
+[0;32mI (717810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (718800) UART: [UART DATA]: 26[0m
+[0;32mI (718810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (719800) UART: [UART DATA]: 26[0m
+[0;32mI (719810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (720800) UART: [UART DATA]: 26[0m
+[0;32mI (720810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (721800) UART: [UART DATA]: 26[0m
+[0;32mI (721810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (722800) UART: [UART DATA]: 26[0m
+[0;32mI (722810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (723800) UART: [UART DATA]: 26[0m
+[0;32mI (723810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (724800) UART: [UART DATA]: 26[0m
+[0;32mI (724810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (725800) UART: [UART DATA]: 26[0m
+[0;32mI (725810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (726800) UART: [UART DATA]: 26[0m
+[0;32mI (726810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (727800) UART: [UART DATA]: 26[0m
+[0;32mI (727810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (728800) UART: [UART DATA]: 26[0m
+[0;32mI (728810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (729800) UART: [UART DATA]: 26[0m
+[0;32mI (729810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (730800) UART: [UART DATA]: 26[0m
+[0;32mI (730810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (731800) UART: [UART DATA]: 26[0m
+[0;32mI (731810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (732800) UART: [UART DATA]: 26[0m
+[0;32mI (732810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (733800) UART: [UART DATA]: 26[0m
+[0;32mI (733810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (734800) UART: [UART DATA]: 26[0m
+[0;32mI (734810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (735800) UART: [UART DATA]: 26[0m
+[0;32mI (735810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (736810) UART: [UART DATA]: 26[0m
+[0;32mI (736810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (737810) UART: [UART DATA]: 26[0m
+[0;32mI (737810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (738810) UART: [UART DATA]: 26[0m
+[0;32mI (738810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (739810) UART: [UART DATA]: 26[0m
+[0;32mI (739810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (740810) UART: [UART DATA]: 26[0m
+[0;32mI (740810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (741810) UART: [UART DATA]: 26[0m
+[0;32mI (741810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (742810) UART: [UART DATA]: 26[0m
+[0;32mI (742810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (743810) UART: [UART DATA]: 26[0m
+[0;32mI (743810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (744810) UART: [UART DATA]: 26[0m
+[0;32mI (744810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (745810) UART: [UART DATA]: 26[0m
+[0;32mI (745810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (746810) UART: [UART DATA]: 26[0m
+[0;32mI (746810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (747810) UART: [UART DATA]: 26[0m
+[0;32mI (747810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (748810) UART: [UART DATA]: 26[0m
+[0;32mI (748810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (749810) UART: [UART DATA]: 26[0m
+[0;32mI (749810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (750810) UART: [UART DATA]: 26[0m
+[0;32mI (750810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (751810) UART: [UART DATA]: 26[0m
+[0;32mI (751810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (752810) UART: [UART DATA]: 26[0m
+[0;32mI (752810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (753810) UART: [UART DATA]: 26[0m
+[0;32mI (753810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (754810) UART: [UART DATA]: 26[0m
+[0;32mI (754810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (755810) UART: [UART DATA]: 26[0m
+[0;32mI (755810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (756810) UART: [UART DATA]: 26[0m
+[0;32mI (756810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (757810) UART: [UART DATA]: 26[0m
+[0;32mI (757810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (758810) UART: [UART DATA]: 26[0m
+[0;32mI (758810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (759810) UART: [UART DATA]: 26[0m
+[0;32mI (759810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (760810) UART: [UART DATA]: 26[0m
+[0;32mI (760810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (761810) UART: [UART DATA]: 26[0m
+[0;32mI (761810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (762810) UART: [UART DATA]: 26[0m
+[0;32mI (762810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (763810) UART: [UART DATA]: 26[0m
+[0;32mI (763810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (764810) UART: [UART DATA]: 26[0m
+[0;32mI (764810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (765810) UART: [UART DATA]: 26[0m
+[0;32mI (765810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (766810) UART: [UART DATA]: 26[0m
+[0;32mI (766810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (767810) UART: [UART DATA]: 26[0m
+[0;32mI (767810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (768810) UART: [UART DATA]: 26[0m
+[0;32mI (768810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (769810) UART: [UART DATA]: 26[0m
+[0;32mI (769810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (770810) UART: [UART DATA]: 26[0m
+[0;32mI (770810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (771810) UART: [UART DATA]: 26[0m
+[0;32mI (771810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (772810) UART: [UART DATA]: 26[0m
+[0;32mI (772810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (773810) UART: [UART DATA]: 26[0m
+[0;32mI (773810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (774810) UART: [UART DATA]: 26[0m
+[0;32mI (774810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (775810) UART: [UART DATA]: 26[0m
+[0;32mI (775810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (776810) UART: [UART DATA]: 26[0m
+[0;32mI (776810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (777810) UART: [UART DATA]: 26[0m
+[0;32mI (777810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (778810) UART: [UART DATA]: 26[0m
+[0;32mI (778810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (779810) UART: [UART DATA]: 26[0m
+[0;32mI (779810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (780810) UART: [UART DATA]: 26[0m
+[0;32mI (780810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (781810) UART: [UART DATA]: 26[0m
+[0;32mI (781810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (782810) UART: [UART DATA]: 26[0m
+[0;32mI (782810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (783810) UART: [UART DATA]: 26[0m
+[0;32mI (783810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (784810) UART: [UART DATA]: 26[0m
+[0;32mI (784810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (785810) UART: [UART DATA]: 26[0m
+[0;32mI (785810) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (786820) UART: [UART DATA]: 26[0m
+[0;32mI (786820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (787820) UART: [UART DATA]: 26[0m
+[0;32mI (787820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (788820) UART: [UART DATA]: 26[0m
+[0;32mI (788820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (789820) UART: [UART DATA]: 26[0m
+[0;32mI (789820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (790820) UART: [UART DATA]: 26[0m
+[0;32mI (790820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (791820) UART: [UART DATA]: 26[0m
+[0;32mI (791820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (792820) UART: [UART DATA]: 26[0m
+[0;32mI (792820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (793820) UART: [UART DATA]: 26[0m
+[0;32mI (793820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (794820) UART: [UART DATA]: 26[0m
+[0;32mI (794820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (795820) UART: [UART DATA]: 26[0m
+[0;32mI (795820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (796820) UART: [UART DATA]: 26[0m
+[0;32mI (796820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (797820) UART: [UART DATA]: 26[0m
+[0;32mI (797820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (798820) UART: [UART DATA]: 26[0m
+[0;32mI (798820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (799820) UART: [UART DATA]: 26[0m
+[0;32mI (799820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (800820) UART: [UART DATA]: 26[0m
+[0;32mI (800820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (801820) UART: [UART DATA]: 26[0m
+[0;32mI (801820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (802820) UART: [UART DATA]: 26[0m
+[0;32mI (802820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (803820) UART: [UART DATA]: 26[0m
+[0;32mI (803820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (804820) UART: [UART DATA]: 26[0m
+[0;32mI (804820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (805820) UART: [UART DATA]: 26[0m
+[0;32mI (805820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (806820) UART: [UART DATA]: 26[0m
+[0;32mI (806820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00
+[0;32mI (807820) UART: [UART DATA]: 26[0m
+[0;32mI (807820) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+3D 32 36 2E 30 30 3D 31 30 30 2E 30 30 3D 32 36 2E 30 30 3D 32 36 2E 30 30 3D 
+26.00,100.00,26.00,26.00

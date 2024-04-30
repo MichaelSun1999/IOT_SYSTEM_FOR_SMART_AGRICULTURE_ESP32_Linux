@@ -1,0 +1,37 @@
+menu "LED matrix Configuration"
+
+    config MATRIX_GPIO
+        int "Blink GPIO number"
+        range 0 48
+        default 18
+        help
+            GPIO number (IOxx) to data pin of the LED matrix
+    config MATRIX_LED_NUMBERS
+        int "Blink LED number"
+        default 64
+        help
+            Numbers of the LED in the strip
+    config MATRIX_RESOLUTION
+        int "LED matrix rmt resolution"
+        default 10000000
+        help
+            LED matrix rmt resolution.
+    config MATRIX_BRIGHTNESS_RED
+        int "LED matrix brightness in red"
+        range 0 255
+        default 0
+        help
+             LED matrix brightness in red.
+    config MATRIX_BRIGHTNESS_GREEN
+        int "LED matrix brightness in green"
+        range 0 255
+        default 0
+        help
+             LED matrix brightness in green.
+    config MATRIX_BRIGHTNESS_BLUE
+        int "LED matrix brightness in blue"
+        range 0 255
+        default 0
+        help
+             LED matrix brightness in blue.
+endmenu

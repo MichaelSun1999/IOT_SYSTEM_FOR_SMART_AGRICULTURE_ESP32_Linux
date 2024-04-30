@@ -1,0 +1,949 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x16e8
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2eb0
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 23 2024 07:05:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (72) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (80) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (87) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (95) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (102) boot:  5 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (110) boot:  6 fctry            WiFi data        01 02 001b0000 00006000[0m
+[0;32mI (117) boot: End of partition table[0m
+[0;32mI (122) boot: No factory image, trying OTA 0[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3c0e0020 size=4f248h (324168) map[0m
+[0;32mI (193) esp_image: segment 1: paddr=0006f270 vaddr=3fc9bd00 size=00da8h (  3496) load[0m
+[0;32mI (194) esp_image: segment 2: paddr=00070020 vaddr=42000020 size=de238h (909880) map[0m
+[0;32mI (362) esp_image: segment 3: paddr=0014e260 vaddr=3fc9caa8 size=03ed4h ( 16084) load[0m
+[0;32mI (366) esp_image: segment 4: paddr=0015213c vaddr=40374000 size=17ccch ( 97484) load[0m
+[0;32mI (399) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (428) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (428) boot: Disabling RNG early entropy source...[0m
+[0;32mI (439) cpu_start: Multicore app[0m
+[0;32mI (439) cpu_start: Pro cpu up.[0m
+[0;32mI (439) cpu_start: Starting app cpu, entry point is 0x40375718[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     ip_internal_network[0m
+[0;32mI (466) cpu_start: App version:      1[0m
+[0;32mI (471) cpu_start: Compile time:     Apr 23 2024 07:05:40[0m
+[0;32mI (477) cpu_start: ELF file SHA256:  9f9c5e23c152b3cb...[0m
+[0;32mI (483) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (493) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (498) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (503) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (510) heap_init: At 3FCA6D30 len 000429E0 (266 KiB): DRAM[0m
+[0;32mI (516) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (523) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (529) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (536) spi_flash: detected chip: gd[0m
+[0;32mI (539) spi_flash: flash io: dio[0m
+[0;32mI (544) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (550) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (557) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (562) coexist: coexist rom version e7ae62f[0m
+[0;32mI (568) app_start: Starting scheduler on CPU0[0m
+[0;32mI (572) app_start: Starting scheduler on CPU1[0m
+[0;32mI (572) main_task: Started on CPU0[0m
+[0;32mI (582) main_task: Calling app_main()[0m
+[0;32mI (592) uart: queue free spaces: 20[0m
+[0;32mI (592) UART: uart rx break[0m
+[0;32mI (602) pp: pp rom version: e7ae62f[0m
+[0;32mI (602) net80211: net80211 rom version: e7ae62f[0m
+I (622) wifi:wifi driver task: 3fcb4258, prio:23, stack:6656, core=0
+I (622) wifi:wifi firmware version: ce9244d
+I (622) wifi:wifi certification version: v7.0
+I (622) wifi:config NVS flash: enabled
+I (622) wifi:config nano formating: disabled
+I (632) wifi:Init data frame dynamic rx buffer num: 32
+I (632) wifi:Init management frame dynamic rx buffer num: 32
+I (642) wifi:Init management short buffer num: 32
+I (642) wifi:Init dynamic tx buffer num: 32
+I (642) wifi:Init static tx FG buffer num: 2
+I (652) wifi:Init static rx buffer size: 1600
+I (652) wifi:Init static rx buffer num: 10
+I (662) wifi:Init dynamic rx buffer num: 32
+[0;32mI (662) wifi_init: rx ba win: 6[0m
+[0;32mI (662) wifi_init: tcpip mbox: 32[0m
+[0;32mI (672) wifi_init: udp mbox: 6[0m
+[0;32mI (672) wifi_init: tcp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp tx win: 5744[0m
+[0;32mI (682) wifi_init: tcp rx win: 5744[0m
+[0;32mI (682) wifi_init: tcp mss: 624[0m
+[0;32mI (692) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (692) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (712) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (712) esp_claim: Initialising Self Claiming. This may take time.[0m
+[0;33mW (712) esp_claim: Generating the private key. This may take time.[0m
+[0;32mI (1092) UART: [UART DATA]: 29[0m
+[0;32mI (1092) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (1712) UART: [UART DATA]: 29[0m
+[0;32mI (1712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (2712) UART: [UART DATA]: 29[0m
+[0;32mI (2712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (3712) UART: [UART DATA]: 29[0m
+[0;32mI (3712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (4712) UART: [UART DATA]: 29[0m
+[0;32mI (4712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (5712) UART: [UART DATA]: 29[0m
+[0;32mI (5712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (6712) UART: [UART DATA]: 29[0m
+[0;32mI (6712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (7712) UART: [UART DATA]: 29[0m
+[0;32mI (7712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (8712) UART: [UART DATA]: 29[0m
+[0;32mI (8712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (9712) UART: [UART DATA]: 29[0m
+[0;32mI (9712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (10712) UART: [UART DATA]: 29[0m
+[0;32mI (10712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (11712) UART: [UART DATA]: 29[0m
+[0;32mI (11712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (12712) UART: [UART DATA]: 29[0m
+[0;32mI (12712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (13712) UART: [UART DATA]: 29[0m
+[0;32mI (13712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (14712) UART: [UART DATA]: 29[0m
+[0;32mI (14712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (15712) UART: [UART DATA]: 29[0m
+[0;32mI (15712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (16712) UART: [UART DATA]: 29[0m
+[0;32mI (16712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (17712) UART: [UART DATA]: 29[0m
+[0;32mI (17712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (18712) UART: [UART DATA]: 29[0m
+[0;32mI (18712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (19712) UART: [UART DATA]: 29[0m
+[0;32mI (19712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;31mE (19712) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (19722) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (19732) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (19732) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (19742) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (19752) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (19752) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (19762) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;32mI (20712) UART: [UART DATA]: 29[0m
+[0;32mI (20712) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (21722) UART: [UART DATA]: 29[0m
+[0;32mI (21722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (22722) UART: [UART DATA]: 29[0m
+[0;32mI (22722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (23722) UART: [UART DATA]: 29[0m
+[0;32mI (23722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (24722) UART: [UART DATA]: 29[0m
+[0;32mI (24722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (25722) UART: [UART DATA]: 29[0m
+[0;32mI (25722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (26722) UART: [UART DATA]: 29[0m
+[0;32mI (26722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (27722) UART: [UART DATA]: 29[0m
+[0;32mI (27722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (28722) UART: [UART DATA]: 29[0m
+[0;32mI (28722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (29722) UART: [UART DATA]: 29[0m
+[0;32mI (29722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (30722) UART: [UART DATA]: 29[0m
+[0;32mI (30722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (31722) UART: [UART DATA]: 29[0m
+[0;32mI (31722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (32722) UART: [UART DATA]: 29[0m
+[0;32mI (32722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (33722) UART: [UART DATA]: 29[0m
+[0;32mI (33722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (34722) UART: [UART DATA]: 29[0m
+[0;32mI (34722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (35722) UART: [UART DATA]: 29[0m
+[0;32mI (35722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (36722) UART: [UART DATA]: 29[0m
+[0;32mI (36722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (37722) UART: [UART DATA]: 29[0m
+[0;32mI (37722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (38722) UART: [UART DATA]: 29[0m
+[0;32mI (38722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (39722) UART: [UART DATA]: 29[0m
+[0;32mI (39722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;31mE (39722) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (39732) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (39732) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (39742) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (39752) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (39752) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (39762) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (39772) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;32mI (40722) UART: [UART DATA]: 29[0m
+[0;32mI (40722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (41722) UART: [UART DATA]: 29[0m
+[0;32mI (41722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (42722) UART: [UART DATA]: 29[0m
+[0;32mI (42722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (43722) UART: [UART DATA]: 29[0m
+[0;32mI (43722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (44722) UART: [UART DATA]: 29[0m
+[0;32mI (44722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (45722) UART: [UART DATA]: 29[0m
+[0;32mI (45722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (46722) UART: [UART DATA]: 29[0m
+[0;32mI (46722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (47722) UART: [UART DATA]: 29[0m
+[0;32mI (47722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (48722) UART: [UART DATA]: 29[0m
+[0;32mI (48722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (49722) UART: [UART DATA]: 29[0m
+[0;32mI (49722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (50722) UART: [UART DATA]: 29[0m
+[0;32mI (50722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (51722) UART: [UART DATA]: 29[0m
+[0;32mI (51722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (52722) UART: [UART DATA]: 29[0m
+[0;32mI (52722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (53722) UART: [UART DATA]: 29[0m
+[0;32mI (53722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (54722) UART: [UART DATA]: 29[0m
+[0;32mI (54722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (55722) UART: [UART DATA]: 29[0m
+[0;32mI (55722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (56722) UART: [UART DATA]: 29[0m
+[0;32mI (56722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (57722) UART: [UART DATA]: 29[0m
+[0;32mI (57722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (58722) UART: [UART DATA]: 29[0m
+[0;32mI (58722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (59722) UART: [UART DATA]: 29[0m
+[0;32mI (59722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;31mE (59732) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (59732) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (59742) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (59752) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (59752) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (59762) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (59772) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (59772) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;32mI (60722) UART: [UART DATA]: 29[0m
+[0;32mI (60722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (61722) UART: [UART DATA]: 29[0m
+[0;32mI (61722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (62722) UART: [UART DATA]: 29[0m
+[0;32mI (62722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (63722) UART: [UART DATA]: 29[0m
+[0;32mI (63722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (64722) UART: [UART DATA]: 29[0m
+[0;32mI (64722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (65722) UART: [UART DATA]: 29[0m
+[0;32mI (65722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (66722) UART: [UART DATA]: 29[0m
+[0;32mI (66722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (67722) UART: [UART DATA]: 29[0m
+[0;32mI (67722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (68722) UART: [UART DATA]: 29[0m
+[0;32mI (68722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (69722) UART: [UART DATA]: 29[0m
+[0;32mI (69722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (70722) UART: [UART DATA]: 29[0m
+[0;32mI (70722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (71722) UART: [UART DATA]: 29[0m
+[0;32mI (71722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (72722) UART: [UART DATA]: 29[0m
+[0;32mI (72722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (73722) UART: [UART DATA]: 29[0m
+[0;32mI (73722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (74722) UART: [UART DATA]: 29[0m
+[0;32mI (74722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (75722) UART: [UART DATA]: 29[0m
+[0;32mI (75722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (76722) UART: [UART DATA]: 29[0m
+[0;32mI (76722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (77722) UART: [UART DATA]: 29[0m
+[0;32mI (77722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (78722) UART: [UART DATA]: 29[0m
+[0;32mI (78722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (79722) UART: [UART DATA]: 29[0m
+[0;32mI (79722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;31mE (79732) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (79732) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (79742) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (79752) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (79752) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (79762) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;31mE (79772) esp_rmaker_device: Device handle or param type cannot be NULL[0m
+[0;31mE (79772) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;32mI (80722) UART: [UART DATA]: 29[0m
+[0;32mI (80722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (81722) UART: [UART DATA]: 29[0m
+[0;32mI (81722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (82152) esp_rmaker_node: Node ID ----- DC5475C7E8BC[0m
+[0;32mI (82152) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (82162) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (82162) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (82172) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (82172) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (82182) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (82182) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (82192) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (82202) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (82202) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (82212) app_wifi: Starting provisioning[0m
+[0;32mI (82232) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+[0;33mW (82232) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+I (82272) wifi:mode : sta (dc:54:75:c7:e8:bc)
+I (82272) wifi:enable tsf
+[0;32mI (82272) BLE_INIT: BT controller compile version [963cad4][0m
+[0;32mI (82272) BLE_INIT: Bluetooth MAC: dc:54:75:c7:e8:be
+[0m
+[0;32mI (82282) protocomm_nimble: BLE Host Task Started[0m
+[0;32mI (82282) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (82292) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (82292) NimBLE: disc_mode=2[0m
+[0;32mI (82302) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (82312) NimBLE: 
+[0m
+[0;32mI (82312) wifi_prov_mgr: Provisioning started with service name : PROV_67903b [0m
+[0;32mI (82322) app_wifi: Provisioning started[0m
+[0;32mI (82322) app_wifi: Scan this QR code from the ESP RainMaker phone app for Provisioning.[0m
+                                      
+  █▀▀▀▀▀█ █  ▄▄█ ▀▀▄▄▄▀▀▀▀▀ █▀▀▀▀▀█   
+  █ ███ █ ██▄ █▄ ▄▀▀▄▄▄▀▄▄█ █ ███ █   
+  █ ▀▀▀ █ ▄██ ▀▀█▀█ █▄▀ ▀▀█ █ ▀▀▀ █   
+  ▀▀▀▀▀▀▀ ▀ █▄▀ ▀ ▀▄█ ▀▄█ █ ▀▀▀▀▀▀▀   
+  █▀▄▄█▀▀   ▀ ▀ ▀█▄▀▄ ▄▀▄▄▄▄ █ ▀█▀▀   
+  ▄███▀ ▀███▀ ▄▀ ██▄▄▄▀▄▀▀██▀▄██▀█    
+  █ ▄▄▄█▀█ ▄▄▀▄▄█▄█▀▄▀▄▀▀▀ ▄▀▄▀ ▄▄▀   
+  ▄▄██  ▀▀▀  █▀▀ ▀▄█▄▄ ▄█▀▄█ ▀ █▀▀▄   
+    ▀█ █▀▄▀▄█ ▀▄▄▄█▀▀▀█▀   █▀▄▀▀  ▀   
+  █▀▄▄▄ ▀███▄ ▄▀ ▀▀▄█▄ ▄█▀█ ▄█▄█▀▀▄   
+  ███▀▀█▀▀ ▄█▀▄ ▄█▄▀█ ▄█ ▀▀▀▀ ▀ ▄█▀   
+    ▄█▀ ▀█▄▄██▀ ▀█▄▄ ▄ █▄▀  █▀▀▀▀▄▄   
+  ▀▀▀ ▀▀▀ █▀  ▀▄▄▄▄██▀█▀ ▄█▀▀▀██▄▀    
+  █▀▀▀▀▀█ ▄▀█ ▄ █▀██▀  ▄█▀█ ▀ ██▀▀    
+  █ ███ █ ▀ ▄▀█▄█▄█▀█▀ ▀█ ███▀█▀▄▄█   
+  █ ▀▀▀ █ ▄ ▄██▀ █▀▄ ▄███▀  ▀█▀▄ ▀    
+  ▀▀▀▀▀▀▀ ▀ ▀▀    ▀▀  ▀▀▀▀▀▀      ▀   
+                                      
+
+[0;32mI (82532) app_wifi: If QR code is not visible, copy paste the below URL in a browser.
+https://rainmaker.espressif.com/qrcode.html?data={"ver":"v1","name":"PROV_67903b","pop":"3992aca7","transport":"ble"}[0m
+[0;32mI (82552) app_wifi: Provisioning Started. Name : PROV_67903b, POP : 3992aca7[0m
+[0;32mI (82562) app_wifi: Provisioning will auto stop after 30 minute(s).[0m
+[0;32mI (82722) UART: [UART DATA]: 29[0m
+[0;32mI (82722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (83722) UART: [UART DATA]: 29[0m
+[0;32mI (83722) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (84732) UART: [UART DATA]: 29[0m
+[0;32mI (84732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (85732) UART: [UART DATA]: 29[0m
+[0;32mI (85732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (86732) UART: [UART DATA]: 29[0m
+[0;32mI (86732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (87732) UART: [UART DATA]: 29[0m
+[0;32mI (87732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (88732) UART: [UART DATA]: 29[0m
+[0;32mI (88732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (89732) UART: [UART DATA]: 29[0m
+[0;32mI (89732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (90732) UART: [UART DATA]: 29[0m
+[0;32mI (90732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (91732) UART: [UART DATA]: 29[0m
+[0;32mI (91732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (92732) UART: [UART DATA]: 29[0m
+[0;32mI (92732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (93732) UART: [UART DATA]: 29[0m
+[0;32mI (93732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (94732) UART: [UART DATA]: 29[0m
+[0;32mI (94732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (95732) UART: [UART DATA]: 29[0m
+[0;32mI (95732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (96622) protocomm_nimble: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (96732) UART: [UART DATA]: 29[0m
+[0;32mI (96732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (97732) UART: [UART DATA]: 29[0m
+[0;32mI (97732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (98732) UART: [UART DATA]: 29[0m
+[0;32mI (98732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (99732) UART: [UART DATA]: 29[0m
+[0;32mI (99732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (100732) UART: [UART DATA]: 29[0m
+[0;32mI (100732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (101732) UART: [UART DATA]: 29[0m
+[0;32mI (101732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (102732) UART: [UART DATA]: 29[0m
+[0;32mI (102732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (103192) esp_rmaker_user_mapping: Received request for node details[0m
+[0;32mI (103192) esp_rmaker_user_mapping: Got user_id = SignInWithApple_EYNz2cf9CZjsBdqjM8EUBg, secret_key = 3CFF569E-C73C-44D4-93DE-4B2B11EDBD87[0m
+[0;32mI (103202) esp_rmaker_user_mapping: Sending status SUCCESS[0m
+[0;32mI (103512) app_wifi: Received Wi-Fi credentials
+	SSID     : SINGTEL-EEU3
+	Password : e7mafrtaem[0m
+[0;32mI (103732) UART: [UART DATA]: 29[0m
+[0;32mI (103732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (104732) UART: [UART DATA]: 29[0m
+[0;32mI (104732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (105732) UART: [UART DATA]: 29[0m
+[0;32mI (105732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (106732) UART: [UART DATA]: 29[0m
+[0;32mI (106732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (107732) UART: [UART DATA]: 29[0m
+[0;32mI (107732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+I (107882) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (108942) UART: [UART DATA]: 29[0m
+[0;32mI (108942) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+I (108952) wifi:state: init -> auth (b0)
+I (108952) wifi:state: auth -> assoc (0)
+I (108962) wifi:state: assoc -> run (10)
+I (108982) wifi:connected with SINGTEL-EEU3, aid = 20, channel 1, BW20, bssid = 6a:99:b2:98:55:02
+I (108982) wifi:security: WPA2-PSK, phy: bgn, rssi: -61
+I (109002) wifi:pm start, type: 1
+
+I (109002) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (109082) wifi:<ba-add>idx:0 (ifx:0, 6a:99:b2:98:55:02), tid:0, ssn:1, winSize:64
+I (109082) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (109732) UART: [UART DATA]: 29[0m
+[0;32mI (109732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (110002) app_wifi: Connected with IP Address:192.168.1.25[0m
+[0;32mI (110002) esp_netif_handlers: sta ip: 192.168.1.25, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (110002) wifi_prov_mgr: STA Got IP[0m
+[0;32mI (110012) app_wifi: Provisioning successful[0m
+[0;32mI (110012) main_task: Returned from app_main()[0m
+[0;32mI (110012) esp_claim: Starting the Self Claim Process. This may take time.[0m
+[0;32mI (110732) UART: [UART DATA]: 29[0m
+[0;32mI (110732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (110942) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (111732) UART: [UART DATA]: 29[0m
+[0;32mI (111732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (112732) UART: [UART DATA]: 29[0m
+[0;32mI (112732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (112762) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (112762) esp_rmaker_time: The current time is: Tue Apr 23 08:13:47 2024 +0800[CST], DST: No.[0m
+[0;32mI (113702) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (113732) UART: [UART DATA]: 29[0m
+[0;32mI (113732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (114732) UART: [UART DATA]: 29[0m
+[0;32mI (114732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (115142) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (115152) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (115152) NimBLE: GAP procedure initiated: terminate connection; conn_handle=1 hci_reason=19
+[0m
+[0;31mE (115162) protocomm_nimble: Error setting advertisement data; rc = 30[0m
+[0;32mI (115172) wifi_prov_mgr: Provisioning stopped[0m
+[0;32mI (115172) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (115652) esp_claim: Self Claiming was successful. Certificate received.[0m
+[0;32mI (115672) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|DC5475C7E8BC[0m
+[0;32mI (115672) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (115672) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (115692) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (115692) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (115702) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (115712) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (115732) UART: [UART DATA]: 29[0m
+[0;32mI (115732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (116512) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (116732) UART: [UART DATA]: 29[0m
+[0;32mI (116732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (117732) UART: [UART DATA]: 29[0m
+[0;32mI (117732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (118732) UART: [UART DATA]: 29[0m
+[0;32mI (118732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (119142) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (119142) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (119152) esp_rmaker_node_config: Generated Node config of length 2997[0m
+[0;32mI (119432) esp_rmaker_param: Params MQTT Init done.[0m
+[0;32mI (119432) esp_rmaker_param: Reporting params (init): {"Relay":{"Name":"Relay","Power":true},"Light matrix":{"Name":"Light matrix","Power":true,"Brightness":10},"Temperature Sensor":{"Name":"Temperature Sensor","Temperature":26.00000},"Humidity Sensor":{"Name":"Humidity Sensor","Temperature":100.00000},"Soil humidity Sensor":{"Name":"Soil humidity Sensor","Temperature":4095.00000},"Light Sensor":{"Name":"Light Sensor","Temperature":140.00000},"Time":{"TZ":"","TZ-POSIX":""},"Schedule":{"Schedules":[]},"Scenes":{"Scenes":[]}}[0m
+[0;32mI (119472) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (119482) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (119492) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (119502) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (119512) esp_rmaker_user_mapping: MQTT Publish: {"node_id":"DC5475C7E8BC","user_id":"SignInWithApple_EYNz2cf9CZjsBdqjM8EUBg","secret_key":"3CFF569E-C73C-44D4-93DE-4B2B11EDBD87"}[0m
+[0;32mI (119732) UART: [UART DATA]: 29[0m
+[0;32mI (119732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (119742) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (119752) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000},"Humidity Sensor":{"Temperature":100.00000},"Soil humidity Sensor":{"Temperature":4095.00000},"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (119772) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (119782) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (119792) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (119802) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (119802) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (119812) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (120042) esp_rmaker_user_mapping: User Node association message published successfully.[0m
+[0;32mI (120732) UART: [UART DATA]: 29[0m
+[0;32mI (120732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (121732) UART: [UART DATA]: 29[0m
+[0;32mI (121732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (122732) UART: [UART DATA]: 29[0m
+[0;32mI (122732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (123422) esp_rmaker_param: Received params: {"Time":{"TZ":"Asia/Singapore"}}[0m
+[0;32mI (123422) esp_rmaker_time_service: Received value = Asia/Singapore for Time - TZ[0m
+[0;32mI (123432) esp_rmaker_time: The current time is: Tue Apr 23 08:13:57 2024 +0800[+08], DST: No.[0m
+[0;32mI (123442) esp_rmaker_param: Reporting params: {"Time":{"TZ-POSIX":"<+08>-8"}}[0m
+[0;32mI (123442) esp_rmaker_param: Reporting params: {"Time":{"TZ":"Asia/Singapore"}}[0m
+[0;32mI (123732) UART: [UART DATA]: 29[0m
+[0;32mI (123732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (124732) UART: [UART DATA]: 29[0m
+[0;32mI (124732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (125732) UART: [UART DATA]: 29[0m
+[0;32mI (125732) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (126742) UART: [UART DATA]: 29[0m
+[0;32mI (126752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (127742) UART: [UART DATA]: 29[0m
+[0;32mI (127752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (128752) UART: [UART DATA]: 29[0m
+[0;32mI (128752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (129752) UART: [UART DATA]: 29[0m
+[0;32mI (129752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (130752) UART: [UART DATA]: 29[0m
+[0;32mI (130752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (131752) UART: [UART DATA]: 29[0m
+[0;32mI (131752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (132742) UART: [UART DATA]: 29[0m
+[0;32mI (132752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (133742) UART: [UART DATA]: 29[0m
+[0;32mI (133752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (134742) UART: [UART DATA]: 29[0m
+[0;32mI (134752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (135742) UART: [UART DATA]: 29[0m
+[0;32mI (135752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (136742) UART: [UART DATA]: 29[0m
+[0;32mI (136752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (137742) UART: [UART DATA]: 29[0m
+[0;32mI (137752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (138742) UART: [UART DATA]: 29[0m
+[0;32mI (138752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (139742) UART: [UART DATA]: 29[0m
+[0;32mI (139752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (139752) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (139762) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (139772) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (139782) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (139792) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (139802) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (139812) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (139812) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (140322) esp_rmaker_param: Received params: {"Relay":{"Power":false}}[0m
+[0;32mI (140322) rainmaker: Received write request via : Cloud[0m
+[0;32mI (140322) rainmaker: Received value = false for Relay - Power[0m
+[0;32mI (140332) UART: Wrote 8 bytes: =2=5000=[0m
+Command to relay complete
+[0;32mI (140342) esp_rmaker_param: Reporting params: {"Relay":{"Power":false}}[0m
+[0;32mI (140742) UART: [UART DATA]: 29[0m
+[0;32mI (140752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (140762) esp_rmaker_param: Received params: {"Relay":{"Power":true}}[0m
+[0;32mI (140762) rainmaker: Received write request via : Cloud[0m
+[0;32mI (140762) rainmaker: Received value = true for Relay - Power[0m
+[0;32mI (140772) UART: Wrote 5 bytes: =2=0=[0m
+Command to relay complete
+[0;32mI (140782) esp_rmaker_param: Reporting params: {"Relay":{"Power":true}}[0m
+[0;32mI (140792) esp_rmaker_param: Received params: {"Relay":{"Power":false}}[0m
+[0;32mI (140792) rainmaker: Received write request via : Cloud[0m
+[0;32mI (140802) rainmaker: Received value = false for Relay - Power[0m
+[0;32mI (140802) UART: Wrote 8 bytes: =2=5000=[0m
+Command to relay complete
+[0;32mI (140812) esp_rmaker_param: Reporting params: {"Relay":{"Power":false}}[0m
+[0;32mI (141742) UART: [UART DATA]: 29[0m
+[0;32mI (141752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (141782) esp_rmaker_param: Received params: {"Relay":{"Power":true}}[0m
+[0;32mI (141782) rainmaker: Received write request via : Cloud[0m
+[0;32mI (141792) rainmaker: Received value = true for Relay - Power[0m
+[0;32mI (141792) UART: Wrote 5 bytes: =2=0=[0m
+Command to relay complete
+[0;32mI (141802) esp_rmaker_param: Reporting params: {"Relay":{"Power":true}}[0m
+[0;32mI (142752) UART: [UART DATA]: 29[0m
+[0;32mI (142752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (143752) UART: [UART DATA]: 29[0m
+[0;32mI (143752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (144752) UART: [UART DATA]: 29[0m
+[0;32mI (144752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (145752) UART: [UART DATA]: 29[0m
+[0;32mI (145752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (146742) UART: [UART DATA]: 29[0m
+[0;32mI (146752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (147742) UART: [UART DATA]: 29[0m
+[0;32mI (147752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (148742) UART: [UART DATA]: 29[0m
+[0;32mI (148752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (149742) UART: [UART DATA]: 29[0m
+[0;32mI (149752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (150742) UART: [UART DATA]: 29[0m
+[0;32mI (150752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (150762) esp_rmaker_param: Received params: {"Light matrix":{"Brightness":11}}[0m
+[0;32mI (150762) rainmaker: Received write request via : Cloud[0m
+[0;32mI (150762) rainmaker: Received value = 11 for Light matrix - Brightness[0m
+[0;32mI (150772) UART: Wrote 6 bytes: =0=11=[0m
+Command to light complete
+[0;32mI (151372) esp_rmaker_param: Received params: {"Light matrix":{"Brightness":26}}[0m
+[0;32mI (151372) rainmaker: Received write request via : Cloud[0m
+[0;32mI (151382) rainmaker: Received value = 26 for Light matrix - Brightness[0m
+[0;32mI (151382) UART: Wrote 6 bytes: =0=26=[0m
+Command to light complete
+[0;32mI (151742) UART: [UART DATA]: 29[0m
+[0;32mI (151752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (152742) UART: [UART DATA]: 29[0m
+[0;32mI (152752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (153742) UART: [UART DATA]: 29[0m
+[0;32mI (153752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (154742) UART: [UART DATA]: 29[0m
+[0;32mI (154752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (155742) UART: [UART DATA]: 29[0m
+[0;32mI (155752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (156742) UART: [UART DATA]: 29[0m
+[0;32mI (156752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (157742) UART: [UART DATA]: 29[0m
+[0;32mI (157752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (158742) UART: [UART DATA]: 29[0m
+[0;32mI (158752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (159742) UART: [UART DATA]: 29[0m
+[0;32mI (159752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (159752) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (159762) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (159772) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (159782) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (159792) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (159802) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (159812) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (159812) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (160742) UART: [UART DATA]: 29[0m
+[0;32mI (160752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (161742) UART: [UART DATA]: 29[0m
+[0;32mI (161752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (162752) UART: [UART DATA]: 29[0m
+[0;32mI (162752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (163752) UART: [UART DATA]: 29[0m
+[0;32mI (163752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (164752) UART: [UART DATA]: 29[0m
+[0;32mI (164752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (165752) UART: [UART DATA]: 29[0m
+[0;32mI (165752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (166752) UART: [UART DATA]: 29[0m
+[0;32mI (166752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (167752) UART: [UART DATA]: 29[0m
+[0;32mI (167752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (168752) UART: [UART DATA]: 29[0m
+[0;32mI (168752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (169752) UART: [UART DATA]: 29[0m
+[0;32mI (169752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (170752) UART: [UART DATA]: 29[0m
+[0;32mI (170752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (171752) UART: [UART DATA]: 29[0m
+[0;32mI (171752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (172752) UART: [UART DATA]: 29[0m
+[0;32mI (172752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (173752) UART: [UART DATA]: 29[0m
+[0;32mI (173752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (174752) UART: [UART DATA]: 29[0m
+[0;32mI (174752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (175752) UART: [UART DATA]: 29[0m
+[0;32mI (175752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (176752) UART: [UART DATA]: 29[0m
+[0;32mI (176752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (177752) UART: [UART DATA]: 29[0m
+[0;32mI (177752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (178752) UART: [UART DATA]: 29[0m
+[0;32mI (178752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (179752) UART: [UART DATA]: 29[0m
+[0;32mI (179752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (179762) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (179772) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (179782) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (179782) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (179802) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (179802) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (179812) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (179822) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (180752) UART: [UART DATA]: 29[0m
+[0;32mI (180752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (181752) UART: [UART DATA]: 29[0m
+[0;32mI (181752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (182752) UART: [UART DATA]: 29[0m
+[0;32mI (182752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (183752) UART: [UART DATA]: 29[0m
+[0;32mI (183752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (184752) UART: [UART DATA]: 29[0m
+[0;32mI (184752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (185752) UART: [UART DATA]: 29[0m
+[0;32mI (185752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (186752) UART: [UART DATA]: 29[0m
+[0;32mI (186752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (187752) UART: [UART DATA]: 29[0m
+[0;32mI (187752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (188752) UART: [UART DATA]: 29[0m
+[0;32mI (188752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (189752) UART: [UART DATA]: 29[0m
+[0;32mI (189752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (190752) UART: [UART DATA]: 29[0m
+[0;32mI (190752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (191752) UART: [UART DATA]: 29[0m
+[0;32mI (191752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (192752) UART: [UART DATA]: 29[0m
+[0;32mI (192752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (193752) UART: [UART DATA]: 29[0m
+[0;32mI (193752) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (194762) UART: [UART DATA]: 29[0m
+[0;32mI (194762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (195762) UART: [UART DATA]: 29[0m
+[0;32mI (195762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (196762) UART: [UART DATA]: 29[0m
+[0;32mI (196762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (197762) UART: [UART DATA]: 29[0m
+[0;32mI (197762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (198762) UART: [UART DATA]: 29[0m
+[0;32mI (198762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (199762) UART: [UART DATA]: 29[0m
+[0;32mI (199762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (199762) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (199772) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (199782) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (199792) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (199802) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (199812) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;32mI (199822) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (199832) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;32mI (200762) UART: [UART DATA]: 29[0m
+[0;32mI (200762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (201762) UART: [UART DATA]: 29[0m
+[0;32mI (201762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (202762) UART: [UART DATA]: 29[0m
+[0;32mI (202762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (203762) UART: [UART DATA]: 29[0m
+[0;32mI (203762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (204762) UART: [UART DATA]: 29[0m
+[0;32mI (204762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (205762) UART: [UART DATA]: 29[0m
+[0;32mI (205762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (206762) UART: [UART DATA]: 29[0m
+[0;32mI (206762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (207762) UART: [UART DATA]: 29[0m
+[0;32mI (207762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (208762) UART: [UART DATA]: 29[0m
+[0;32mI (208762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (209762) UART: [UART DATA]: 29[0m
+[0;32mI (209762) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00

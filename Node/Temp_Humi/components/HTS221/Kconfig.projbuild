@@ -1,0 +1,22 @@
+menu "HTS221 Configuration"
+    config I2C_HTS221_SCL_IO
+        int "I2C SCL port number"
+        default 26
+        help
+            I2C SCL port number.
+    config I2C_HTS221_SDA_IO
+        int "I2C SDA port number"
+        default 21
+        help
+            I2C SDA port number.
+    config I2C_HTS221_NUM
+        int "I2C port number"
+        default 0
+        help
+            I2C port number; I2C_NUM_i=i.
+    config I2C_HTS221_FREQ
+        int "I2C frequency"
+        default 100000
+        help
+            I2C frequency.
+endmenu

@@ -1,0 +1,1642 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x16e8
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2eb0
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 23 2024 07:05:57[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (72) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (80) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (87) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (95) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (102) boot:  5 ota_0            OTA app          00 10 00020000 00190000[0m
+[0;32mI (110) boot:  6 fctry            WiFi data        01 02 001b0000 00006000[0m
+[0;32mI (117) boot: End of partition table[0m
+[0;32mI (122) boot: No factory image, trying OTA 0[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3c0e0020 size=4f258h (324184) map[0m
+[0;32mI (193) esp_image: segment 1: paddr=0006f280 vaddr=3fc9bd00 size=00d98h (  3480) load[0m
+[0;32mI (194) esp_image: segment 2: paddr=00070020 vaddr=42000020 size=de224h (909860) map[0m
+[0;32mI (362) esp_image: segment 3: paddr=0014e24c vaddr=3fc9ca98 size=03ee4h ( 16100) load[0m
+[0;32mI (366) esp_image: segment 4: paddr=00152138 vaddr=40374000 size=17ccch ( 97484) load[0m
+[0;32mI (399) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (426) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (426) boot: Disabling RNG early entropy source...[0m
+[0;32mI (437) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu up.[0m
+[0;32mI (437) cpu_start: Starting app cpu, entry point is 0x40375718[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (459) cpu_start: Project name:     ip_internal_network[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (469) cpu_start: Compile time:     Apr 23 2024 07:05:40[0m
+[0;32mI (475) cpu_start: ELF file SHA256:  0e455ea1e93e67cc...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FCA6D28 len 000429E8 (266 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (521) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (534) spi_flash: detected chip: gd[0m
+[0;32mI (537) spi_flash: flash io: dio[0m
+[0;32mI (542) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (548) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (555) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (561) coexist: coexist rom version e7ae62f[0m
+[0;32mI (566) app_start: Starting scheduler on CPU0[0m
+[0;32mI (571) app_start: Starting scheduler on CPU1[0m
+[0;32mI (571) main_task: Started on CPU0[0m
+[0;32mI (581) main_task: Calling app_main()[0m
+[0;32mI (621) uart: queue free spaces: 20[0m
+[0;32mI (621) UART: uart rx break[0m
+[0;32mI (621) pp: pp rom version: e7ae62f[0m
+[0;32mI (621) net80211: net80211 rom version: e7ae62f[0m
+I (641) wifi:wifi driver task: 3fcb4494, prio:23, stack:6656, core=0
+I (651) wifi:wifi firmware version: ce9244d
+I (651) wifi:wifi certification version: v7.0
+I (651) wifi:config NVS flash: enabled
+I (651) wifi:config nano formating: disabled
+I (651) wifi:Init data frame dynamic rx buffer num: 32
+I (661) wifi:Init management frame dynamic rx buffer num: 32
+I (661) wifi:Init management short buffer num: 32
+I (671) wifi:Init dynamic tx buffer num: 32
+I (671) wifi:Init static tx FG buffer num: 2
+I (681) wifi:Init static rx buffer size: 1600
+I (681) wifi:Init static rx buffer num: 10
+I (681) wifi:Init dynamic rx buffer num: 32
+[0;32mI (691) wifi_init: rx ba win: 6[0m
+[0;32mI (691) wifi_init: tcpip mbox: 32[0m
+[0;32mI (701) wifi_init: udp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp tx win: 5744[0m
+[0;32mI (711) wifi_init: tcp rx win: 5744[0m
+[0;32mI (711) wifi_init: tcp mss: 624[0m
+[0;32mI (721) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (721) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (741) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (751) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|DC5475C7E8BC[0m
+[0;32mI (751) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (751) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (771) esp_rmaker_node: Node ID ----- DC5475C7E8BC[0m
+[0;32mI (771) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (781) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (781) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (791) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (801) esp_rmaker_time_service: Time service enabled[0m
+[0;32mI (801) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (811) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (811) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (821) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (831) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (831) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (841) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (841) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+I (891) wifi:mode : sta (dc:54:75:c7:e8:bc)
+I (891) wifi:enable tsf
+[0;32mI (1211) UART: [UART DATA]: 26[0m
+[0;32mI (1211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (2211) UART: [UART DATA]: 26[0m
+[0;32mI (2211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (3211) UART: [UART DATA]: 26[0m
+[0;32mI (3211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+I (3301) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3301) wifi:state: init -> auth (b0)
+I (3301) wifi:state: auth -> assoc (0)
+I (3321) wifi:state: assoc -> run (10)
+I (3361) wifi:connected with SINGTEL-EEU3, aid = 31, channel 1, BW20, bssid = 6a:99:b2:98:55:02
+I (3361) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (3371) wifi:pm start, type: 1
+
+I (3371) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+I (3371) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+I (3421) wifi:<ba-add>idx:0 (ifx:0, 6a:99:b2:98:55:02), tid:0, ssn:1, winSize:64
+[0;32mI (4211) UART: [UART DATA]: 26[0m
+[0;32mI (4211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (4381) app_wifi: Connected with IP Address:192.168.1.25[0m
+[0;32mI (4381) esp_netif_handlers: sta ip: 192.168.1.25, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (4381) main_task: Returned from app_main()[0m
+[0;32mI (4381) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (4391) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (4401) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (4411) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (5211) UART: [UART DATA]: 26[0m
+[0;32mI (5211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (6211) UART: [UART DATA]: 26[0m
+[0;32mI (6211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (7211) UART: [UART DATA]: 26[0m
+[0;32mI (7211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (7741) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (8211) UART: [UART DATA]: 26[0m
+[0;32mI (8211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (9211) UART: [UART DATA]: 26[0m
+[0;32mI (9211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (10211) UART: [UART DATA]: 26[0m
+[0;32mI (10211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (10451) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (10451) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (10451) esp_rmaker_node_config: Generated Node config of length 3286[0m
+[0;32mI (10741) esp_rmaker_param: Params MQTT Init done.[0m
+[0;32mI (10751) esp_rmaker_param: Reporting params (init): {"Mesh topology":{"Name":"Mesh topology","Power":false},"Relay":{"Name":"Relay","Power":true},"Light matrix":{"Name":"Light matrix","Power":true,"Brightness":10},"Temperature Sensor":{"Name":"Temperature Sensor","Temperature":26.00000},"Humidity Sensor":{"Name":"Humidity Sensor","Temperature":100.00000},"Soil humidity Sensor":{"Name":"Soil humidity Sensor","Temperature":26.00000},"Light Sensor":{"Name":"Light Sensor","Temperature":26.00000},"Time":{"TZ":"Asia/Singapore","TZ-POSIX":"<+08>-8"},"Schedule":{"Schedules":[]},"Scenes":{"Scenes":[]}}[0m
+[0;31mE (10801) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;31mE (10801) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;31mE (10811) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;31mE (10821) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (11211) UART: [UART DATA]: 26[0m
+[0;32mI (11211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (11211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (11221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000},"Humidity Sensor":{"Temperature":100.00000},"Soil humidity Sensor":{"Temperature":26.00000},"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (11241) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (11251) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (11261) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (11261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (11281) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (11281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (12211) UART: [UART DATA]: 26[0m
+[0;32mI (12211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (12211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (12221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (12231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (12231) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (12251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (12251) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (12261) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (12271) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (13211) UART: [UART DATA]: 26[0m
+[0;32mI (13211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (13211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (13221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (13231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (13231) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (13251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (13251) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (13261) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (13271) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (14211) UART: [UART DATA]: 26[0m
+[0;32mI (14211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (14211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (14221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (14231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (14231) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (14251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (14251) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (14261) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (14271) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (15211) UART: [UART DATA]: 26[0m
+[0;32mI (15211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (15211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (15221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (15231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (15241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (15251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (15251) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (15261) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (15271) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (16211) UART: [UART DATA]: 26[0m
+[0;32mI (16211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (16211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (16221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (16231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (16231) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (16251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (16251) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (16261) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (16271) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (17211) UART: [UART DATA]: 26[0m
+[0;32mI (17211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (17211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (17221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (17231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (17231) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (17251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (17251) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (17261) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (17271) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (18211) UART: [UART DATA]: 26[0m
+[0;32mI (18211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (18211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (18221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (18231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (18231) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (18251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (18251) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (18261) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (18271) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (19211) UART: [UART DATA]: 26[0m
+[0;32mI (19211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (19211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (19221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (19231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (19241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (19251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (19251) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (19261) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (19271) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (20211) UART: [UART DATA]: 26[0m
+[0;32mI (20211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (20211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (20221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (20231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (20231) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (20251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (20251) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (20261) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (20271) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (21211) UART: [UART DATA]: 26[0m
+[0;32mI (21211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (21211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (21221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (21231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (21241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (21251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (21261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (21271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (21281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (22211) UART: [UART DATA]: 26[0m
+[0;32mI (22211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (22211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (22221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (22231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (22241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (22251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (22261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (22271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (22281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (23211) UART: [UART DATA]: 26[0m
+[0;32mI (23211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (23211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (23221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (23231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (23241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (23251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (23261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (23271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (23281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (24211) UART: [UART DATA]: 26[0m
+[0;32mI (24211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (24211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (24221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (24241) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (24241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (24251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (24261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (24271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (24281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (25211) UART: [UART DATA]: 26[0m
+[0;32mI (25211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (25211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (25221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (25231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (25241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (25251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (25261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (25271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (25281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (26211) UART: [UART DATA]: 26[0m
+[0;32mI (26211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (26211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (26221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (26231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (26241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (26251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (26261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (26271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (26281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (27211) UART: [UART DATA]: 26[0m
+[0;32mI (27211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (27211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (27221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (27231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (27241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (27251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (27261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (27271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (27281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (28211) UART: [UART DATA]: 26[0m
+[0;32mI (28211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (28211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (28221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (28241) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (28241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (28251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (28261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (28271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (28281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (29211) UART: [UART DATA]: 26[0m
+[0;32mI (29211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (29211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (29221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (29231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (29241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (29251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (29261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (29271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (29281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (30211) UART: [UART DATA]: 26[0m
+[0;32mI (30211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (30211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (30221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (30231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (30241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (30251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (30261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (30271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (30281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (31211) UART: [UART DATA]: 26[0m
+[0;32mI (31211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (31211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (31221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (31231) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (31241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (31251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (31261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (31271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (31281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (32211) UART: [UART DATA]: 26[0m
+[0;32mI (32211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;31mE (32211) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (32221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (32241) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (32241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (32251) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (32261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (32271) esp_rmaker_param: Current time not yet available. Cannot report time series data.[0m
+[0;32mI (32281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (32511) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (32511) esp_rmaker_time: The current time is: Tue Apr 23 07:59:18 2024 +0800[+08], DST: No.[0m
+[0;32mI (33211) UART: [UART DATA]: 26[0m
+[0;32mI (33211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (33211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (33231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (33231) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (33241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (33251) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (33261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (33271) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;32mI (33281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (34211) UART: [UART DATA]: 26[0m
+[0;32mI (34211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (34211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (34231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (34231) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;32mI (34241) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;32mI (34251) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;32mI (34261) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;32mI (34271) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (34281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (34281) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (34291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (35211) UART: [UART DATA]: 26[0m
+[0;32mI (35211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (35211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (35221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (35231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (35241) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (35251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (35251) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (35261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (35271) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (35281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (35291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (35301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (35301) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (35311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (35321) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (35331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (36211) UART: [UART DATA]: 26[0m
+[0;32mI (36211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (36211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (36221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (36231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (36241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (36251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (36251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (36261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (36271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (36281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (36291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (36301) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (36301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (36311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (36321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (36331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (36341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (37211) UART: [UART DATA]: 26[0m
+[0;32mI (37211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (37211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (37221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (37231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (37241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (37251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (37251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (37261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (37271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (37281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (37291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (37291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (37301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (37311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (37321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (37331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (37341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (38211) UART: [UART DATA]: 26[0m
+[0;32mI (38211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (38211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (38221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (38231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (38241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (38251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (38251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (38261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (38271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (38281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (38291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (38291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (38301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (38311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (38321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (38331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (38341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (39211) UART: [UART DATA]: 26[0m
+[0;32mI (39211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (39211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (39221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (39231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (39241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (39251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (39251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (39261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (39271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (39281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (39291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (39291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (39301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (39311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (39321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (39331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (39341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (40211) UART: [UART DATA]: 26[0m
+[0;32mI (40211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (40211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (40231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (40231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (40241) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (40251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (40251) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (40261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (40271) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (40281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (40291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (40301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (40301) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (40311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (40321) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (40331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (41211) UART: [UART DATA]: 26[0m
+[0;32mI (41211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (41211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (41221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (41231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (41241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (41251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (41251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (41261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (41271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (41281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (41291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (41291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (41301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (41311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (41321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (41331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (41341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (42211) UART: [UART DATA]: 26[0m
+[0;32mI (42211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (42211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (42221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (42231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (42241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (42251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (42251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (42261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (42271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (42281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (42291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (42291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (42301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (42311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (42321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (42331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (42341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (43211) UART: [UART DATA]: 26[0m
+[0;32mI (43211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (43211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (43221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (43231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (43241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (43251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (43251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (43261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (43271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (43281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (43291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (43291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (43301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (43311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (43321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (43331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (43341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (44211) UART: [UART DATA]: 26[0m
+[0;32mI (44211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (44211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (44221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (44231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (44241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (44251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (44251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (44261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (44271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (44281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (44291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (44291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (44301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (44311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (44321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (44331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (44341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (45211) UART: [UART DATA]: 26[0m
+[0;32mI (45211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (45211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (45231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (45231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (45241) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (45251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (45251) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (45261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (45271) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (45281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (45291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (45301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (45301) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (45311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (45321) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (45331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (46211) UART: [UART DATA]: 26[0m
+[0;32mI (46211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (46211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (46221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (46231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (46241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (46251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (46251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (46261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (46271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (46281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (46291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (46291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (46301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (46311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (46321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (46331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (46341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (47211) UART: [UART DATA]: 26[0m
+[0;32mI (47211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (47211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (47221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (47231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (47241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (47251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (47251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (47261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (47271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (47281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (47291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (47291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (47301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (47311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (47321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (47331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (47341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (48211) UART: [UART DATA]: 26[0m
+[0;32mI (48211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (48211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (48221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (48231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (48241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (48251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (48251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (48261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (48271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (48281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (48291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (48291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (48301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (48311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (48321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (48331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (48341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (49211) UART: [UART DATA]: 26[0m
+[0;32mI (49211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (49211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (49221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (49231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (49241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (49251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (49251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (49261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (49271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (49281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (49291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (49291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (49301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (49311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (49321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (49331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (49341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (50211) UART: [UART DATA]: 26[0m
+[0;32mI (50211) UART: Read 26 bytes: '=26.00=100.00=26.00=26.00='[0m
+26.00,100.00,26.00,26.00
+[0;32mI (50211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (50231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (50231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (50241) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (50251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (50251) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (50261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (50271) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (50281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (50291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (50301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (50301) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (50311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (50321) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (50331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (51211) UART: [UART DATA]: 25[0m
+[0;32mI (51211) UART: Read 25 bytes: '=26.00=100.00=26.00=0.00='[0m
+26.00,100.00,26.00,0.00
+[0;32mI (51211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (51221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (51231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (51241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (51251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (51251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (51261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (51271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (51281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (51291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (51291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (51301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (51311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (51321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (51331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (51341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (52211) UART: [UART DATA]: 24[0m
+[0;32mI (52211) UART: Read 24 bytes: '=26.00=100.00=0.00=0.00='[0m
+26.00,100.00,0.00,0.00
+[0;32mI (52211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (52221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (52231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (52241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (52251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (52251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (52261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (52271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (52281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (52291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (52291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (52301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (52311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (52321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (52331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (52331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (53211) UART: [UART DATA]: 24[0m
+[0;32mI (53211) UART: Read 24 bytes: '=26.00=100.00=0.00=0.00='[0m
+26.00,100.00,0.00,0.00
+[0;32mI (53211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (53221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (53231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (53241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (53251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (53251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (53261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (53271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (53281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (53291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (53291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (53301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (53311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (53321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (53331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (53331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (54211) UART: [UART DATA]: 24[0m
+[0;32mI (54211) UART: Read 24 bytes: '=26.00=100.00=0.00=0.00='[0m
+26.00,100.00,0.00,0.00
+[0;32mI (54211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (54221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (54231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (54241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (54251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (54251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (54261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (54271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (54281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (54291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (54291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (54301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (54311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (54321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (54331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (54331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (55211) UART: [UART DATA]: 24[0m
+[0;32mI (55211) UART: Read 24 bytes: '=26.00=100.00=0.00=0.00='[0m
+26.00,100.00,0.00,0.00
+[0;32mI (55211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (55221) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (55231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (55241) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (55251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (55251) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (55261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (55271) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (55281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (55291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (55301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (55301) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (55311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (55321) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (55331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (56211) UART: [UART DATA]: 24[0m
+[0;32mI (56211) UART: Read 24 bytes: '=26.00=100.00=0.00=0.00='[0m
+26.00,100.00,0.00,0.00
+[0;32mI (56211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (56221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (56231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (56241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (56251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (56251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (56261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (56271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (56281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (56291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (56291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (56301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (56311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (56321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (56331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (56331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (57211) UART: [UART DATA]: 24[0m
+[0;32mI (57211) UART: Read 24 bytes: '=26.00=100.00=0.00=0.00='[0m
+26.00,100.00,0.00,0.00
+[0;32mI (57211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (57221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (57231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (57241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (57251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (57251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (57261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (57271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (57281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (57291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (57291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (57301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (57311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (57321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (57331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (57341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (58211) UART: [UART DATA]: 24[0m
+[0;32mI (58211) UART: Read 24 bytes: '=26.00=100.00=0.00=0.00='[0m
+26.00,100.00,0.00,0.00
+[0;32mI (58211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (58221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (58231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (58241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (58251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (58251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (58261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (58271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (58281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (58291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (58291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (58301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (58311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (58321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (58331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (58331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (59211) UART: [UART DATA]: 24[0m
+[0;32mI (59211) UART: Read 24 bytes: '=26.00=100.00=0.00=0.00='[0m
+26.00,100.00,0.00,0.00
+[0;32mI (59211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (59221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (59231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (59241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (59251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (59251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (59261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (59271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (59281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (59291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (59291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (59301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (59311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (59321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (59331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (59331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (60211) UART: [UART DATA]: 24[0m
+[0;32mI (60211) UART: Read 24 bytes: '=26.00=100.00=0.00=0.00='[0m
+26.00,100.00,0.00,0.00
+[0;32mI (60211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (60231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (60231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (60241) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (60251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (60251) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (60261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (60271) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (60281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (60291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (60301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (60301) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (60311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (60321) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (60331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (61211) UART: [UART DATA]: 24[0m
+[0;32mI (61211) UART: Read 24 bytes: '=26.00=100.00=0.00=0.00='[0m
+26.00,100.00,0.00,0.00
+[0;32mI (61211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (61221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (61231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (61241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (61251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (61251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (61261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (61271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (61281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (61291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (61291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (61301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (61311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (61321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (61331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (61331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (62211) UART: [UART DATA]: 26[0m
+[0;32mI (62211) UART: Read 26 bytes: '=26.00=100.00=0.00=140.00='[0m
+26.00,100.00,0.00,140.00
+[0;32mI (62211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (62221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (62231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (62241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (62251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (62251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (62261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (62271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (62281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (62291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (62291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (62301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (62311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (62321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (62331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (62341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (63211) UART: [UART DATA]: 26[0m
+[0;32mI (63211) UART: Read 26 bytes: '=26.00=100.00=0.00=140.00='[0m
+26.00,100.00,0.00,140.00
+[0;32mI (63211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (63221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (63231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (63241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (63251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (63251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (63261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (63271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (63281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (63291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (63291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (63301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (63311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (63321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (63331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (63341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (64211) UART: [UART DATA]: 26[0m
+[0;32mI (64211) UART: Read 26 bytes: '=26.00=100.00=0.00=140.00='[0m
+26.00,100.00,0.00,140.00
+[0;32mI (64211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (64221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (64231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (64241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (64251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (64251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (64261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (64271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (64281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (64291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (64291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (64301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (64311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (64321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (64331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (64341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (65211) UART: [UART DATA]: 26[0m
+[0;32mI (65211) UART: Read 26 bytes: '=26.00=100.00=0.00=140.00='[0m
+26.00,100.00,0.00,140.00
+[0;32mI (65211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (65231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (65231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (65241) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (65251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (65251) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (65261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (65271) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (65281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (65291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":0.00000}}[0m
+[0;31mE (65301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (65301) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (65311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (65321) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (65331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (66211) UART: [UART DATA]: 29[0m
+[0;32mI (66211) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (66211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (66221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (66231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (66241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (66251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (66261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (66261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (66271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (66281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (66291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (66301) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (66301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (66311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (66321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (66331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (66341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (67211) UART: [UART DATA]: 29[0m
+[0;32mI (67211) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (67211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (67221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (67231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (67241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (67251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (67261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (67261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (67271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (67281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (67291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (67301) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (67301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (67311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (67321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (67331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (67341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (68211) UART: [UART DATA]: 29[0m
+[0;32mI (68211) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (68211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (68221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (68231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (68241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (68251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (68261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (68261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (68271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (68281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (68291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (68301) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (68301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (68311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (68321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (68331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (68341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (69211) UART: [UART DATA]: 29[0m
+[0;32mI (69211) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (69211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (69221) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (69231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (69241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (69251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (69261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (69261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (69271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (69281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (69291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (69301) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (69301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (69311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (69321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (69331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (69341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (70211) UART: [UART DATA]: 29[0m
+[0;32mI (70211) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (70211) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (70231) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (70231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (70241) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (70251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (70261) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (70261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (70271) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (70281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (70291) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (70301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (70311) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (70311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (70321) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (70331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (71221) UART: [UART DATA]: 29[0m
+[0;32mI (71221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (71221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (71231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (71241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (71251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (71261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (71271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (71271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (71281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (71291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (71301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (71311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (71311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (71321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (71331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (71341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (71351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (72221) UART: [UART DATA]: 29[0m
+[0;32mI (72221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (72221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (72231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (72241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (72251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (72261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (72271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (72271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (72281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (72291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (72301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (72311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (72311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (72321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (72331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (72341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (72351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (73221) UART: [UART DATA]: 29[0m
+[0;32mI (73221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (73221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (73231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (73241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (73251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (73261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (73271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (73271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (73281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (73291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (73301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (73311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (73311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (73321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (73331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (73341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (73351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (74221) UART: [UART DATA]: 29[0m
+[0;32mI (74221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (74221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (74231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (74241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (74251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (74261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (74271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (74271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (74281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (74291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (74301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (74311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (74311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (74321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (74331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (74341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (74351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (75221) UART: [UART DATA]: 29[0m
+[0;32mI (75221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (75221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (75241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (75241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (75251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (75261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (75271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (75271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (75281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (75291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (75301) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (75311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (75321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (75321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (75331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (75341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (76221) UART: [UART DATA]: 29[0m
+[0;32mI (76221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (76221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (76231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (76241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (76251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (76261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (76271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (76271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (76281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (76291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (76301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (76311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (76311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (76321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (76331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (76341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (76351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (77221) UART: [UART DATA]: 29[0m
+[0;32mI (77221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (77221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (77231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (77241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (77251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (77261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (77271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (77271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (77281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (77291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (77301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (77311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (77311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (77321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (77331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (77341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (77351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (78221) UART: [UART DATA]: 29[0m
+[0;32mI (78221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (78221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (78231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (78241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (78251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (78261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (78271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (78271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (78281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (78291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (78301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (78311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (78311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (78321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (78331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (78341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (78351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (79221) UART: [UART DATA]: 29[0m
+[0;32mI (79221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (79221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (79231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (79241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (79251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (79261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (79271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (79271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (79281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (79291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (79301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (79311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (79311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (79321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (79331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (79341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (79351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (80221) UART: [UART DATA]: 29[0m
+[0;32mI (80221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (80221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (80241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (80241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (80251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (80261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (80271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (80271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (80281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (80291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (80301) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (80311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (80321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (80321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (80331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (80341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (81221) UART: [UART DATA]: 29[0m
+[0;32mI (81221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (81221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (81231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (81241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (81251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (81261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (81271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (81271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (81281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (81291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (81301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (81311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (81311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (81321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (81331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (81341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (81351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (82221) UART: [UART DATA]: 29[0m
+[0;32mI (82221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (82221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (82231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (82241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (82251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (82261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (82271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (82271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (82281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (82291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (82301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (82311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (82311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (82321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (82331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (82341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (82351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (83221) UART: [UART DATA]: 29[0m
+[0;32mI (83221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (83221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (83231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (83241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (83251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (83261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (83271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (83271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (83281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (83291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (83301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (83311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (83311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (83321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (83331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (83341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (83351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (84221) UART: [UART DATA]: 29[0m
+[0;32mI (84221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (84221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (84231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (84241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (84251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (84261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (84271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (84271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (84281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (84291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (84301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (84311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (84311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (84321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (84331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (84341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (84351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (85221) UART: [UART DATA]: 29[0m
+[0;32mI (85221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (85221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (85241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (85241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (85251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (85261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (85271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (85271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (85281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (85291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (85301) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (85311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (85321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (85321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (85331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (85341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (86221) UART: [UART DATA]: 29[0m
+[0;32mI (86221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (86221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (86231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (86241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (86251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (86261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (86271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (86271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (86281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (86291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (86301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (86311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (86311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (86321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (86331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (86341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (86351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (87221) UART: [UART DATA]: 29[0m
+[0;32mI (87221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (87221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (87231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (87241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (87251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (87261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (87271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (87271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (87281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (87291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (87301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (87311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (87311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (87321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (87331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (87341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (87351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (88221) UART: [UART DATA]: 29[0m
+[0;32mI (88221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (88221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (88231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (88241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (88251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (88261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (88271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (88271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (88281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (88291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (88301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (88311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (88311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (88321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (88331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (88341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (88351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (89221) UART: [UART DATA]: 29[0m
+[0;32mI (89221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (89221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (89231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (89241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (89251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (89261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (89261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (89271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (89281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (89291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (89301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (89311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (89311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (89321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (89331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (89341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (89351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (90221) UART: [UART DATA]: 29[0m
+[0;32mI (90221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (90221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (90241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (90241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (90251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (90261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (90271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (90271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (90281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (90291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (90301) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (90311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (90321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (90321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (90331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (90341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (91221) UART: [UART DATA]: 29[0m
+[0;32mI (91221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (91221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (91231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (91241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (91251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (91261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (91261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (91271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (91281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (91291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (91301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (91311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (91311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (91321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (91331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (91341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (91351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (92221) UART: [UART DATA]: 29[0m
+[0;32mI (92221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (92221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (92231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (92241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (92251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (92261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (92261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (92271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (92281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (92291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (92301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (92311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (92311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (92321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (92331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (92341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (92351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (93221) UART: [UART DATA]: 29[0m
+[0;32mI (93221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (93221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (93231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (93241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (93251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (93261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (93261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (93271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (93281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (93291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (93301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (93311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (93311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (93321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (93331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (93341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (93351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (94221) UART: [UART DATA]: 29[0m
+[0;32mI (94221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (94221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (94231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (94241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (94251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (94261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (94261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (94271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (94281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (94291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (94301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (94311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (94311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (94321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (94331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (94341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (94351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (95221) UART: [UART DATA]: 29[0m
+[0;32mI (95221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (95221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;32mI (95241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (95241) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (95251) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (95261) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (95271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (95271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (95281) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (95291) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (95301) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (95311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (95321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (95321) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (95331) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (95341) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (96221) UART: [UART DATA]: 29[0m
+[0;32mI (96221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (96221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (96231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (96241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (96251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (96261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (96271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (96271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (96281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (96291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (96301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (96311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (96311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (96321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (96331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (96341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (96351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (97221) UART: [UART DATA]: 29[0m
+[0;32mI (97221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (97221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (97231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (97241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (97251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (97261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (97271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (97271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (97281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (97291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (97301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (97311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (97311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (97321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (97331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (97341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (97351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (98221) UART: [UART DATA]: 29[0m
+[0;32mI (98221) UART: Read 29 bytes: '=26.00=100.00=4095.00=140.00='[0m
+26.00,100.00,4095.00,140.00
+[0;32mI (98221) esp_rmaker_param: Reporting Time Series Data for Temperature Sensor.Temperature[0m
+[0;31mE (98231) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (98241) esp_rmaker_param: Reporting params: {"Temperature Sensor":{"Temperature":26.00000}}[0m
+[0;31mE (98251) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (98261) esp_rmaker_param: Reporting Time Series Data for Humidity Sensor.Temperature[0m
+[0;31mE (98271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (98271) esp_rmaker_param: Reporting params: {"Humidity Sensor":{"Temperature":100.00000}}[0m
+[0;31mE (98281) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (98291) esp_rmaker_param: Reporting Time Series Data for Soil humidity Sensor.Temperature[0m
+[0;31mE (98301) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (98311) esp_rmaker_param: Reporting params: {"Soil humidity Sensor":{"Temperature":4095.00000}}[0m
+[0;31mE (98311) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (98321) esp_rmaker_param: Reporting Time Series Data for Light Sensor.Temperature[0m
+[0;31mE (98331) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (98341) esp_rmaker_param: Reporting params: {"Light Sensor":{"Temperature":140.00000}}[0m
+[0;31mE (98351) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
