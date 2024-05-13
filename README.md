@@ -2,7 +2,8 @@
 
 ## Environment
 
-Ubuntu22.04 in VMware workstation player 17, ESP-IDF 5.1.1, VSCode
+Ubuntu22.04 in VMware workstation player 17, ESP-IDF 5.1.1, VSCode;
+ESP Rainmaker and EspBlufi on the phone
 
 ## Devices in use
 
@@ -39,3 +40,9 @@ Complete the whole project
 1. Replace the MQTT communication with mesh data transmission functions
 2. Add a small board (ESP32-S3-DevKitM-1) to the Router part to act as the router for Rainmaker, which communicates with mesh root through UART.
 3. Add commands to the nodes to control the actuators
+
+## The whole structure
+Rainmaker <--> Router(ESP32-S3-DevKitM-1) <--> Mesh Root(ESP32-S3-LCD-EV-Board) <--> Mesh nodes(ESP32-S3-DevKitM-1)
+
+## For those who will use the project for further development
+The connections between the root and the nodes are currently completely maintained by ESP Mesh, which actually reacts slowly. I personally suggest to make the root send an OK to the node who has send the data to let the node knows that the data has been transmitted successfully. 
